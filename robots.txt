@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://OsalydPublii/sitemap.xml
+Sitemap: https://JulmandineOsalyd.github.io/OsalydPublii/sitemap.xml

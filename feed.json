@@ -1,13 +1,28 @@
 {
     "version": "https://jsonfeed.org/version/1",
-    "title": "Osalyd",
+    "title": "Osalyd Consulting",
     "description": "",
-    "home_page_url": "https://OsalydPublii",
-    "feed_url": "https://OsalydPublii/feed.json",
+    "home_page_url": "https://JulmandineOsalyd.github.io/OsalydPublii",
+    "feed_url": "https://JulmandineOsalyd.github.io/OsalydPublii/feed.json",
     "user_comment": "",
+    "icon": "https://JulmandineOsalyd.github.io/OsalydPublii/media/website/Logo_Osalyd_VF.png",
     "author": {
         "name": "JB"
     },
     "items": [
+        {
+            "id": "https://JulmandineOsalyd.github.io/OsalydPublii/test-post/",
+            "url": "https://JulmandineOsalyd.github.io/OsalydPublii/test-post/",
+            "title": "Test Post",
+            "summary": "fkhsfhskhfsk",
+            "content_html": "<p>fkhsfhskhfsk</p>",
+            "author": {
+                "name": "JB"
+            },
+            "tags": [
+            ],
+            "date_published": "2025-07-14T11:28:54+02:00",
+            "date_modified": "2025-07-14T11:28:54+02:00"
+        }
     ]
 }
