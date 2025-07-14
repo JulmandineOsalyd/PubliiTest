@@ -1,0 +1,13 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Osalyd",
+    "description": "",
+    "home_page_url": "https://OsalydPublii",
+    "feed_url": "https://OsalydPublii/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "JB"
+    },
+    "items": [
+    ]
+}
