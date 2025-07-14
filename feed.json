@@ -2,17 +2,17 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "Osalyd Consulting",
     "description": "",
-    "home_page_url": "https://julmandineosalyd.github.io/PubliiTest",
-    "feed_url": "https://julmandineosalyd.github.io/PubliiTest/feed.json",
+    "home_page_url": "https://julmandineosalyd.github.io/PubliiTest.",
+    "feed_url": "https://julmandineosalyd.github.io/PubliiTest./feed.json",
     "user_comment": "",
-    "icon": "https://julmandineosalyd.github.io/PubliiTest/media/website/Logo_Osalyd_VF.png",
+    "icon": "https://julmandineosalyd.github.io/PubliiTest./media/website/Logo_Osalyd_VF.png",
     "author": {
         "name": "JB"
     },
     "items": [
         {
-            "id": "https://julmandineosalyd.github.io/PubliiTest/test-post/",
-            "url": "https://julmandineosalyd.github.io/PubliiTest/test-post/",
+            "id": "https://julmandineosalyd.github.io/PubliiTest./test-post/",
+            "url": "https://julmandineosalyd.github.io/PubliiTest./test-post/",
             "title": "Test Post",
             "summary": "fkhsfhskhfsk",
             "content_html": "<p>fkhsfhskhfsk</p>",
