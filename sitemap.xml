@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="https://JulmandineOsalyd.github.io/OsalydPublii/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://julmandineosalyd.github.io/PubliiTest/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 <url>
-<loc>https://JulmandineOsalyd.github.io/OsalydPublii/</loc>
+<loc>https://julmandineosalyd.github.io/PubliiTest/</loc>
 </url>
 <url>
-<loc>https://JulmandineOsalyd.github.io/OsalydPublii/test-page/</loc>
+<loc>https://julmandineosalyd.github.io/PubliiTest/test-page/</loc>
 <lastmod>2025-07-14T11:27:51+02:00</lastmod>
 </url>
 <url>
-<loc>https://JulmandineOsalyd.github.io/OsalydPublii/test-post/</loc>
+<loc>https://julmandineosalyd.github.io/PubliiTest/test-post/</loc>
 <lastmod>2025-07-14T11:28:54+02:00</lastmod>
 </url>
 </urlset>
