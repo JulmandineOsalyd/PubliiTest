@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
     <title>Osalyd Consulting</title>
-    <link href="https://julmandineosalyd.github.io/PubliiTest./feed.xml" rel="self" />
-    <link href="https://julmandineosalyd.github.io/PubliiTest." />
+    <link href="https://julmandineosalyd.github.io/PubliiTest/feed.xml" rel="self" />
+    <link href="https://julmandineosalyd.github.io/PubliiTest" />
     <updated>2025-07-14T11:28:54+02:00</updated>
     <author>
-        <name>JB</name>
+        <name>Julie BREDECHE</name>
     </author>
-    <id>https://julmandineosalyd.github.io/PubliiTest.</id>
+    <id>https://julmandineosalyd.github.io/PubliiTest</id>
 
     <entry>
         <title>Test Post</title>
         <author>
-            <name>JB</name>
+            <name>Julie BREDECHE</name>
         </author>
-        <link href="https://julmandineosalyd.github.io/PubliiTest./test-post/"/>
-        <id>https://julmandineosalyd.github.io/PubliiTest./test-post/</id>
+        <link href="https://julmandineosalyd.github.io/PubliiTest/test-post/"/>
+        <id>https://julmandineosalyd.github.io/PubliiTest/test-post/</id>
 
         <updated>2025-07-14T11:28:54+02:00</updated>
             <summary>
