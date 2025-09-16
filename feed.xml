@@ -3,29 +3,176 @@
     <title>Osalyd Consulting</title>
     <link href="https://www.osalydconsulting.com/feed.xml" rel="self" />
     <link href="https://www.osalydconsulting.com" />
-    <updated>2025-07-14T11:28:54+02:00</updated>
+    <updated>2025-09-16T20:41:36+02:00</updated>
     <author>
         <name>Julie BREDECHE</name>
     </author>
     <id>https://www.osalydconsulting.com</id>
 
     <entry>
-        <title>Test Post</title>
+        <title>L’IA dans SharePoint va transformer votre gestion documentaire en 2025</title>
         <author>
             <name>Julie BREDECHE</name>
         </author>
-        <link href="https://www.osalydconsulting.com/test-post/"/>
-        <id>https://www.osalydconsulting.com/test-post/</id>
+        <link href="https://www.osalydconsulting.com/test-post-sharepoint/"/>
+        <id>https://www.osalydconsulting.com/test-post-sharepoint/</id>
+            <category term="SharePoint"/>
+            <category term="IA"/>
+            <category term="Copilot"/>
+            <category term="Agents"/>
 
-        <updated>2025-07-14T11:28:54+02:00</updated>
+        <updated>2025-08-10T09:30:00+02:00</updated>
             <summary>
                 <![CDATA[
-                    fkhsfhskhfsk
+                    L’intelligence artificielle s’invite partout, et SharePoint n’échappe pas à la tendance. En 2025, Microsoft intègre l’IA au cœur de son&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>fkhsfhskhfsk</p>
+                <h1> </h1>
+<p class="p3">L’intelligence artificielle s’invite partout, et SharePoint n’échappe pas à la tendance. En 2025, Microsoft intègre l’IA au cœur de son environnement, avec une ambition claire : faire de SharePoint bien plus qu’un simple espace de stockage. L’objectif est d’en faire un véritable <span class="s2"><strong>assistant intelligent</strong></span> capable de fluidifier les workflows et de valoriser la masse d’informations présentes dans vos documents.</p>
+<h3><span style="color: #843fa1;"><strong>Qu’est-ce que l’IA dans SharePoint ?</strong></span></h3>
+<p class="p3">Plutôt qu’un produit unique, il s’agit d’un <span class="s2"><strong>ensemble de fonctionnalités</strong></span> intégrées dans l’écosystème Microsoft 365. Leur mission : donner du sens aux fichiers et automatiser les tâches répétitives.</p>
+<ul>
+<li>
+<p class="p1"><span class="s1"><strong>Copilot</strong></span> : un assistant IA intégré dans vos applications Microsoft 365. Il vous aide à rédiger, à résumer des contenus ou à retrouver rapidement une information.</p>
+</li>
+<li>
+<p class="p1"><span class="s1"><strong>Agents SharePoint</strong></span> : de petits assistants spécialisés que vous pouvez configurer pour un site ou une bibliothèque spécifique. Par exemple, un agent RH peut répondre uniquement à partir des documents officiels de l’entreprise.</p>
+</li>
+<li>
+<p class="p1"><span class="s1"><strong>SharePoint Premium</strong></span> (anciennement Syntex) : une plateforme avancée de gestion documentaire qui exploite l’IA pour extraire des données, assembler des modèles, gérer des signatures électroniques ou appliquer automatiquement des règles de sécurité.</p>
+</li>
+</ul>
+<p class="p2"> </p>
+<p class="p3">Toutes ces briques fonctionnent <span class="s2"><strong>dans le respect des droits et règles de sécurité</strong></span> déjà en place dans Microsoft 365.</p>
+<p class="p2"> </p>
+<h2><strong>Les apports concrets de l’IA dans SharePoint</strong></h2>
+<p class="p2"> </p>
+<h3><strong>Génération et résumé de contenu</strong></h3>
+<p class="p2"> </p>
+<p class="p3">Copilot peut créer le premier jet d’un article, d’une proposition commerciale ou d’un plan projet à partir de simples instructions. Il peut également condenser un long rapport, des comptes rendus de réunion ou un fil d’e-mails en quelques points clés.</p>
+<p class="p2"> </p>
+<h3><strong>Traitement automatisé des documents</strong></h3>
+<p class="p2"> </p>
+<p class="p3">Avec SharePoint Premium et Power Automate, les documents comme les factures ou les contrats peuvent être analysés automatiquement : l’IA en extrait les informations essentielles (dates, montants, clauses) puis déclenche un flux d’approbation ou une alerte en cas d’échéance.</p>
+<p class="p2"> </p>
+<h3><strong>Recherche enrichie et découverte des connaissances</strong></h3>
+<p class="p2"> </p>
+<p class="p3">La recherche s’appuie sur le langage naturel pour trouver <span class="s2"><strong>des réponses précises</strong></span>, pas seulement des fichiers. Cela facilite l’accès à l’information, même quand on n’a pas le bon mot-clé en tête.</p>
+<p class="p2"> </p>
+<h3><strong>Assistants personnalisés</strong></h3>
+<p class="p2"> </p>
+<p class="p3">Les agents permettent de créer des IA spécialisées. Un site d’onboarding RH, par exemple, peut proposer un chatbot qui répond uniquement à partir de la documentation interne validée.</p>
+<p class="p3"><strong style="font-family: var(--font-base); font-size: 1.60181em; letter-spacing: var(--letter-spacing);">Quelques cas d’usage concrets</strong></p>
+<table>
+<thead>
+<tr>
+<th>
+<p class="p1"><strong>Département</strong></p>
+</th>
+<th>
+<p class="p1"><strong>Cas d’usage</strong></p>
+</th>
+<th>
+<p class="p1"><strong>Comment l’IA de SharePoint aide</strong></p>
+</th>
+<th>
+<p class="p1"><strong>Fonctionnalités clés utilisées</strong></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p class="p1"><strong>Finance</strong></p>
+</td>
+<td>
+<p class="p1">Automatisation des notes de frais</p>
+</td>
+<td>
+<p class="p1">Analyse les reçus téléchargés, extrait les informations comme le fournisseur et le prix, classe les dépenses et signale celles qui ne respectent pas les règles de l’entreprise.</p>
+</td>
+<td>
+<p class="p1">SharePoint Premium (Traitement des documents), Power Automate</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="p1"><strong>Ressources Humaines (RH)</strong></p>
+</td>
+<td>
+<p class="p1">Intégration des nouveaux employés</p>
+</td>
+<td>
+<p class="p1">Un agent IA dédié sur le site d’accueil des nouveaux arrivants répond aux questions fréquentes concernant les avantages sociaux ou l’installation informatique, en s’appuyant uniquement sur les fichiers RH validés.</p>
+</td>
+<td>
+<p class="p1">Agents SharePoint, Copilot</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="p1"><strong>Ventes</strong></p>
+</td>
+<td>
+<p class="p1">Génération de propositions commerciales</p>
+</td>
+<td>
+<p class="p1">Copilot aide à rédiger une nouvelle proposition en récupérant des informations clés, des témoignages clients et des données produits issues des propositions précédentes stockées sur le site de l’équipe commerciale.</p>
+</td>
+<td>
+<p class="p1">Copilot, Recherche IA</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="p1"><strong>Juridique</strong></p>
+</td>
+<td>
+<p class="p1">Gestion des contrats</p>
+</td>
+<td>
+<p class="p1">Lorsqu’un nouveau contrat est téléchargé, il est automatiquement classé, les dates et clauses importantes sont extraites, et les bonnes étiquettes de rétention sont appliquées pour la conformité légale.</p>
+</td>
+<td>
+<p class="p1">SharePoint Premium (Assemblage de contenu, Gouvernance)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="p1"><strong>Opérations</strong></p>
+</td>
+<td>
+<p class="p1">Q&amp;R sur la sécurité terrain</p>
+</td>
+<td>
+<p class="p1">Une entreprise d’ingénierie offre aux travailleurs de terrain un accès mobile immédiat aux manuels de sécurité. Les employés peuvent poser des questions et obtenir instantanément des réponses à partir des guides officiels. (Basé sur l’exemple client <i>Amey</i>).</p>
+</td>
+<td>
+<p class="p1">Agents SharePoint</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2><strong>Les limites à garder en tête</strong></h2>
+<p class="p2"> </p>
+<p class="p3">Si la promesse est séduisante, certains points méritent attention :</p>
+<ul>
+<li>
+<p class="p1"><span class="s1">L’IA SharePoint reste </span><strong>cantonnée à l’écosystème Microsoft 365</strong><span class="s1">.</span></p>
+</li>
+<li>
+<p class="p1">Les coûts peuvent grimper : Copilot est facturé en supplément (30 $/utilisateur/mois).</p>
+</li>
+<li>
+<p class="p1">L’efficacité dépend directement de la qualité et de l’organisation de vos contenus. Une base documentaire désordonnée donnera des résultats imprécis.</p>
+</li>
+</ul>
+<p class="p2"> </p>
+<h2><strong>En résumé</strong></h2>
+<p class="p2"> </p>
+<p class="p3">L’IA dans SharePoint ouvre une nouvelle étape dans la gestion documentaire : automatisation, gain de temps, accès facilité à l’information. Elle se révèle particulièrement puissante pour les organisations déjà ancrées dans Microsoft 365. Mais avant de se lancer, il est essentiel d’évaluer la maturité de ses contenus et la gouvernance en place pour réellement tirer parti de ces innovations.</p>
             ]]>
         </content>
     </entry>
