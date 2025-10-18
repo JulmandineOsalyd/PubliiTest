@@ -3,41 +3,32 @@
     <title>Osalyd Consulting</title>
     <link href="https://www.osalydconsulting.com/feed.xml" rel="self" />
     <link href="https://www.osalydconsulting.com" />
-    <updated>2025-10-18T13:08:12+02:00</updated>
+    <updated>2025-10-18T18:46:16+02:00</updated>
     <author>
         <name>Julie BREDECHE</name>
     </author>
     <id>https://www.osalydconsulting.com</id>
 
     <entry>
-        <title>Test</title>
-        <author>
-            <name>Julie BREDECHE</name>
-        </author>
-        <link href="https://www.osalydconsulting.com/test/"/>
-        <id>https://www.osalydconsulting.com/test/</id>
-
-        <updated>2025-10-18T13:08:12+02:00</updated>
-            <summary></summary>
-        <content></content>
-    </entry>
-    <entry>
-        <title>5 erreurs à éviter pour une automatisation efficace !</title>
+        <title>5 erreurs à éviter pour une réussir son automatisation !</title>
         <author>
             <name>Julie BREDECHE</name>
         </author>
         <link href="https://www.osalydconsulting.com/les-5-erreurs-a-eviter-pour-une-automatisat/"/>
         <id>https://www.osalydconsulting.com/les-5-erreurs-a-eviter-pour-une-automatisat/</id>
-            <category term="Power Platform"/>
+        <media:content url="https://www.osalydconsulting.com/media/posts/7/Banner-Site-Osalyd-1.svg" medium="image" />
+            <category term="PowerPlatform"/>
 
         <updated>2025-09-21T22:08:09+02:00</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://www.osalydconsulting.com/media/posts/7/Banner-Site-Osalyd-1.svg" alt="" />
                     L’automatisation est souvent présentée comme une solution miracle pour gagner du temps, réduire les tâches répétitives et fiabiliser les processus.
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <p><img src="https://www.osalydconsulting.com/media/posts/7/Banner-Site-Osalyd-1.svg" class="type:primaryImage" alt="" /></p>
                 <p>L’automatisation est souvent présentée comme une solution miracle pour gagner du temps, réduire les tâches répétitives et fiabiliser les processus. Et c’est vrai… <span class="s2"><strong>quand c’est bien fait</strong></span>.</p>
 <p class="p3">Mais dans la pratique, beaucoup d’équipes tombent dans des pièges classiques qui peuvent non seulement annuler les bénéfices attendus, mais aussi générer des frustrations, des blocages, voire une perte de confiance dans les outils.</p>
 <p class="p3">Voici les <span class="s2"><strong>5 erreurs les plus fréquentes</strong></span> quand on se lance dans l’automatisation (avec Power Automate ou autre), et surtout <span class="s2"><strong>les bonnes pratiques pour les éviter.</strong></span></p>
@@ -98,23 +89,26 @@
         </content>
     </entry>
     <entry>
-        <title>L’IA Copilot dans SharePoint va transformer votre gestion documentaire</title>
+        <title>Comment l’IA Copilot va transformer votre gestion documentaire dans SharePoint</title>
         <author>
             <name>Julie BREDECHE</name>
         </author>
         <link href="https://www.osalydconsulting.com/test-post-sharepoint/"/>
         <id>https://www.osalydconsulting.com/test-post-sharepoint/</id>
+        <media:content url="https://www.osalydconsulting.com/media/posts/4/Site-Web-OSALYD-Copilot.svg" medium="image" />
             <category term="SharePoint"/>
             <category term="Copilot"/>
 
         <updated>2025-08-10T09:30:00+02:00</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://www.osalydconsulting.com/media/posts/4/Site-Web-OSALYD-Copilot.svg" alt="" />
                     En 2025, Microsoft intègre l’IA au cœur de son environnement, avec une ambition claire : faire de SharePoint bien plus&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <p><img src="https://www.osalydconsulting.com/media/posts/4/Site-Web-OSALYD-Copilot.svg" class="type:primaryImage" alt="" /></p>
                 <p id="ember1348" class="ember-view reader-text-block__paragraph"><span style="color: #000000;">En 2025, Microsoft intègre l’IA au cœur de son environnement, avec une ambition claire : faire de SharePoint bien plus qu’un simple espace de stockage. L’objectif est d’en faire un véritable <strong>assistant intelligent</strong> capable valoriser la masse d’informations présentes dans vos documents.</span></p>
 <p id="ember1349" class="ember-view reader-text-block__paragraph"><span style="color: #000000;">Plutôt qu’un produit unique, il s’agit d’un <strong>ensemble de fonctionnalités</strong> intégrées dans l’écosystème Microsoft 365. Leur mission : donner du sens aux fichiers et automatiser les tâches répétitives.</span></p>
 <h3 id="ember1350" class="ember-view reader-text-block__heading-3"><span style="color: #4a3c8d;">SharePoint Premium (ex Microsoft Syntex)</span></h3>
