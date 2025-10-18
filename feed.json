@@ -11,6 +11,18 @@
     },
     "items": [
         {
+            "id": "https://www.osalydconsulting.com/test/",
+            "url": "https://www.osalydconsulting.com/test/",
+            "title": "Test",
+            "author": {
+                "name": "Julie BREDECHE"
+            },
+            "tags": [
+            ],
+            "date_published": "2025-10-18T13:08:12+02:00",
+            "date_modified": "2025-10-18T13:08:12+02:00"
+        },
+        {
             "id": "https://www.osalydconsulting.com/les-5-erreurs-a-eviter-pour-une-automatisat/",
             "url": "https://www.osalydconsulting.com/les-5-erreurs-a-eviter-pour-une-automatisat/",
             "title": "5 erreurs à éviter pour une automatisation efficace !",
