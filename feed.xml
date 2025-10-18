@@ -3,37 +3,90 @@
     <title>Osalyd Consulting</title>
     <link href="https://www.osalydconsulting.com/feed.xml" rel="self" />
     <link href="https://www.osalydconsulting.com" />
-    <updated>2025-09-16T22:53:09+02:00</updated>
+    <updated>2025-10-18T11:15:57+02:00</updated>
     <author>
         <name>Julie BREDECHE</name>
     </author>
     <id>https://www.osalydconsulting.com</id>
 
     <entry>
-        <title>SharePoint Premium</title>
+        <title>5 erreurs à éviter pour une automatisation efficace !</title>
         <author>
             <name>Julie BREDECHE</name>
         </author>
-        <link href="https://www.osalydconsulting.com/sharepoint-premium/"/>
-        <id>https://www.osalydconsulting.com/sharepoint-premium/</id>
+        <link href="https://www.osalydconsulting.com/les-5-erreurs-a-eviter-pour-une-automatisat/"/>
+        <id>https://www.osalydconsulting.com/les-5-erreurs-a-eviter-pour-une-automatisat/</id>
+            <category term="Power Platform"/>
 
-        <updated>2025-09-16T21:40:11+02:00</updated>
+        <updated>2025-09-21T22:08:09+02:00</updated>
             <summary>
                 <![CDATA[
-                    https://www.shoviv.com/blog/sharepoint-premium-features-and-cost/?srsltid=AfmBOorqQyJt3cB_c_2Sd6LqQQ4SONJ_NNEz2C6KjXx097i3as7hCQGO https://www.linkedin.com/pulse/sharepoint-online-vs-premium-which-right-your-business-gltyc/
+                    L’automatisation est souvent présentée comme une solution miracle pour gagner du temps, réduire les tâches répétitives et fiabiliser les processus.
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p><a href="https://www.shoviv.com/blog/sharepoint-premium-features-and-cost/?srsltid=AfmBOorqQyJt3cB_c_2Sd6LqQQ4SONJ_NNEz2C6KjXx097i3as7hCQGO">https://www.shoviv.com/blog/sharepoint-premium-features-and-cost/?srsltid=AfmBOorqQyJt3cB_c_2Sd6LqQQ4SONJ_NNEz2C6KjXx097i3as7hCQGO</a></p>
-<p> </p>
-<p><a href="https://www.linkedin.com/pulse/sharepoint-online-vs-premium-which-right-your-business-gltyc/">https://www.linkedin.com/pulse/sharepoint-online-vs-premium-which-right-your-business-gltyc/</a></p>
-<p> </p>
+                <p>L’automatisation est souvent présentée comme une solution miracle pour gagner du temps, réduire les tâches répétitives et fiabiliser les processus. Et c’est vrai… <span class="s2"><strong>quand c’est bien fait</strong></span>.</p>
+<p class="p3">Mais dans la pratique, beaucoup d’équipes tombent dans des pièges classiques qui peuvent non seulement annuler les bénéfices attendus, mais aussi générer des frustrations, des blocages, voire une perte de confiance dans les outils.</p>
+<p class="p3">Voici les <span class="s2"><strong>5 erreurs les plus fréquentes</strong></span> quand on se lance dans l’automatisation (avec Power Automate ou autre), et surtout <span class="s2"><strong>les bonnes pratiques pour les éviter.</strong></span></p>
+<h4><strong>❌  <span style="color: #4a3c8d;">Erreur n°1 : Automatiser un processus qui est déjà défaillant</span></strong></h4>
+<p class="p3">Si votre processus est bancal à la base, l’automatisation ne fera qu’en amplifier les défauts.Un mauvais workflow, automatisé, reste un mauvais workflow… mais plus rapide à planter.</p>
+<p class="p4"><strong>À faire avant toute chose :</strong></p>
+<ul>
+<li class="p1">Cartographier le processus : qui fait quoi, quand, avec quelles exceptions ?</li>
+<li class="p1">Supprimer les étapes inutiles, clarifier les responsabilités.</li>
+<li class="p1">Impliquer les utilisateurs pour comprendre les vraies contraintes du terrain.</li>
+</ul>
+<p class="p3"><span class="s2"><strong>🎯 L’objectif :</strong></span> partir sur des bases saines avant d’automatiser.</p>
+<h4><strong>❌  <span style="color: #4a3c8d;">Erreur n°2 : Vouloir tout automatiser, y compris ce qui ne s’y prête pas</span></strong></h4>
+<p class="p3">Certaines tâches <span class="s2"><strong>nécessitent du contexte, de l’humain, ou du bon sens</strong></span>. Vouloir les automatiser coûte souvent plus cher que de les laisser manuelles.</p>
+<p class="p4"><strong>Ce qu’il vaut mieux automatiser :</strong></p>
+<ul>
+<li class="p1">Les actions simples, répétitives, bien définies</li>
+<li class="p1">Les enchaînements logiques sans ambiguïté</li>
+<li class="p1">Les alertes, validations, mises à jour, transferts de données…</li>
+</ul>
+<p class="p4"><strong>🎯 Le bon réflexe :</strong><span class="s3"> automatiser là où c’est </span>sûr, rentable et prévisible<span class="s3">.</span></p>
+<h4><strong>❌  <span style="color: #4a3c8d;">Erreur n°3 : Négliger l’accompagnement des utilisateurs</span></strong></h4>
+<p class="p3">Un automatisme bien conçu mais mal adopté ne servira… à rien. <span class="s3">Et souvent, </span><strong>la résistance vient d’un manque d’explication ou de formation.</strong></p>
+<p class="p4"><strong>Les bonnes pratiques :</strong></p>
+<ul>
+<li class="p1">Associer les utilisateurs dès le début du projet</li>
+<li class="p1">Expliquer le <i>pourquoi</i>, pas seulement le <i>comment</i><i></i></li>
+<li class="p1">Prévoir une phase de test, de formation, et un support post-déploiement</li>
+</ul>
+<p class="p4"><strong>🎯 Le bon réflexe : </strong>Le facteur humain est aussi important que la technique.</p>
+<h4><strong>❌  <span style="color: #4a3c8d;">Erreur n°4 : Oublier les exceptions et la gestion des erreurs</span></strong></h4>
+<p class="p3">Un flux qui fonctionne <i>seulement</i> quand tout se passe parfaitement… ne fonctionnera pas longtemps. Dans la vraie vie, les imprévus sont la norme.</p>
+<p class="p4"><strong>À prévoir dans votre automatisation :</strong></p>
+<ul>
+<li class="p1">Des scénarios alternatifs (ex. si une personne est absente)</li>
+<li>Des garde-fous : validations, vérifications, alertes</li>
+<li class="p1">Des escalades automatiques en cas de blocage</li>
+</ul>
+<p class="p3"><span class="s2"><strong>🎯 L’objectif :</strong></span> sécuriser le processus et éviter les interruptions invisibles.</p>
+<h4><strong>❌  <span style="color: #4a3c8d;">Erreur n°5 : Considérer l’automatisation comme un projet “one shot”</span></strong></h4>
+<p class="p3">Les besoins évoluent. Les équipes changent. Un processus qui fonctionnait bien à son lancement peut devenir obsolète en quelques mois.</p>
+<p class="p4"><strong>Pour que l’automatisation reste efficace :</strong></p>
+<ul>
+<li class="p1">Mesurer régulièrement les résultats (temps gagné, erreurs évitées…)</li>
+<li class="p1">Recueillir les retours des utilisateurs</li>
+<li class="p1">Prévoir des itérations : ajustements, ajouts, optimisations</li>
+</ul>
+<p class="p4"><strong>🎯 Le bon réflexe : </strong>Une bonne automatisation s’adapte au fil du temps.</p>
+<h2><strong>En résumé</strong></h2>
+<p class="p3">L’automatisation est un levier puissant pour les entreprises. Mais pour en tirer tous les bénéfices, <span class="s2"><strong>il faut la penser comme un projet d’équipe, ancré dans la réalité métier</strong></span>, et non comme une simple implémentation technique.</p>
+<p class="p3">Avant de lancer votre prochain flux Power Automate, prenez un moment pour vérifier :</p>
+<p class="p3">✔ Le processus est-il bien conçu ?</p>
+<p>✔ Ai-je identifié les tâches vraiment automatisables ?</p>
+<p class="p3">✔ Les utilisateurs sont-ils embarqués ?</p>
+<p class="p3">✔ Les exceptions sont-elles prévues ?</p>
+<p class="p3">✔ Ai-je un plan pour faire évoluer le flux dans le temps ?</p>
             ]]>
         </content>
     </entry>
     <entry>
-        <title>L’IA dans SharePoint va transformer votre gestion documentaire en 2025</title>
+        <title>L’IA Copilot dans SharePoint va transformer votre gestion documentaire</title>
         <author>
             <name>Julie BREDECHE</name>
         </author>
@@ -45,107 +98,58 @@
         <updated>2025-08-10T09:30:00+02:00</updated>
             <summary>
                 <![CDATA[
-                    L’intelligence artificielle s’invite partout, et SharePoint n’échappe pas à la tendance. En 2025, Microsoft intègre l’IA au cœur de son&hellip;
+                    En 2025, Microsoft intègre l’IA au cœur de son environnement, avec une ambition claire : faire de SharePoint bien plus&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p class="p3">L’intelligence artificielle s’invite partout, et SharePoint n’échappe pas à la tendance. En 2025, Microsoft intègre l’IA au cœur de son environnement, avec une ambition claire : faire de SharePoint bien plus qu’un simple espace de stockage. L’objectif est d’en faire un véritable <span class="s2"><strong>assistant intelligent</strong></span> capable de fluidifier les workflows et de valoriser la masse d’informations présentes dans vos documents.</p>
-<h3><span style="color: #4a3c8d;">Qu’est-ce que l’IA dans SharePoint ?</span></h3>
-<p class="p3">Plutôt qu’un produit unique, il s’agit d’un <span class="s2"><strong>ensemble de fonctionnalités</strong></span> intégrées dans l’écosystème Microsoft 365. Leur mission : donner du sens aux fichiers et automatiser les tâches répétitives.</p>
+                <p id="ember1348" class="ember-view reader-text-block__paragraph"><span style="color: #000000;">En 2025, Microsoft intègre l’IA au cœur de son environnement, avec une ambition claire : faire de SharePoint bien plus qu’un simple espace de stockage. L’objectif est d’en faire un véritable <strong>assistant intelligent</strong> capable valoriser la masse d’informations présentes dans vos documents.</span></p>
+<p id="ember1349" class="ember-view reader-text-block__paragraph"><span style="color: #000000;">Plutôt qu’un produit unique, il s’agit d’un <strong>ensemble de fonctionnalités</strong> intégrées dans l’écosystème Microsoft 365. Leur mission : donner du sens aux fichiers et automatiser les tâches répétitives.</span></p>
+<h3 id="ember1350" class="ember-view reader-text-block__heading-3"><span style="color: #4a3c8d;">SharePoint Premium (ex Microsoft Syntex)</span></h3>
+<p><span style="color: #000000;">Une plateforme avancée de gestion documentaire qui s’appuie sur l’IA pour :</span></p>
 <ul>
-<li>
-<p class="p1"><span class="s1"><strong>Agents Copilot SharePoint</strong></span> : de petits assistants spécialisés que vous pouvez configurer pour un site ou une bibliothèque SharePoint spécifique. Par exemple, un agent RH peut répondre uniquement à partir des documents officiels de l’entreprise.</p>
-<figure ><figure class="post__image post__image--center"><img loading="lazy"  src="https://www.osalydconsulting.com/media/posts/4/Capture-decran-2025-09-16-a-21.37.08.png" alt="Copilot Site SharePoint" width="2776" height="1132" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://www.osalydconsulting.com/media/posts/4/responsive/Capture-decran-2025-09-16-a-21.37.08-xs.png 384w ,https://www.osalydconsulting.com/media/posts/4/responsive/Capture-decran-2025-09-16-a-21.37.08-sm.png 600w ,https://www.osalydconsulting.com/media/posts/4/responsive/Capture-decran-2025-09-16-a-21.37.08-md.png 768w ,https://www.osalydconsulting.com/media/posts/4/responsive/Capture-decran-2025-09-16-a-21.37.08-lg.png 1200w ,https://www.osalydconsulting.com/media/posts/4/responsive/Capture-decran-2025-09-16-a-21.37.08-xl.png 1600w"></figure>
-<figcaption >Copilot dans un site SharePoint</figcaption>
-</figure>
-</li>
-<li>
-<p class="p1"><span class="s1"><strong>SharePoint Premium</strong></span> (ex Microsoft Syntex) : une plateforme avancée de gestion documentaire qui exploite l’IA pour extraire des données, assembler des modèles, gérer des signatures électroniques ou appliquer automatiquement vos règles de sécurité.</p>
-</li>
+<li><span style="color: #000000;">Extraire automatiquement des données clés (dates, montants, clauses),</span></li>
+<li><span style="color: #000000;">Assembler des modèles ou déclencher des flux d’approbation,</span></li>
+<li><span style="color: #000000;">Appliquer vos politiques de sécurité et de conformité.</span></li>
 </ul>
-<figure ><figure class="post__image post__image--center"><img loading="lazy"  src="https://www.osalydconsulting.com/media/posts/4/SharePointPremiumHistory-1.jpg" alt="SharePoint Premium History" width="1630" height="506" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://www.osalydconsulting.com/media/posts/4/responsive/SharePointPremiumHistory-1-xs.jpg 384w ,https://www.osalydconsulting.com/media/posts/4/responsive/SharePointPremiumHistory-1-sm.jpg 600w ,https://www.osalydconsulting.com/media/posts/4/responsive/SharePointPremiumHistory-1-md.jpg 768w ,https://www.osalydconsulting.com/media/posts/4/responsive/SharePointPremiumHistory-1-lg.jpg 1200w ,https://www.osalydconsulting.com/media/posts/4/responsive/SharePointPremiumHistory-1-xl.jpg 1600w"></figure>
-<figcaption >SharePoint Premium History</figcaption>
+<figure ><figure class="post__image post__image--center"><img loading="lazy"  src="https://www.osalydconsulting.com/media/posts/4/1759148598844-2.png" alt="SharePoint Premium" width="691" height="136" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://www.osalydconsulting.com/media/posts/4/responsive/1759148598844-2-xs.png 384w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759148598844-2-sm.png 600w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759148598844-2-md.png 768w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759148598844-2-lg.png 1200w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759148598844-2-xl.png 1600w"></figure>
+<figcaption >Historique de SharePoint Premium</figcaption>
 </figure>
-<p> </p>
-<p class="p3">Toutes ces briques fonctionnent <span class="s2"><strong>dans le respect des droits et règles de sécurité</strong></span> déjà en place dans Microsoft 365.</p>
-<h3><span style="color: #4a3c8d;">Les apports concrets de l’IA dans SharePoint</span></h3>
-<h4><span style="color: #000000;"><strong>Génération et résumé de contenu</strong></span></h4>
-<p class="p3">Copilot peut créer le premier jet d’un article, d’une proposition commerciale ou d’un plan projet à partir de simples instructions. Il peut également condenser un long rapport, des comptes rendus de réunion ou un fil d’e-mails en quelques points clés.</p>
-<h4><span style="color: #000000;"><strong>Traitement automatisé des documents</strong></span></h4>
-<p class="p3">Avec SharePoint Premium et AI Builder, les documents comme les factures ou les contrats peuvent être analysés automatiquement : l’IA en extrait les informations essentielles (dates, montants, clauses) puis déclenche un flux d’approbation ou une alerte en cas d’échéance.</p>
-<h4><span style="color: #000000;"><strong>Recherche enrichie et découverte des connaissances</strong></span></h4>
-<p class="p3">La recherche s’appuie sur le langage naturel pour trouver <span class="s2"><strong>des réponses précises</strong></span>, pas seulement des fichiers. Cela facilite l’accès à l’information, même quand on n’a pas le bon mot-clé en tête.</p>
-<h3><span style="color: #4a3c8d;">Quelques cas d'usages concrets</span></h3>
-<table>
-<tbody>
-<tr>
-<td>
-<p class="p1"><strong>Ressources Humaines</strong></p>
-</td>
-<td>
-<p class="p1">Intégration des nouveaux employés</p>
-</td>
-<td>
-<p class="p1">Un agent IA dédié sur l'Intranet répond aux questions fréquentes des employés en s’appuyant uniquement sur les fichiers RH validés.</p>
-</td>
-<td>
-<p class="p1">Agents SharePoint</p>
-</td>
-</tr>
-<tr>
-<td>
-<p class="p1"><strong>Ventes</strong></p>
-</td>
-<td>
-<p class="p1">Génération de propositions commerciales</p>
-</td>
-<td>
-<p class="p1">Copilot aide à rédiger une nouvelle proposition en récupérant des informations clés, des témoignages clients et des données produits issues des propositions précédentes stockées sur le site SharePoint de l’équipe commerciale.</p>
-</td>
-<td>
-<p class="p1">Copilot, Recherche IA</p>
-</td>
-</tr>
-<tr>
-<td>
-<p class="p1"><strong>Juridique</strong></p>
-</td>
-<td>
-<p class="p1">Gestion des contrats</p>
-</td>
-<td>
-<p class="p1">Lorsqu’un nouveau contrat est téléchargé, il est automatiquement classé, les dates et clauses importantes sont extraites, et les bonnes étiquettes de rétention sont appliquées pour la conformité légale.</p>
-</td>
-<td>
-<p class="p1">SharePoint Premium </p>
-</td>
-</tr>
-<tr>
-<td>
-<p class="p1"><strong>Opérations</strong></p>
-</td>
-<td>
-<p class="p1">Q&amp;A sur la sécurité terrain</p>
-</td>
-<td>
-<p class="p1">Une entreprise d’ingénierie offre aux collaborateurs sur le terrain un accès mobile immédiat aux manuels de sécurité. Les employés peuvent poser des questions et obtenir instantanément des réponses à partir des guides officiels.</p>
-</td>
-<td>
-<p class="p1">Agents SharePoint</p>
-</td>
-</tr>
-</tbody>
-</table>
-<h3><span style="color: #4a3c8d;">Quelques limites à garder en tête</span></h3>
-<p class="p3">Bien que prometteuse, l’IA dans SharePoint vient avec quelques points de vigilance :</p>
+<h3 id="ember1354" class="ember-view reader-text-block__heading-3"><span style="color: #4a3c8d;">Copilot pour Microsoft 365</span></h3>
+<p id="ember1355" class="ember-view reader-text-block__paragraph"><span style="color: #000000;">Intégré directement dans les applications que vous utilisez au quotidien (Word, Outlook, Teams, SharePoint…), Copilot devient un <strong>assistant de travail transversal</strong>. Dans SharePoint, il vous aide à :</span></p>
 <ul>
-<li class="p1"><span class="s1">Un écosystème<strong> </strong></span>limité à l'environnement Microsoft.</li>
-<li class="p1">Un coût additionnel<span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);"> : Copilot est proposé en supplément (30 € / uilisateur / mois), certaines fonctionnalités avancées de SharePoint Premium sont facturées en pay-as-you-go...</span></li>
-<li class="p1">Une dépendance à la qualité de vos contenus<span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);"> : une base documentaire désordonnée entraîne des résultats décevants.</span></li>
+<li><span style="color: #000000;">Unifier vos contenus en utilisant SharePoint comme socle documentaire pour exploiter les informations dans d'autres outils M365</span></li>
+<li><span style="color: #000000;">Générer et synthétiser des contenus pertinents à partir des fichiers et du contenus de vos sites SharePoint</span></li>
 </ul>
-<h3><span style="color: #4a3c8d;">En résumé</span></h3>
-<p class="p3">L’IA dans SharePoint <strong>ouvre une nouvelle étape dans la gestion documentaire</strong> : automatisation, gain de temps, accès facilité à l’information. Elle se révèle particulièrement puissante pour les organisations déjà ancrées dans Microsoft 365. Mais avant de se lancer, il est essentiel d’évaluer la maturité de ses contenus et la gouvernance en place pour réellement tirer parti de ces innovations.</p>
+<figure class="post__image"><img loading="lazy"  src="https://www.osalydconsulting.com/media/posts/4/1759147908174.png" alt="Copilot dans Microsoft 365" width="1241" height="407" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://www.osalydconsulting.com/media/posts/4/responsive/1759147908174-xs.png 384w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759147908174-sm.png 600w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759147908174-md.png 768w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759147908174-lg.png 1200w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759147908174-xl.png 1600w"><figcaption>Copilot dans Microsoft 365</figcaption></figure>
+<h3 id="ember1358" class="ember-view reader-text-block__heading-3"><span style="color: #4a3c8d;">Agents de connaissances SharePoint (Knowledge Agents)</span></h3>
+<p id="ember1359" class="ember-view reader-text-block__paragraph">💡Disponible en <em>Public Preview</em> depuis Septembre 2025</p>
+<p id="ember1360" class="ember-view reader-text-block__paragraph">De petits assistants spécialisés que vous pouvez utiliser sur un site SharePoint, une page, une liste ou une bibliothèque spécifique. Ils permettent par exemple de :</p>
+<ul>
+<li>Rechercher l'information à partir d’une base documentaire ciblée (RH, juridique, support…),</li>
+<li>Maintenir vos contenus Intranet à jour (liens cassés, pages obsolètes, FAQ automatiques),</li>
+<li>Appliquer des métadonnées automatiquement pour préparer vos documents à être exploités par Copilot.</li>
+</ul>
+<p id="ember1361" class="ember-view reader-text-block__paragraph"></p>
+<p id="ember1362" class="ember-view reader-text-block__paragraph">➡️ Pour tester une démo des nouveaux agents SharePoint c'est par ici : <a class="pwHwmXBqmofSClxsctVkNQQzvNIASaSVkFYLg " target="_self" href="https://demos.microsoft.com/microsoft/play/5140/knowledge-agents#/0/1" data-test-app-aware-link="" tabindex="0">https://demos.microsoft.com/microsoft/play/5140/knowledge-agents#/0/1</a></p>
+<div class="reader-image-block reader-image-block--full-width"> </div>
+<div>
+<figure ><figure class="post__image post__image--center"><img loading="lazy"  src="https://www.osalydconsulting.com/media/posts/4/1759148061440-2.png" alt="" width="1086" height="584" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://www.osalydconsulting.com/media/posts/4/responsive/1759148061440-2-xs.png 384w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759148061440-2-sm.png 600w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759148061440-2-md.png 768w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759148061440-2-lg.png 1200w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759148061440-2-xl.png 1600w"></figure>
+<figcaption >SharePoint Knowledge Agents</figcaption>
+</figure>
+<h3 id="ember1364" class="ember-view reader-text-block__heading-3"><span style="color: #4a3c8d;">Quelques limites à garder en tête</span></h3>
+<p id="ember1365" class="ember-view reader-text-block__paragraph">Bien que prometteuse, l’IA dans SharePoint n'est pas magique et il existe quelques points de vigilance à prendre en compte :</p>
+<ul>
+<li>Un écosystème limité à l'environnement Microsoft.</li>
+<li>Un coût additionnel : Copilot est proposé en supplément (30 € / uitilisateur / mois), certaines fonctionnalités avancées de SharePoint Premium sont facturées en pay-as-you-go...</li>
+<li>Une dépendance à la qualité de vos contenus : une base documentaire désordonnée entraîne des résultats décevants.</li>
+</ul>
+<p id="ember1366" class="ember-view reader-text-block__paragraph"></p>
+<h3 id="ember1367" class="ember-view reader-text-block__heading-3"><span style="color: #4a3c8d;">En conclusion</span></h3>
+<p id="ember1368" class="ember-view reader-text-block__paragraph">Avec SharePoint, Microsoft transforme la gestion documentaire en un véritable levier stratégique : automatisation, gouvernance renforcée et exploitation intelligente des connaissances. En combinant <strong>Copilot</strong> et les <strong>Knowledge Agents</strong> vos contenus ne sont plus seulement stockés, mais deviennent <strong>une ressource vivante qui alimente vos décisions</strong>, vos projets et vos collaborateurs.</p>
+<p id="ember1369" class="ember-view reader-text-block__paragraph"></p>
+</div>
+<p id="ember1356" class="ember-view reader-text-block__paragraph"></p>
             ]]>
         </content>
     </entry>
