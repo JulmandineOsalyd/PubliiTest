@@ -3,7 +3,7 @@
     <title>Osalyd Consulting</title>
     <link href="https://www.osalydconsulting.com/feed.xml" rel="self" />
     <link href="https://www.osalydconsulting.com" />
-    <updated>2025-10-20T20:04:06+02:00</updated>
+    <updated>2025-10-20T20:12:31+02:00</updated>
     <author>
         <name>Julie BREDECHE</name>
     </author>
@@ -87,19 +87,19 @@
         </author>
         <link href="https://www.osalydconsulting.com/les-5-erreurs-a-eviter-pour-une-automatisat/"/>
         <id>https://www.osalydconsulting.com/les-5-erreurs-a-eviter-pour-une-automatisat/</id>
-        <media:content url="https://www.osalydconsulting.com/media/posts/7/Banner-Site-Osalyd-1.svg" medium="image" />
+        <media:content url="https://www.osalydconsulting.com/media/posts/7/Site-Web-5-erreurs-automatisation.svg" medium="image" />
             <category term="PowerAutomate"/>
 
         <updated>2025-09-21T22:08:09+02:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://www.osalydconsulting.com/media/posts/7/Banner-Site-Osalyd-1.svg" alt="" />
+                        <img src="https://www.osalydconsulting.com/media/posts/7/Site-Web-5-erreurs-automatisation.svg" alt="" />
                     L’automatisation est souvent présentée comme une solution miracle pour gagner du temps, réduire les tâches répétitives et fiabiliser les processus.
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://www.osalydconsulting.com/media/posts/7/Banner-Site-Osalyd-1.svg" class="type:primaryImage" alt="" /></p>
+                    <p><img src="https://www.osalydconsulting.com/media/posts/7/Site-Web-5-erreurs-automatisation.svg" class="type:primaryImage" alt="" /></p>
                 <p>L’automatisation est souvent présentée comme une solution miracle pour gagner du temps, réduire les tâches répétitives et fiabiliser les processus. Et c’est vrai… <span class="s2"><strong>quand c’est bien fait</strong></span>.</p>
 <p class="p3">Mais dans la pratique, beaucoup d’équipes tombent dans des pièges classiques qui peuvent non seulement annuler les bénéfices attendus, mais aussi générer des frustrations, des blocages, voire une perte de confiance dans les outils.</p>
 <p class="p3">Voici les <span class="s2"><strong>5 erreurs les plus fréquentes</strong></span> quand on se lance dans l’automatisation (avec Power Automate ou autre), et surtout <span class="s2"><strong>les bonnes pratiques pour les éviter.</strong></span></p>
