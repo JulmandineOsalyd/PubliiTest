@@ -3,12 +3,83 @@
     <title>Osalyd Consulting</title>
     <link href="https://www.osalydconsulting.com/feed.xml" rel="self" />
     <link href="https://www.osalydconsulting.com" />
-    <updated>2025-10-20T17:06:46+02:00</updated>
+    <updated>2025-10-20T20:04:06+02:00</updated>
     <author>
         <name>Julie BREDECHE</name>
     </author>
     <id>https://www.osalydconsulting.com</id>
 
+    <entry>
+        <title>3 erreurs fréquentes de conception d&#x27;un flux Power Automate</title>
+        <author>
+            <name>Julie BREDECHE</name>
+        </author>
+        <link href="https://www.osalydconsulting.com/3-erreurs-frequentes-de-conception-dun-flux-power-automate/"/>
+        <id>https://www.osalydconsulting.com/3-erreurs-frequentes-de-conception-dun-flux-power-automate/</id>
+        <media:content url="https://www.osalydconsulting.com/media/posts/11/Site-Web-3-erreurs-de-conception.svg" medium="image" />
+            <category term="PowerAutomate"/>
+
+        <updated>2025-10-20T18:51:16+02:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://www.osalydconsulting.com/media/posts/11/Site-Web-3-erreurs-de-conception.svg" alt="" />
+                    Au fil des missions réalisées pour différents clients, j'ai pu constater que les mêmes erreurs reviennent régulièrement dans la conception&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://www.osalydconsulting.com/media/posts/11/Site-Web-3-erreurs-de-conception.svg" class="type:primaryImage" alt="" /></p>
+                <p> </p>
+<p>Au fil des missions réalisées pour différents clients, j'ai pu constater que les mêmes erreurs reviennent régulièrement dans la conception de flux Power Automate.</p>
+<p class="p1">Elles ne sont pas toujours visibles au premier abord, mais peuvent rapidement nuire à la lisibilité, à la fiabilité et à la maintenabilité de vos automatisations !</p>
+<p class="p1">Voici selon moi, les trois erreurs les plus courantes… et les bonnes pratiques à adopter pour les éviter.</p>
+<hr>
+<h2><span style="color: #4a3c8d;"><strong>#1 - Des actions mal nommées</strong></span></h2>
+<p>❌  <code>“Condition 12”, “Apply to each 4”, “Compose 5”…</code></p>
+<p class="p3">Ces noms par défaut peuvent sembler anodins au départ, mais deviennent vite un cauchemar à maintenir.</p>
+<p class="p4"><strong>Pourquoi c’est une erreur :</strong></p>
+<p class="p3">Lorsqu’un flux devient complexe, il devient presque impossible de s’y retrouver. Et si une autre personne doit le reprendre, le débogage devient un véritable parcours du combattant.</p>
+<p class="p4"><strong>💡 La bonne pratique :</strong></p>
+<p class="cvGsUA direction-ltr para-style-body align-left"><span class="a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none">Appliquer une règle de nommage commune à tous les flux qui :</span></p>
+<ul>
+<li class="cvGsUA direction-ltr para-style-body align-left"><span class="a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none">Conserve le nom de l’action initial</span></li>
+<li class="cvGsUA direction-ltr para-style-body align-left"><span class="a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none">Respecte la nomenclature</span><span class="a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none"> camelCase (ou à minima en évitant les espaces dans le texte ajouté)</span></li>
+<li class="cvGsUA direction-ltr para-style-body align-left"><span class="a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none">Résume ce que fait cette action simplement</span></li>
+</ul>
+<p>✅  <code>“Condition - ifDocumentFound ”, “Apply to each - documentFound”, “Compose - formatCreationDate”…</code></p>
+<p class="p3">C’est un réflexe simple, mais essentiel pour assurer la compréhension et la maintenance dans la durée.</p>
+<hr>
+<h2><span style="color: #4a3c8d;"><strong>#2 - Aucune gestion d’erreur</strong></span></h2>
+<p class="p3">Un appel HTTP échoue ? Une donnée est manquante ? Le flux s’arrête… sans prévenir.</p>
+<p class="p4"><strong>Pourquoi c’est une erreur :</strong></p>
+<p class="p3">Sans gestion d’erreur, les anomalies ne sont détectées qu’après coup — souvent par les utilisateurs finaux. Cela crée de la frustration et nuit à la confiance dans l’outil.</p>
+<p class="p4"><strong>💡 La bonne pratique :</strong></p>
+<p class="p3">Mettre en place des contrôles d’erreur avec les conditions “Run after” ou des branches parallèles prévoyant une notification automatique (via Teams ou e-mail).</p>
+<p class="p3">Un flux robuste, c’est un flux capable de se relever tout seul lorsqu’un incident survient.</p>
+<figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://www.osalydconsulting.com/media/posts/11/image-1.png" alt="" width="560" height="189" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://www.osalydconsulting.com/media/posts/11/responsive/image-1-xs.png 384w ,https://www.osalydconsulting.com/media/posts/11/responsive/image-1-sm.png 600w ,https://www.osalydconsulting.com/media/posts/11/responsive/image-1-md.png 768w ,https://www.osalydconsulting.com/media/posts/11/responsive/image-1-lg.png 1200w ,https://www.osalydconsulting.com/media/posts/11/responsive/image-1-xl.png 1600w"></figure>
+<figcaption >Exemple de d'intégration de "Run after" dans un flux</figcaption>
+</figure>
+<hr>
+<h2><span style="color: #4a3c8d;"><strong>#3 - Trop de conditions imbriquées</strong></span></h2>
+<blockquote>
+<p class="p3">Si A, alors B… sauf si C, mais seulement si D.</p>
+</blockquote>
+<p class="p3">Le résultat : ce n'est plus un flux mais une épopée </p>
+<p class="p4"><strong>Pourquoi c’est une erreur :</strong></p>
+<p class="p3">Les conditions imbriquées rendent la lecture difficile, la maintenance fastidieuse et les évolutions risquées.</p>
+<p class="p4"><strong>💡 La bonne pratique :</strong></p>
+<p class="p3">Simplifier la logique avec des expressions conditionnelles ou l’action “Switch”.</p>
+<figure class="post__image" ><img loading="lazy" src="https://www.osalydconsulting.com/media/posts/11/image-3.png" alt="" width="1899" height="494" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://www.osalydconsulting.com/media/posts/11/responsive/image-3-xs.png 384w ,https://www.osalydconsulting.com/media/posts/11/responsive/image-3-sm.png 600w ,https://www.osalydconsulting.com/media/posts/11/responsive/image-3-md.png 768w ,https://www.osalydconsulting.com/media/posts/11/responsive/image-3-lg.png 1200w ,https://www.osalydconsulting.com/media/posts/11/responsive/image-3-xl.png 1600w">
+<figcaption >Exemple d'action "Switch" pour remplacer des conditions imbriquées</figcaption>
+</figure>
+<p class="p3">Et si le processus devient trop complexe, envisager de le découper en plusieurs flux plus ciblés.</p>
+<hr>
+<h2><strong>En résumé</strong></h2>
+<p class="p3">Un bon flux Power Automate, c’est comme un bon process : <span class="s2">il doit être </span><strong>clair, prévisible et facile à faire évoluer</strong><span class="s2">.</span></p>
+<p class="p3">Concevoir un flux, ce n’est pas empiler des actions : c’est structurer une logique métier de façon lisible et durable.</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>5 erreurs à éviter pour une réussir son automatisation !</title>
         <author>
@@ -16,19 +87,19 @@
         </author>
         <link href="https://www.osalydconsulting.com/les-5-erreurs-a-eviter-pour-une-automatisat/"/>
         <id>https://www.osalydconsulting.com/les-5-erreurs-a-eviter-pour-une-automatisat/</id>
-        <media:content url="https://www.osalydconsulting.com/media/posts/7/Site-Web-OSALYD-Power-Automate.svg" medium="image" />
-            <category term="PowerPlatform"/>
+        <media:content url="https://www.osalydconsulting.com/media/posts/7/Banner-Site-Osalyd-1.svg" medium="image" />
+            <category term="PowerAutomate"/>
 
         <updated>2025-09-21T22:08:09+02:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://www.osalydconsulting.com/media/posts/7/Site-Web-OSALYD-Power-Automate.svg" alt="" />
+                        <img src="https://www.osalydconsulting.com/media/posts/7/Banner-Site-Osalyd-1.svg" alt="" />
                     L’automatisation est souvent présentée comme une solution miracle pour gagner du temps, réduire les tâches répétitives et fiabiliser les processus.
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://www.osalydconsulting.com/media/posts/7/Site-Web-OSALYD-Power-Automate.svg" class="type:primaryImage" alt="" /></p>
+                    <p><img src="https://www.osalydconsulting.com/media/posts/7/Banner-Site-Osalyd-1.svg" class="type:primaryImage" alt="" /></p>
                 <p>L’automatisation est souvent présentée comme une solution miracle pour gagner du temps, réduire les tâches répétitives et fiabiliser les processus. Et c’est vrai… <span class="s2"><strong>quand c’est bien fait</strong></span>.</p>
 <p class="p3">Mais dans la pratique, beaucoup d’équipes tombent dans des pièges classiques qui peuvent non seulement annuler les bénéfices attendus, mais aussi générer des frustrations, des blocages, voire une perte de confiance dans les outils.</p>
 <p class="p3">Voici les <span class="s2"><strong>5 erreurs les plus fréquentes</strong></span> quand on se lance dans l’automatisation (avec Power Automate ou autre), et surtout <span class="s2"><strong>les bonnes pratiques pour les éviter.</strong></span></p>
