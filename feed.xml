@@ -1,84 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
-    <title>Osalyd Consulting</title>
+    <title>Julie BREDECHE</title>
     <link href="https://www.osalydconsulting.com/feed.xml" rel="self" />
     <link href="https://www.osalydconsulting.com" />
-    <updated>2025-11-06T15:33:59+01:00</updated>
+    <updated>2025-11-16T15:26:14+01:00</updated>
     <author>
         <name>Julie BREDECHE</name>
     </author>
     <id>https://www.osalydconsulting.com</id>
 
     <entry>
-        <title>L&#x27;évolution de Power Virtual Agents à Copilot Studio</title>
+        <title>Comment l’IA a fait évoluer Power Virtual Agents vers Copilot Studio</title>
         <author>
             <name>Julie BREDECHE</name>
         </author>
         <link href="https://www.osalydconsulting.com/levolution-de-power-virtual-agents-a-copilot-studio/"/>
         <id>https://www.osalydconsulting.com/levolution-de-power-virtual-agents-a-copilot-studio/</id>
-        <media:content url="https://www.osalydconsulting.com/media/posts/13/Site-Web-PVA-Copilot-Studio.svg" medium="image" />
             <category term="Copilot"/>
 
         <updated>2025-11-06T14:53:23+01:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://www.osalydconsulting.com/media/posts/13/Site-Web-PVA-Copilot-Studio.svg" alt="De Power Virtuals Agents à Copilot Studio" />
-                    Depuis plusieurs années, Power Virtual Agents permettait de créer des chatbots métier low-code dans l’écosystème Microsoft. Mais avec l’arrivée de&hellip;
+                    Pendant plusieurs années, Power Virtual Agents a été l’outil de référence pour créer des chatbots métier low-code dans l’écosystème Microsoft. Un compagnon fiable, simple à déployer, et largement adopté par les équipes métiers. Mais l’arrivée de l’IA générative a rebattu les cartes… et accéléré une&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://www.osalydconsulting.com/media/posts/13/Site-Web-PVA-Copilot-Studio.svg" class="type:primaryImage" alt="De Power Virtuals Agents à Copilot Studio" /></p>
-                <p class="p1">Depuis plusieurs années, <span class="s1"><strong>Power Virtual Agents </strong></span>permettait de créer des chatbots métier low-code dans l’écosystème Microsoft. Mais avec <span class="s1">l’arrivée de l’<strong>IA générative</strong></span>, Microsoft a franchi une nouvelle étape :</p>
-<p class="p2"><span class="s2">👉 <span class="s1"><strong>Power Virtual Agents</strong></span> devient </span>Microsoft <strong>Copilot Studio</strong><span class="s2">.</span></p>
+                <p class="p1">Pendant plusieurs années, Power Virtual Agents a été l’outil de référence pour créer des chatbots métier low-code dans l’écosystème Microsoft. Un compagnon fiable, simple à déployer, et largement adopté par les équipes métiers.</p>
+<p class="p1">Mais l’arrivée de l’IA générative a rebattu les cartes… et accéléré une transformation majeure : <span class="s1"><strong>Power Virtual Agents devient Microsoft Copilot Studio</strong></span>.</p>
 <hr>
-<h2 class="p1"><span style="color: #4a3c8d;">De Power Virtuals Agents à Copilot Studio</span></h2>
-<p class="p1">Power Virtual Agents, lancé en 2019, était conçu pour permettre à tous de créer des <span class="s1"><strong>chatbots sans code</strong></span>, capables d’interagir avec les utilisateurs et de répondre à des scénarios pré-configurés.</p>
-<p class="p1">Avec l’arrivée des modèles LLM (Large Language Models), Microsoft a fait évoluer cette approche : le chatbot ne se limite plus à “répondre”, il <span class="s1"><strong>agit, comprend et collabore</strong></span>.</p>
-<p class="p1">Copilot Studio est donc la <span class="s1"><strong>fusion entre Power Virtual Agents et l’univers Copilot</strong></span>, avec une intégration directe à Microsoft 365 et la Power Platform.</p>
+<h3><strong>Un changement de nom… mais surtout de dimension</strong></h3>
+<p class="p1">Lancé en 2019, Power Virtual Agents avait un objectif clair : permettre à n’importe quelle équipe de <strong>concevoir des bots sans écrire une ligne de code</strong>. Ces agents répondaient à des scénarios préconfigurés, souvent centrés sur du support ou des FAQ.</p>
+<p class="p1">Puis sont arrivés les modèles de langage (LLM). Une rupture technologique qui a poussé Microsoft à dépasser le simple bot conversationnel pour aller vers un véritable assistant capable de comprendre, d’agir et de collaborer.</p>
+<p class="p3"><strong>Copilot Studio incarne cette nouvelle étape.</strong></p>
+<p class="p1">C’est la fusion entre l’héritage Power Virtual Agents et l’univers Copilot, avec une intégration beaucoup plus poussée dans Microsoft 365 et l’ensemble de la Power Platform.</p>
 <p class="msg msg--info">💡 Vos bots Power Virtual Agents continuent de fonctionner et pourront toujours être modifiés via l'interface Copilot Studio.</p>
 <hr>
-<h2><span style="color: #4a3c8d;">La nouveauté : l'intégration de l'IA générative</span></h2>
-<p class="p1">Copilot Studio intègre désormais des briques d’<span class="s1"><strong>IA générative</strong></span> (LLM), associées à vos <strong>données d'entreprise</strong>.</p>
-<p>Cela permet de :</p>
+<h3><span style="color: #000000;">L'IA générative au coeur de Copilot Studio</span></h3>
+<p class="p1">La grande nouveauté ? L’intégration native de l’IA générative, connectée à vos données d’entreprise.</p>
+<p class="p1">Concrètement, Copilot Studio permet désormais de :</p>
 <ul>
-<li class="p1">Générer des réponses contextuelles à partir de documents <strong>SharePoint, OneDrive</strong> ou stockés dans <strong>Dataverse</strong>,</li>
-<li class="p1">Déclencher des flux<span class="s1"><strong> Power Automate</strong></span> en fonction des requêtes utilisateurs,</li>
-<li class="p1">Créer de véritables <span class="s1">assistants métiers utilisant<strong> l'IA générative</strong></span>, et non de simples bots de FAQ.</li>
+<li class="p1"><span class="s1"><strong>Produire des réponses contextuelles</strong></span> à partir de documents SharePoint, OneDrive ou Dataverse.</li>
+<li class="p1"><span class="s1"><strong>Déclencher des flux Power Automate</strong></span>, selon ce que demande l’utilisateur.</li>
+<li class="p1"><span class="s1"><strong>Créer des assistants métiers complets</strong></span>, capables d’interpréter des besoins complexes, d’agir, et d’apprendre.</li>
 </ul>
-<figure ><figure class="post__image post__image--center"><img loading="lazy"  src="https://www.osalydconsulting.com/media/posts/13/Copilot-Studio-Home-1-1024x576.webp" alt="" width="1024" height="576" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://www.osalydconsulting.com/media/posts/13/responsive/Copilot-Studio-Home-1-1024x576-xs.webp 384w ,https://www.osalydconsulting.com/media/posts/13/responsive/Copilot-Studio-Home-1-1024x576-sm.webp 600w ,https://www.osalydconsulting.com/media/posts/13/responsive/Copilot-Studio-Home-1-1024x576-md.webp 768w ,https://www.osalydconsulting.com/media/posts/13/responsive/Copilot-Studio-Home-1-1024x576-lg.webp 1200w ,https://www.osalydconsulting.com/media/posts/13/responsive/Copilot-Studio-Home-1-1024x576-xl.webp 1600w"></figure>
+<p class="p1">On n’est plus dans le chatbot « question / réponse ». On entre dans l’ère des agents personnalisés.</p>
+<figure ><figure class="post__image post__image--center"><img loading="lazy"  src="https://www.osalydconsulting.com/media/posts/13/Copilot-Studio-Home-1-1024x576.webp" alt="" width="1024" height="576" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://www.osalydconsulting.com/media/posts/13/responsive/Copilot-Studio-Home-1-1024x576-xs.webp 640w ,https://www.osalydconsulting.com/media/posts/13/responsive/Copilot-Studio-Home-1-1024x576-sm.webp 768w ,https://www.osalydconsulting.com/media/posts/13/responsive/Copilot-Studio-Home-1-1024x576-md.webp 1024w ,https://www.osalydconsulting.com/media/posts/13/responsive/Copilot-Studio-Home-1-1024x576-lg.webp 1366w ,https://www.osalydconsulting.com/media/posts/13/responsive/Copilot-Studio-Home-1-1024x576-xl.webp 1600w ,https://www.osalydconsulting.com/media/posts/13/responsive/Copilot-Studio-Home-1-1024x576-2xl.webp 1920w"></figure>
 <figcaption >Nouvelle interface Copilot Studio</figcaption>
 </figure>
 <hr>
-<h2><span style="color: #4a3c8d;">Une gouvernance et une sécurité renforcée</span></h2>
-<p class="p1">Microsoft a également mis l’accent sur les besoins des équipes IT des organisations déjà engagées sur la Power Platform en permettant :</p>
+<h3><span style="color: #000000;">Une gouvernance et une sécurité renforcée</span></h3>
+<p class="p1">Cette évolution s’accompagne d’un gros travail sur la gouvernance, un point très attendu par les équipes IT déjà engagées sur la Power Platform.</p>
+<p class="p1">Copilot Studio permet notamment :</p>
 <ul>
-<li class="p1">Une gestion centralisée des agents dans l'interface Copilot Studio,</li>
-<li>Un suivi des usages et des tableaux de bord analytiques,</li>
-<li class="p1">Un contrôle fin des sources de données et du périmètre d’action de l’IA.</li>
+<li class="p1">Une <span class="s1"><strong>gestion centralisée</strong></span> de tous les agents.</li>
+<li class="p1">Un <span class="s1"><strong>pilotage analytique</strong></span> avec tableaux de bord intégrés.</li>
+<li class="p1">Un <span class="s1"><strong>contrôle avancé</strong></span> des sources de données et droits d’accès.</li>
 </ul>
-<figure ><figure class="post__image post__image--center"><img loading="lazy"  src="https://www.osalydconsulting.com/media/posts/13/CopilotAnalytics-3.png" alt="Copilot Agent Analytics" width="904" height="568" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://www.osalydconsulting.com/media/posts/13/responsive/CopilotAnalytics-3-xs.png 384w ,https://www.osalydconsulting.com/media/posts/13/responsive/CopilotAnalytics-3-sm.png 600w ,https://www.osalydconsulting.com/media/posts/13/responsive/CopilotAnalytics-3-md.png 768w ,https://www.osalydconsulting.com/media/posts/13/responsive/CopilotAnalytics-3-lg.png 1200w ,https://www.osalydconsulting.com/media/posts/13/responsive/CopilotAnalytics-3-xl.png 1600w"></figure>
+<p class="p1">Autrement dit : plus de puissance, mais aussi plus de maîtrise.</p>
+<figure ><figure class="post__image post__image--center"><img loading="lazy"  src="https://www.osalydconsulting.com/media/posts/13/CopilotAnalytics-3.png" alt="Copilot Agent Analytics" width="904" height="568" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://www.osalydconsulting.com/media/posts/13/responsive/CopilotAnalytics-3-xs.png 640w ,https://www.osalydconsulting.com/media/posts/13/responsive/CopilotAnalytics-3-sm.png 768w ,https://www.osalydconsulting.com/media/posts/13/responsive/CopilotAnalytics-3-md.png 1024w ,https://www.osalydconsulting.com/media/posts/13/responsive/CopilotAnalytics-3-lg.png 1366w ,https://www.osalydconsulting.com/media/posts/13/responsive/CopilotAnalytics-3-xl.png 1600w ,https://www.osalydconsulting.com/media/posts/13/responsive/CopilotAnalytics-3-2xl.png 1920w"></figure>
 <figcaption >Extrait d'un tableau de bord analytique d'un Agent Copilot</figcaption>
 </figure>
 <hr>
-<h2><span style="color: #4a3c8d;">Un nouveau modèle de facturation</span></h2>
+<h3><span style="color: #000000;">Un nouveau modèle de facturation : plus flexible, mais à surveiller</span></h3>
 <p>Depuis le 1er novembre 2025, les <strong>crédits AI Builders deviennent des crédits CoPilot</strong> et Microsoft a mis en place un nouveau modèle de facturation associé à Copilot Studio.</p>
+<p class="p1">Microsoft en profite pour introduire un modèle économique plus granulaire :</p>
 <ul>
-<li><strong>Pay-as-you-go</strong> : <span class="s1">Vous payez uniquement selon le </span>nombre de crédits Copilot  réellement consommés<span class="s1"> chaque mois (0.01$ par crédit)</span></li>
-<li><strong>Pack mensuel de crédits</strong> : Un pack de crédit attribué au Tenant avec un certain nombre de crédits qui peuvent être alloués sur des environnements Power Platform (200$ / 25 000 crédits mensuels)</li>
-<li><strong>Plan annuel prépayé</strong> : Un pool de crédits Copilot valable un an<span class="s1">, avec </span>des remises dégressives selon le volume<span class="s1">.</span></li>
+<li class="p1"><span class="s1"><strong>Pay-as-you-go</strong></span> : vous ne payez que les crédits réellement consommés (0,01 $ par crédit).</li>
+<li class="p1"><span class="s1"><strong>Pack mensuel</strong></span> : 25 000 crédits pour 200 $ / mois, à répartir sur vos environnements Power Platform.</li>
+<li class="p1"><span class="s1"><strong>Plan annuel prépayé</strong></span> : un volume de crédits valable un an, avec remises selon le niveau d’engagement.</li>
 </ul>
 <p>Plus d'infos : <a href="https://go.microsoft.com/fwlink/?linkid=2320995&amp;clcid=0x40c&amp;culture=fr-fr&amp;country=fr">Guide de la gestion des licences Copilot Studio</a></p>
 <p class="msg msg--warning">⚠️ Les crédits obtenus via les licences Power Automate et Power Apps Premium exprireront en Novembre 2026.</p>
 <hr>
-<h2><span style="color: #4a3c8d;">Points de vigilance</span></h2>
-<p class="p1">Comme pour tout projet intégrant de l’intelligence artificielle, certains points de vigilance sont essentiels.</p>
-<p class="p1">D’abord, <span class="s1"><strong>le coût des actions IA</strong></span> : chaque appel à un modèle d'IA Microsoft a un coût. Il est donc important d’évaluer en amont la volumétrie de données et le nombre d’utilisateurs concernés, afin d’éviter les mauvaises surprises.</p>
-<p class="p1">Ensuite, <span class="s1"><strong>la qualité des données</strong></span> joue un rôle déterminant. Une IA n’est pertinente que si elle s’appuie sur des informations fiables, à jour et bien structurées. L’entraînement et la précision de l'Agent dépendront directement de la qualité des sources de données.</p>
-<p class="p1">Enfin, un Agent Copilot ne s’impose pas : il se <strong>co-construit avec les utilisateurs</strong>, en prenant le temps de comprendre leurs usages et leurs irritants. </p>
+<h3><span style="color: #000000;">Les points de vigilance à garder en tête</span></h3>
+<p class="p1">Comme toujours avec l’IA, le potentiel est immense… mais les précautions sont indispensables.</p>
+<h4><strong>1. Le coût de l’IA</strong></h4>
+<p class="p3">Chaque appel à un modèle d’IA a un coût.</p>
+<p class="p3">Mieux vaut anticiper le nombre d’utilisateurs et le volume de données interrogé pour éviter les dérapages budgétaires.</p>
+<h4><strong>2. La qualité des données</strong></h4>
+<p class="p3">Une IA n’est jamais meilleure que les sources qu’on lui donne.</p>
+<p class="p3">Des données à jour, structurées, fiables : c’est la condition pour obtenir des réponses pertinentes.</p>
+<h3><strong>3. L’adoption terrain</strong></h3>
+<p class="p3">Un agent Copilot ne s’impose pas.</p>
+<p>Il se co-construit avec les utilisateurs, en observant leurs besoins, leurs irritants et leurs usages réels.</p>
 <hr>
-<h2 class="p1"><span style="color: #4a3c8d;">En résumé</span></h2>
-<p class="p1">Power Virtual Agents n’a pas disparu. Il a <span class="s1"><strong>évolué</strong></span> vers Copilot Studio, un modèle qui <span class="s2">marque la </span><strong>convergence </strong>entre la<strong> Power Platform et l’IA générative</strong><span class="s2">, </span>et ouvre la voie à une nouvelle génération d’assistants métiers !</p>
+<h3 class="p1"><span style="color: #000000;">En résumé</span></h3>
+<p class="p1">Power Virtual Agents ne disparaît pas : il se métamorphose !</p>
+<p class="p1">Avec Copilot Studio, Microsoft fait converger la Power Platform et l’IA générative pour ouvrir une nouvelle ère : <span class="s1"><strong>celle des assistants métiers intelligents, connectés et véritablement utiles au quotidien.</strong></span></p>
             ]]>
         </content>
     </entry>
@@ -96,7 +105,7 @@
             <summary>
                 <![CDATA[
                         <img src="https://www.osalydconsulting.com/media/posts/11/Site-Web-3-erreurs-de-conception.svg" alt="" />
-                    Au fil des missions réalisées pour différents clients, j'ai pu constater que les mêmes erreurs reviennent régulièrement dans la conception&hellip;
+                    Au fil des missions réalisées pour différents clients, j'ai pu constater que les mêmes erreurs reviennent régulièrement dans la conception de flux Power Automate. Elles ne sont pas toujours visibles au premier abord, mais peuvent rapidement nuire à la lisibilité, à la fiabilité et à&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -129,7 +138,7 @@
 <p class="p4"><strong>💡 La bonne pratique :</strong></p>
 <p class="p3">Mettre en place des contrôles d’erreur avec les conditions “Run after” ou des branches parallèles prévoyant une notification automatique (via Teams ou e-mail).</p>
 <p class="p3">Un flux robuste, c’est un flux capable de se relever tout seul lorsqu’un incident survient.</p>
-<figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://www.osalydconsulting.com/media/posts/11/image-1.png" alt="" width="560" height="189" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://www.osalydconsulting.com/media/posts/11/responsive/image-1-xs.png 384w ,https://www.osalydconsulting.com/media/posts/11/responsive/image-1-sm.png 600w ,https://www.osalydconsulting.com/media/posts/11/responsive/image-1-md.png 768w ,https://www.osalydconsulting.com/media/posts/11/responsive/image-1-lg.png 1200w ,https://www.osalydconsulting.com/media/posts/11/responsive/image-1-xl.png 1600w"></figure>
+<figure class="post__image" ><figure class="post__image post__image--center"><img loading="lazy"  src="https://www.osalydconsulting.com/media/posts/11/image-1.png" alt="" width="560" height="189" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://www.osalydconsulting.com/media/posts/11/responsive/image-1-xs.png 640w ,https://www.osalydconsulting.com/media/posts/11/responsive/image-1-sm.png 768w ,https://www.osalydconsulting.com/media/posts/11/responsive/image-1-md.png 1024w ,https://www.osalydconsulting.com/media/posts/11/responsive/image-1-lg.png 1366w ,https://www.osalydconsulting.com/media/posts/11/responsive/image-1-xl.png 1600w ,https://www.osalydconsulting.com/media/posts/11/responsive/image-1-2xl.png 1920w"></figure>
 <figcaption >Exemple de d'intégration de "Run after" dans un flux</figcaption>
 </figure>
 <hr>
@@ -142,7 +151,7 @@
 <p class="p3">Les conditions imbriquées rendent la lecture difficile, la maintenance fastidieuse et les évolutions risquées.</p>
 <p class="p4"><strong>💡 La bonne pratique :</strong></p>
 <p class="p3">Simplifier la logique avec des expressions conditionnelles ou l’action “Switch”.</p>
-<figure class="post__image" ><img loading="lazy" src="https://www.osalydconsulting.com/media/posts/11/image-3.png" alt="" width="1899" height="494" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://www.osalydconsulting.com/media/posts/11/responsive/image-3-xs.png 384w ,https://www.osalydconsulting.com/media/posts/11/responsive/image-3-sm.png 600w ,https://www.osalydconsulting.com/media/posts/11/responsive/image-3-md.png 768w ,https://www.osalydconsulting.com/media/posts/11/responsive/image-3-lg.png 1200w ,https://www.osalydconsulting.com/media/posts/11/responsive/image-3-xl.png 1600w">
+<figure class="post__image" ><img loading="lazy" src="https://www.osalydconsulting.com/media/posts/11/image-3.png" alt="" width="1899" height="494" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://www.osalydconsulting.com/media/posts/11/responsive/image-3-xs.png 640w ,https://www.osalydconsulting.com/media/posts/11/responsive/image-3-sm.png 768w ,https://www.osalydconsulting.com/media/posts/11/responsive/image-3-md.png 1024w ,https://www.osalydconsulting.com/media/posts/11/responsive/image-3-lg.png 1366w ,https://www.osalydconsulting.com/media/posts/11/responsive/image-3-xl.png 1600w ,https://www.osalydconsulting.com/media/posts/11/responsive/image-3-2xl.png 1920w">
 <figcaption >Exemple d'action "Switch" pour remplacer des conditions imbriquées</figcaption>
 </figure>
 <p class="p3">Et si le processus devient trop complexe, envisager de le découper en plusieurs flux plus ciblés.</p>
@@ -167,7 +176,7 @@
             <summary>
                 <![CDATA[
                         <img src="https://www.osalydconsulting.com/media/posts/7/Site-Web-5-erreurs-automatisation.svg" alt="" />
-                    L’automatisation est souvent présentée comme une solution miracle pour gagner du temps, réduire les tâches répétitives et fiabiliser les processus.
+                    L’automatisation est souvent présentée comme une solution miracle pour gagner du temps, réduire les tâches répétitives et fiabiliser les processus. Et c’est vrai… quand c’est bien fait. Mais dans la pratique, beaucoup d’équipes tombent dans des pièges classiques qui peuvent non seulement annuler les bénéfices&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -247,7 +256,7 @@
             <summary>
                 <![CDATA[
                         <img src="https://www.osalydconsulting.com/media/posts/4/Site-Web-OSALYD-Copilot.svg" alt="" />
-                    En 2025, Microsoft intègre l’IA au cœur de son environnement, avec une ambition claire : faire de SharePoint bien plus&hellip;
+                    En 2025, Microsoft intègre l’IA au cœur de son environnement, avec une ambition claire : faire de SharePoint bien plus qu’un simple espace de stockage. L’objectif est d’en faire un véritable assistant intelligent capable valoriser la masse d’informations présentes dans vos documents. Plutôt qu’un produit&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -262,7 +271,7 @@
 <li><span style="color: #000000;">Assembler des modèles ou déclencher des flux d’approbation,</span></li>
 <li><span style="color: #000000;">Appliquer vos politiques de sécurité et de conformité.</span></li>
 </ul>
-<figure ><figure class="post__image post__image--center"><img loading="lazy"  src="https://www.osalydconsulting.com/media/posts/4/1759148598844-2.png" alt="SharePoint Premium" width="691" height="136" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://www.osalydconsulting.com/media/posts/4/responsive/1759148598844-2-xs.png 384w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759148598844-2-sm.png 600w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759148598844-2-md.png 768w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759148598844-2-lg.png 1200w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759148598844-2-xl.png 1600w"></figure>
+<figure ><figure class="post__image post__image--center"><img loading="lazy"  src="https://www.osalydconsulting.com/media/posts/4/1759148598844-2.png" alt="SharePoint Premium" width="691" height="136" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://www.osalydconsulting.com/media/posts/4/responsive/1759148598844-2-xs.png 640w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759148598844-2-sm.png 768w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759148598844-2-md.png 1024w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759148598844-2-lg.png 1366w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759148598844-2-xl.png 1600w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759148598844-2-2xl.png 1920w"></figure>
 <figcaption >Historique de SharePoint Premium</figcaption>
 </figure>
 <h3 id="ember1354" class="ember-view reader-text-block__heading-3"><span style="color: #4a3c8d;">Copilot pour Microsoft 365</span></h3>
@@ -271,7 +280,7 @@
 <li><span style="color: #000000;">Unifier vos contenus en utilisant SharePoint comme socle documentaire pour exploiter les informations dans d'autres outils M365</span></li>
 <li><span style="color: #000000;">Générer et synthétiser des contenus pertinents à partir des fichiers et du contenus de vos sites SharePoint</span></li>
 </ul>
-<figure class="post__image"><img loading="lazy"  src="https://www.osalydconsulting.com/media/posts/4/1759147908174.png" alt="Copilot dans Microsoft 365" width="1241" height="407" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://www.osalydconsulting.com/media/posts/4/responsive/1759147908174-xs.png 384w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759147908174-sm.png 600w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759147908174-md.png 768w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759147908174-lg.png 1200w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759147908174-xl.png 1600w"><figcaption>Copilot dans Microsoft 365</figcaption></figure>
+<figure class="post__image"><img loading="lazy"  src="https://www.osalydconsulting.com/media/posts/4/1759147908174.png" alt="Copilot dans Microsoft 365" width="1241" height="407" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://www.osalydconsulting.com/media/posts/4/responsive/1759147908174-xs.png 640w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759147908174-sm.png 768w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759147908174-md.png 1024w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759147908174-lg.png 1366w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759147908174-xl.png 1600w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759147908174-2xl.png 1920w"><figcaption>Copilot dans Microsoft 365</figcaption></figure>
 <h3 id="ember1358" class="ember-view reader-text-block__heading-3"><span style="color: #4a3c8d;">Agents de connaissances SharePoint (Knowledge Agents)</span></h3>
 <p id="ember1359" class="ember-view reader-text-block__paragraph">💡Disponible en <em>Public Preview</em> depuis Septembre 2025</p>
 <p id="ember1360" class="ember-view reader-text-block__paragraph">De petits assistants spécialisés que vous pouvez utiliser sur un site SharePoint, une page, une liste ou une bibliothèque spécifique. Ils permettent par exemple de :</p>
@@ -284,7 +293,7 @@
 <p id="ember1362" class="ember-view reader-text-block__paragraph">➡️ Pour tester une démo des nouveaux agents SharePoint c'est par ici : <a class="pwHwmXBqmofSClxsctVkNQQzvNIASaSVkFYLg " target="_self" href="https://demos.microsoft.com/microsoft/play/5140/knowledge-agents#/0/1" data-test-app-aware-link="" tabindex="0">https://demos.microsoft.com/microsoft/play/5140/knowledge-agents#/0/1</a></p>
 <div class="reader-image-block reader-image-block--full-width"> </div>
 <div>
-<figure ><figure class="post__image post__image--center"><img loading="lazy"  src="https://www.osalydconsulting.com/media/posts/4/1759148061440-2.png" alt="" width="1086" height="584" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://www.osalydconsulting.com/media/posts/4/responsive/1759148061440-2-xs.png 384w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759148061440-2-sm.png 600w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759148061440-2-md.png 768w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759148061440-2-lg.png 1200w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759148061440-2-xl.png 1600w"></figure>
+<figure ><figure class="post__image post__image--center"><img loading="lazy"  src="https://www.osalydconsulting.com/media/posts/4/1759148061440-2.png" alt="" width="1086" height="584" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://www.osalydconsulting.com/media/posts/4/responsive/1759148061440-2-xs.png 640w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759148061440-2-sm.png 768w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759148061440-2-md.png 1024w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759148061440-2-lg.png 1366w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759148061440-2-xl.png 1600w ,https://www.osalydconsulting.com/media/posts/4/responsive/1759148061440-2-2xl.png 1920w"></figure>
 <figcaption >SharePoint Knowledge Agents</figcaption>
 </figure>
 <h3 id="ember1364" class="ember-view reader-text-block__heading-3"><span style="color: #4a3c8d;">Quelques limites à garder en tête</span></h3>
