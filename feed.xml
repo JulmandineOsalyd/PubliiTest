@@ -3,7 +3,7 @@
     <title>Julie BREDECHE</title>
     <link href="https://www.osalydconsulting.com/feed.xml" rel="self" />
     <link href="https://www.osalydconsulting.com" />
-    <updated>2025-11-16T23:23:12+01:00</updated>
+    <updated>2025-11-17T13:24:37+01:00</updated>
     <author>
         <name>Julie BREDECHE</name>
     </author>
@@ -210,7 +210,7 @@
 <p class="p1">Elles ne sont pas toujours visibles au premier abord, mais peuvent rapidement nuire à la lisibilité, à la fiabilité et à la maintenabilité de vos automatisations !</p>
 <p class="p1">Voici selon moi, les trois erreurs les plus courantes… et les bonnes pratiques à adopter pour les éviter.</p>
 <hr>
-<h2><span style="color: #4a3c8d;"><strong>#1 - Des actions mal nommées</strong></span></h2>
+<h2><strong>#1 - Des actions mal nommées</strong></h2>
 <p>❌  <code>“Condition 12”, “Apply to each 4”, “Compose 5”…</code></p>
 <p class="p3">Ces noms par défaut peuvent sembler anodins au départ, mais deviennent vite un cauchemar à maintenir.</p>
 <p class="p4"><strong>Pourquoi c’est une erreur :</strong></p>
@@ -225,7 +225,7 @@
 <p>✅  <code>“Condition - ifDocumentFound ”, “Apply to each - documentFound”, “Compose - formatCreationDate”…</code></p>
 <p class="p3">C’est un réflexe simple, mais essentiel pour assurer la compréhension et la maintenance dans la durée.</p>
 <hr>
-<h2><span style="color: #4a3c8d;"><strong>#2 - Aucune gestion d’erreur</strong></span></h2>
+<h2><strong>#2 - Aucune gestion d’erreur</strong></h2>
 <p class="p3">Un appel HTTP échoue ? Une donnée est manquante ? Le flux s’arrête… sans prévenir.</p>
 <p class="p4"><strong>Pourquoi c’est une erreur :</strong></p>
 <p class="p3">Sans gestion d’erreur, les anomalies ne sont détectées qu’après coup — souvent par les utilisateurs finaux. Cela crée de la frustration et nuit à la confiance dans l’outil.</p>
@@ -236,7 +236,7 @@
 <figcaption >Exemple de d'intégration de "Run after" dans un flux</figcaption>
 </figure>
 <hr>
-<h2><span style="color: #4a3c8d;"><strong>#3 - Trop de conditions imbriquées</strong></span></h2>
+<h2><strong>#3 - Trop de conditions imbriquées</strong></h2>
 <blockquote>
 <p class="p3">Si A, alors B… sauf si C, mais seulement si D.</p>
 </blockquote>
