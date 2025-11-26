@@ -3,7 +3,7 @@
     <title>Julie BREDECHE</title>
     <link href="https://www.osalydconsulting.com/feed.xml" rel="self" />
     <link href="https://www.osalydconsulting.com" />
-    <updated>2025-11-26T14:49:30+01:00</updated>
+    <updated>2025-11-26T14:56:46+01:00</updated>
     <author>
         <name>Julie BREDECHE</name>
     </author>
@@ -77,9 +77,9 @@
 <ul>
 <li>Renommez le script afin de le retrouver facilement dans Power Automate.</li>
 </ul>
-<h4>4. Executer l'Office Script dans Power Automate</h4>
+<h4>4. Exécuter l'Office Script dans Power Automate</h4>
 <p data-start="61" data-end="197">Ajoutez ensuite l’action <strong data-start="2770" data-end="2784">Run script</strong> (Exécuter un script) puis sélectionner le fichier Excel précédemment créé.</p>
-<p data-start="199" data-end="241">Indiquez ensuite les 3 paramètres qui vont permettre de spécifier comment la RegEx doit être excutée :</p>
+<p data-start="199" data-end="241">Indiquez ensuite les 3 paramètres qui vont permettre de spécifier comment la RegEx doit être exécutée :</p>
 <ul>
 <li data-start="245" data-end="405"><strong data-start="245" data-end="260">inputString</strong> : le texte extrait du PDF (contenu dynamique)</li>
 <li data-start="408" data-end="459"><strong data-start="408" data-end="419">pattern</strong> : votre expression régulière, dans notre exemple :<br data-start="3060" data-end="3063"><code data-start="3065" data-end="3093">[A-Z]{3}\d{6}[A-Z]$</code></li>
@@ -97,12 +97,12 @@
 <li data-start="3443" data-end="3473">Envoyer un email de contrôle</li>
 <li data-start="3476" data-end="3522">Ou encore alimenter un outil de SAV / helpdesk</li>
 </ul>
-<h3 data-start="3475" data-end="3529"><strong data-start="3478" data-end="3529">Limites, pièges courants et bonnes pratiques</strong></h3>
+<h3 data-start="3475" data-end="3529"><strong data-start="3478" data-end="3529">⚠️ Limites, pièges courants et bonnes pratiques</strong></h3>
 <ul>
-<li data-start="3583" data-end="3637">Les PDF scannés nécessitent de l’OCR via AI Builder.</li>
-<li data-start="3640" data-end="3720">Vérifiez que le numéro de commande est réellement unique dans chaque document.</li>
-<li data-start="3723" data-end="3805">Prévoyez un scénario “aucun numéro trouvé” pour éviter les erreurs silencieuses.</li>
-<li data-start="3808" data-end="3894">Conservez un journal d’erreurs dans une liste dédiée (ex : “Suivi des extractions”).</li>
+<li data-start="3583" data-end="3637">Les PDF scannés nécessitent de l’OCR via AI Builder</li>
+<li data-start="3640" data-end="3720">Vérifiez que le numéro de commande est réellement unique dans chaque document</li>
+<li data-start="3723" data-end="3805">Prévoyez un scénario “aucun numéro trouvé” pour éviter les erreurs silencieuses</li>
+<li data-start="3808" data-end="3894">Conservez un journal d’erreurs dans une liste dédiée </li>
 </ul>
 <h3>✅ Conclusion</h3>
 <p data-start="87" data-end="343">Avec ce flux Power Automate, l’extraction d’un numéro de commande dans des milliers de PDF devient un processus rapide et entièrement automatisé ! Plus besoin d’ouvrir chaque fichier : le texte est reconnu, analysé, puis exploité selon les besoins.</p>
