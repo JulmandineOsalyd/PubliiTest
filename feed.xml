@@ -3,7 +3,7 @@
     <title>Julie BREDECHE</title>
     <link href="https://www.osalydconsulting.com/feed.xml" rel="self" />
     <link href="https://www.osalydconsulting.com" />
-    <updated>2025-12-01T17:06:03+01:00</updated>
+    <updated>2025-12-04T17:57:30+01:00</updated>
     <author>
         <name>Julie BREDECHE</name>
     </author>
@@ -14,8 +14,8 @@
         <author>
             <name>Julie BREDECHE</name>
         </author>
-        <link href="https://www.osalydconsulting.com/quest-quun-agent-copilot-episode-1/"/>
-        <id>https://www.osalydconsulting.com/quest-quun-agent-copilot-episode-1/</id>
+        <link href="https://www.osalydconsulting.com/agent-copilot/"/>
+        <id>https://www.osalydconsulting.com/agent-copilot/</id>
 
         <updated>2025-12-01T15:01:26+01:00</updated>
             <summary>
@@ -79,11 +79,11 @@
 <hr>
 <h3 data-start="4070" data-end="4120">Un exemple concret : Un Agent RH pour les avantages sociaux</h3>
 <h5 data-start="3601" data-end="3618">🎯 Objectif</h5>
-<p data-start="3619" data-end="3651">Aider les nouveaux embauchés à comprendre leurs avantages sociaux, accéder aux doucments utiles voire suivre les différentes étapes d'adhésion</p>
+<p data-start="3619" data-end="3651">Aider les nouveaux embauchés à comprendre leurs avantages sociaux, accéder aux documents utiles, voire suivre les différentes étapes d'adhésion.</p>
 <h5 data-start="3762" data-end="3788">📚 Sources utilisées</h5>
 <ul>
 <li data-start="3791" data-end="3816">Pages de politiques RH dans l'Intranet</li>
-<li data-start="3819" data-end="3836">FAQ d’onboarding dans une équipe Teams dédiée à l'Onboarding</li>
+<li class="article-editor-paragraph article-editor-content__has-focus">FAQ d’onboarding stockée dans une équipe Teams dédiée à l'accueil des nouveaux arrivants</li>
 </ul>
 <h5 data-start="3838" data-end="3883">⚙️ Ce qu’un Agent déclaratif peut faire...</h5>
 <ul>
