@@ -3,7 +3,7 @@
     <title>Julie BREDECHE</title>
     <link href="https://www.osalydconsulting.com/feed.xml" rel="self" />
     <link href="https://www.osalydconsulting.com" />
-    <updated>2025-12-08T10:52:01+01:00</updated>
+    <updated>2026-01-03T12:34:45+01:00</updated>
     <author>
         <name>Julie BREDECHE</name>
     </author>
@@ -354,9 +354,10 @@
 <h2 class="article-editor-heading"><span style="color: #4a3c8d;">3. Schématiser et valider les fonctionnalités</span></h2>
 <p class="article-editor-paragraph">Une fois les fonctionnalités identifiées, je <strong>schématise les processus</strong> <strong>associés</strong> pour les reparcourir et les faire valider par le client.</p>
 <p class="article-editor-paragraph">Mes schémas font souvent leur petit effet : le client comprend la logique, précise ses besoins, et se sent écouté. Et moi, je sais exactement dans quel ordre avancer.</p>
-<figure ><figure class="post__image post__image--center"><img loading="lazy"  src="file:///Users/julie/Library/CloudStorage/OneDrive-OsalydConsulting/Site Web Osalyd/julie-bredeche/input/media/posts/12/schemabooking.svg" alt="" width="3318" height="1815"></figure>
+<figure ><figure class="post__image post__image--center"><img loading="lazy"  src="https://www.osalydconsulting.com/media/posts/15/schemabooking.svg" alt="" width="3318" height="1815"></figure>
 <figcaption >Schéma simplifié du nouveau process de réservation</figcaption>
 </figure>
+<p> </p>
 <p class="p1">Pour les interfaces, je crée des <span class="s1"><strong>maquettes directement dans Power Apps</strong></span> : cela permet une projection réaliste, avec les composants graphiques réels proposés par Microsoft.</p>
 <p class="p1">C’est rapide, concret et très parlant pour les métiers.</p>
 <div class="article-editor-horizontal-rule__container" ><hr class="article-editor-horizontal-rule">
