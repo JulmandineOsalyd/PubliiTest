@@ -3,7 +3,7 @@
     <title>Julie BREDECHE</title>
     <link href="https://www.osalydconsulting.com/feed.xml" rel="self" />
     <link href="https://www.osalydconsulting.com" />
-    <updated>2026-01-03T20:05:56+01:00</updated>
+    <updated>2026-01-03T23:48:00+01:00</updated>
     <author>
         <name>Julie BREDECHE</name>
     </author>
@@ -16,15 +16,19 @@
         </author>
         <link href="https://www.osalydconsulting.com/creer-un-agent-avec-copilot-chat/"/>
         <id>https://www.osalydconsulting.com/creer-un-agent-avec-copilot-chat/</id>
+        <media:content url="https://www.osalydconsulting.com/media/posts/19/Vignette-Copilot.png" medium="image" />
+            <category term="Copilot"/>
 
         <updated>2026-01-03T12:39:23+01:00</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://www.osalydconsulting.com/media/posts/19/Vignette-Copilot.png" alt="" />
                     Dans beaucoup d’organisations, l’onboarding des nouveaux collaborateurs repose sur des informations stockées dans un Intranet SharePoint : Une page de bienvenue, quelques liens clés… et une bibliothèque de documents censée répondre à toutes les questions. En théorie, tout est là. En pratique, les nouveaux arrivants&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <p><img src="https://www.osalydconsulting.com/media/posts/19/Vignette-Copilot.png" class="type:primaryImage" alt="" /></p>
                 <p class="p1">Dans beaucoup d’organisations, l’onboarding des nouveaux collaborateurs repose sur des informations stockées dans un Intranet <span class="s1"><strong>SharePoint</strong></span> : Une page de bienvenue, quelques liens clés… et une bibliothèque de documents censée répondre à toutes les questions.</p>
 <p class="p1">En théorie, tout est là. En pratique, les nouveaux arrivants ne savent pas <span class="s1"><strong>où chercher</strong></span>, <span class="s1"><strong>quoi lire</strong></span>, ni <span class="s1"><strong>quel document est à jour</strong></span>.</p>
 <p class="p1"><strong>🚀 Et si, au lieu de demander <i>« Où est le document ? »</i>, les collaborateurs pouvaient simplement poser leurs questions en langage naturel… et obtenir une réponse directement basée sur des contenus ciblés ?</strong></p>
@@ -108,21 +112,111 @@
         </content>
     </entry>
     <entry>
+        <title>La synchronisation OneDrive : 3 points essentiels pour tout comprendre</title>
+        <author>
+            <name>Julie BREDECHE</name>
+        </author>
+        <link href="https://www.osalydconsulting.com/la-synchronisation-onedrive-3-points-essentiels-pour-tout-comprendre/"/>
+        <id>https://www.osalydconsulting.com/la-synchronisation-onedrive-3-points-essentiels-pour-tout-comprendre/</id>
+        <media:content url="https://www.osalydconsulting.com/media/posts/20/Design-sans-titre-1.png" medium="image" />
+            <category term="Teams"/>
+            <category term="SharePoint"/>
+
+        <updated>2025-12-16T10:24:00+01:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://www.osalydconsulting.com/media/posts/20/Design-sans-titre-1.png" alt="" />
+                    Dans beaucoup d’entreprises, OneDrive est devenu un outil central. On y stocke ses fichiers, on synchronise des dossiers, on travaille hors connexion… et parfois, ça coince : fichiers en double, synchronisation bloquée, messages d’erreur incompréhensibles. Dans la majorité des cas, le problème n’est pas technique,&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://www.osalydconsulting.com/media/posts/20/Design-sans-titre-1.png" class="type:primaryImage" alt="" /></p>
+                <p class="p1">Dans beaucoup d’entreprises, OneDrive est devenu un outil central. On y stocke ses fichiers, on synchronise des dossiers, on travaille hors connexion… et parfois, ça coince : fichiers en double, synchronisation bloquée, messages d’erreur incompréhensibles.</p>
+<p class="p3"><span class="s1">Dans la majorité des cas, </span>le problème n’est pas technique, il vient surtout d’une <strong>mauvaise compréhension de ce que fait réellement OneDrive</strong>.</p>
+<p class="p1"><span class="s1">👉  </span>Voici <span class="s2"><strong>les 3 points essentiels</strong></span> à connaître pour utiliser la synchronisation OneDrive sereinement, et éviter 80 % des incidents du quotidien.</p>
+<hr>
+<h3><strong>1. Espace OneDrive ≠ application OneDrive</strong></h3>
+<h5><strong>📑 L’espace OneDrive : du stockage dans le cloud</strong></h5>
+<p class="p1">L’<span class="s2"><strong>espace OneDrive</strong></span> correspond à votre espace de stockage personnel dans le cloud Microsoft.</p>
+<p class="p1">Concrètement :</p>
+<ul>
+<li class="p1">Accessible depuis un navigateur ou depuis le PC</li>
+<li class="p1">Les fichiers sont stockés <span class="s1"><strong>en ligne</strong></span></li>
+<li class="p1">1 To d’espace disponible par défaut (selon les licences)</li>
+</ul>
+<h5><strong>L’application OneDrive :  un outil de synchronisation</strong></h5>
+<p class="p1">🔄 L’<span class="s2"><strong>application OneDrive </strong></span>est un outil installé sur votre poste de travail.</p>
+<p>Son rôle :</p>
+<ul>
+<li class="p1">Créer un dossier OneDrive sur votre PC</li>
+<li class="p1">Synchroniser automatiquement des fichiers stockés dans OneDrive, SharePoint et Teams</li>
+<li class="p1">Permettre le travail hors connexion</li>
+</ul>
+<p class="p1">Elle ne stocke rien par elle-même, elle <span class="s2"><strong>reflète</strong></span> ce qui existe dans le cloud.</p>
+<h3><strong>2. Ajouter un raccourci à OneDrive ≠ Synchroniser</strong></h3>
+<p class="p1">Microsoft a fait évoluer les modes de synchronisation avec l'application OneDrive au fil des années, et il existe désormais plusieurs façons de synchroniser vos fichiers stockés <strong>Teams</strong> et <strong>SharePoint</strong>.</p>
+<h5><strong>🔗 Ajouter un raccourci à OneDrive (méthode recommandée)</strong></h5>
+<p class="p1">Ce que cette option permet :</p>
+<ul>
+<li class="p1">Les bibliothèques apparaissent dans le dossier OneDrive</li>
+<li class="p1">Tous les fichiers cloud sont accessibles depuis <span class="s1"><strong>un seul endroit</strong></span></li>
+<li class="p1">Les raccourcis sont conservés même en cas de changement de poste de travail</li>
+<li class="p1">La suppression des raccourcis est simple et sans risque</li>
+</ul>
+<p class="p1">👉 C’est aujourd’hui <span class="s2"><strong>la pratique recommandée par Microsoft</strong></span> pour accéder à des fichiers partagés dans le cloud Microsoft 365.</p>
+<h5><strong>🔄 Synchroniser une bibliothèque (ancienne méthode)</strong></h5>
+<p class="p1">Ici, OneDrive crée un dossier séparé sur le poste de travail portant le nom de votre Organisation.</p>
+<p class="p1">Les limites de cette méthode de synchronisation :</p>
+<ul>
+<li class="p1">Méthode plus ancienne proposée par Microsoft</li>
+<li class="p1">Les fichiers sont stockés dans un dossier distinct</li>
+<li class="p1">La désynchronisation peut être délicate (risque de suppression de fichiers si la manipulation n'est pas maîtrisée)</li>
+</ul>
+<h3><strong>3. Les limites de la synchronisation OneDrive</strong></h3>
+<p class="p1">L'application OneDrive est un outil puissant mais qui connait quelques limitations importantes à connaître : </p>
+<ul>
+<li class="p1">Trop de fichiers synchronisés peuvent provoquer des lenteurs</li>
+<li class="p1"><strong>300 000 fichiers maximum</strong><span class="s1"> par synchronisation</span></li>
+<li class="p1">Certains caractères sont interdits dans les noms de fichiers ou dossiers : <strong>" * : &lt; &gt; ? / \ |</strong></li>
+<li class="p1">Le chemin complet d’un fichier ne doit pas dépasser <span class="s1"><strong>400 caractères</strong></span></li>
+<li class="p1"><span class="s1">Un même dossier ne peut pas être </span><strong>à la fois synchronisé et ajouté comme raccourci</strong></li>
+</ul>
+<p class="p1">Ces contraintes sont souvent ignorées… jusqu’au jour où tout se bloque.</p>
+<hr>
+<h3><strong>💡 Quelques bonnes pratiques à garder en tête</strong></h3>
+<p class="p1">Ce que je recommande le plus souvent chez mes clients :</p>
+<ul>
+<li class="p1">Limiter la synchronisation aux dossiers réellement utilisés au quotidien</li>
+<li class="p1">Construire une arborescence simple et lisible</li>
+<li class="p1">Privilégier les <span class="s2"><strong>raccourcis OneDrive</strong></span> plutôt que la synchronisation classique</li>
+<li class="p1">Former les utilisateurs aux bases de OneDrive</li>
+</ul>
+<p class="p1">En conclusion, la majorité des problèmes rencontrés avec OneDrive ne sont pas techniques, i<span class="s1">ls sont </span><strong>pédagogiques</strong><span class="s1">.</span></p>
+<p class="p1">Quand les utilisateurs comprennent ce qui est stocké dans le cloud, ce qui est synchronisé sur leur poste, et pourquoi certaines règles existent, les incidents chutent drastiquement !</p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
         <title>[Copilot de A à Z] - Qu&#x27;est qu&#x27;un Agent Copilot ? </title>
         <author>
             <name>Julie BREDECHE</name>
         </author>
         <link href="https://www.osalydconsulting.com/agent-copilot/"/>
         <id>https://www.osalydconsulting.com/agent-copilot/</id>
+        <media:content url="https://www.osalydconsulting.com/media/posts/17/Vignette-Copilot-Studio.png" medium="image" />
+            <category term="Copilot"/>
 
         <updated>2025-12-01T15:01:26+01:00</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://www.osalydconsulting.com/media/posts/17/Vignette-Copilot-Studio.png" alt="" />
                     Depuis quelques temps, on entend le mot « Agent » associé à l'IA à toutes les sauces. Honnêtement, moi-même je n’étais plus totalement sûre de ce qu'était un agent et encore moins dans le contexte Microsoft 365. Alors, remettons un peu d’ordre dans tout ça&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <p><img src="https://www.osalydconsulting.com/media/posts/17/Vignette-Copilot-Studio.png" class="type:primaryImage" alt="" /></p>
                 <p>Depuis quelques temps, on entend le mot <em data-start="429" data-end="440">« Agent »</em> associé à l'IA à toutes les sauces.<br data-start="476" data-end="479">Honnêtement, moi-même je n’étais plus totalement sûre de ce qu'était un agent et encore moins dans le contexte Microsoft 365.</p>
 <p>Alors, remettons un peu d’ordre dans tout ça ! </p>
 <hr>
@@ -224,15 +318,18 @@
         </author>
         <link href="https://www.osalydconsulting.com/tuto-extraire-une-information-specifique-dun-pdf/"/>
         <id>https://www.osalydconsulting.com/tuto-extraire-une-information-specifique-dun-pdf/</id>
+        <media:content url="https://www.osalydconsulting.com/media/posts/16/Vignette-Power-Automate.png" medium="image" />
 
         <updated>2025-11-24T13:47:12+01:00</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://www.osalydconsulting.com/media/posts/16/Vignette-Power-Automate.png" alt="" />
                     Le besoin initial Un de mes clients devait récupérer les numéros de commande inscrits dans plusieurs milliers de factures PDF afin de les injecter dans un nouvel outil de suivi de facturation. La bonne nouvelle, c'est que le numéro de commande suit un format très&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <p><img src="https://www.osalydconsulting.com/media/posts/16/Vignette-Power-Automate.png" class="type:primaryImage" alt="" /></p>
                 <h3>Le besoin initial</h3>
 <p>Un de mes clients devait <strong>récupérer les numéros de commande inscrits dans plusieurs milliers de factures PDF</strong> afin de les injecter dans un nouvel outil de suivi de facturation.</p>
 <p>La bonne nouvelle, c'est que le numéro de commande suit un format très reconnaissable, du type <strong data-start="724" data-end="740">“ABC123456A” </strong>→ 3 lettres, 6 chiffres, 1 lettre.<br data-start="777" data-end="780">Idéal pour une extraction via <strong data-start="810" data-end="842">expression régulière (RegEx)</strong>.</p>
@@ -325,16 +422,19 @@
         </author>
         <link href="https://www.osalydconsulting.com/levolution-de-power-virtual-agents-a-copilot-studio/"/>
         <id>https://www.osalydconsulting.com/levolution-de-power-virtual-agents-a-copilot-studio/</id>
+        <media:content url="https://www.osalydconsulting.com/media/posts/13/Vignette-Copilot-Studio.png" medium="image" />
             <category term="Copilot"/>
 
         <updated>2025-11-06T14:53:23+01:00</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://www.osalydconsulting.com/media/posts/13/Vignette-Copilot-Studio.png" alt="De Power Virtuals Agents à Copilot Studio" />
                     Pendant plusieurs années, Power Virtual Agents a été l’outil de référence pour créer des chatbots métier low-code dans l’écosystème Microsoft. Un compagnon fiable, simple à déployer, et largement adopté par les équipes métiers. Mais l’arrivée de l’IA générative a rebattu les cartes… et accéléré une&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <p><img src="https://www.osalydconsulting.com/media/posts/13/Vignette-Copilot-Studio.png" class="type:primaryImage" alt="De Power Virtuals Agents à Copilot Studio" /></p>
                 <p class="p1">Pendant plusieurs années, Power Virtual Agents a été l’outil de référence pour créer des chatbots métier low-code dans l’écosystème Microsoft. Un compagnon fiable, simple à déployer, et largement adopté par les équipes métiers.</p>
 <p class="p1">Mais l’arrivée de l’IA générative a rebattu les cartes… et accéléré une transformation majeure : <span class="s1"><strong>Power Virtual Agents devient Microsoft Copilot Studio</strong></span>.</p>
 <hr>
@@ -407,15 +507,18 @@
         </author>
         <link href="https://www.osalydconsulting.com/ma-methode-infaillible/"/>
         <id>https://www.osalydconsulting.com/ma-methode-infaillible/</id>
+        <media:content url="https://www.osalydconsulting.com/media/posts/15/Vignette-Power-Platform.png" medium="image" />
 
         <updated>2025-10-30T14:21:00+01:00</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://www.osalydconsulting.com/media/posts/15/Vignette-Power-Platform.png" alt="" />
                     💬 “On veut une application Power Apps" , "On veut automatiser ce processus” J'ai très vite compris qu’un projet Power Platform ne se joue pas uniquement sur la technique…mais sur la clarté du besoin et la manière de le cadrer. Voici comment je pilote mes&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <p><img src="https://www.osalydconsulting.com/media/posts/15/Vignette-Power-Platform.png" class="type:primaryImage" alt="" /></p>
                 <p class="article-editor-heading article-editor-content__has-focus"><strong>💬 “On veut une application Power Apps" </strong><strong>, "On veut automatiser ce processus”</strong></p>
 <p class="article-editor-paragraph">J'ai très vite compris qu’un projet Power Platform ne se joue pas uniquement sur la technique…mais sur la <strong>clarté du besoin</strong> et la <strong>manière de le cadrer</strong>.</p>
 <p class="article-editor-paragraph">Voici comment je pilote mes projets de bout en bout, avec un cas d'usage concret pour illustrer mes différents points👇</p>
@@ -490,16 +593,19 @@
         </author>
         <link href="https://www.osalydconsulting.com/3-erreurs-frequentes-de-conception-dun-flux-power-automate/"/>
         <id>https://www.osalydconsulting.com/3-erreurs-frequentes-de-conception-dun-flux-power-automate/</id>
+        <media:content url="https://www.osalydconsulting.com/media/posts/11/Vignette-Power-Automate.png" medium="image" />
             <category term="PowerAutomate"/>
 
         <updated>2025-10-20T18:51:16+02:00</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://www.osalydconsulting.com/media/posts/11/Vignette-Power-Automate.png" alt="" />
                     Au fil des missions réalisées pour différents clients, j'ai pu constater que les mêmes erreurs reviennent régulièrement dans la conception de flux Power Automate. Elles ne sont pas toujours visibles au premier abord, mais peuvent rapidement nuire à la lisibilité, à la fiabilité et à&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <p><img src="https://www.osalydconsulting.com/media/posts/11/Vignette-Power-Automate.png" class="type:primaryImage" alt="" /></p>
                 <p> </p>
 <p>Au fil des missions réalisées pour différents clients, j'ai pu constater que les mêmes erreurs reviennent régulièrement dans la conception de flux Power Automate.</p>
 <p class="p1">Elles ne sont pas toujours visibles au premier abord, mais peuvent rapidement nuire à la lisibilité, à la fiabilité et à la maintenabilité de vos automatisations !</p>
@@ -558,17 +664,20 @@
         </author>
         <link href="https://www.osalydconsulting.com/comment-lia-copilot-va-transformer-votre-gestion-documentaire-dans-sharepoint/"/>
         <id>https://www.osalydconsulting.com/comment-lia-copilot-va-transformer-votre-gestion-documentaire-dans-sharepoint/</id>
+        <media:content url="https://www.osalydconsulting.com/media/posts/4/Vignette-SharePoint.png" medium="image" />
             <category term="SharePoint"/>
             <category term="Copilot"/>
 
         <updated>2025-09-15T09:30:00+02:00</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://www.osalydconsulting.com/media/posts/4/Vignette-SharePoint.png" alt="" />
                     En 2025, Microsoft intègre l’IA au cœur de son environnement, avec une ambition claire : faire de SharePoint bien plus qu’un simple espace de stockage. L’objectif est d’en faire un véritable assistant intelligent capable valoriser la masse d’informations présentes dans vos documents. Plutôt qu’un produit&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <p><img src="https://www.osalydconsulting.com/media/posts/4/Vignette-SharePoint.png" class="type:primaryImage" alt="" /></p>
                 <p id="ember1348" class="ember-view reader-text-block__paragraph"><span style="color: #000000;">En 2025, Microsoft intègre l’IA au cœur de son environnement, avec une ambition claire : faire de SharePoint bien plus qu’un simple espace de stockage. L’objectif est d’en faire un véritable <strong>assistant intelligent</strong> capable valoriser la masse d’informations présentes dans vos documents.</span></p>
 <p id="ember1349" class="ember-view reader-text-block__paragraph"><span style="color: #000000;">Plutôt qu’un produit unique, il s’agit d’un <strong>ensemble de fonctionnalités</strong> intégrées dans l’écosystème Microsoft 365. Leur mission : donner du sens aux fichiers et automatiser les tâches répétitives.</span></p>
 <h3 id="ember1350" class="ember-view reader-text-block__heading-3"><span style="color: #4a3c8d;">SharePoint Premium (ex Microsoft Syntex)</span></h3>
@@ -626,16 +735,19 @@
         </author>
         <link href="https://www.osalydconsulting.com/les-5-erreurs-a-eviter-pour-une-automatisat/"/>
         <id>https://www.osalydconsulting.com/les-5-erreurs-a-eviter-pour-une-automatisat/</id>
+        <media:content url="https://www.osalydconsulting.com/media/posts/7/Vignette-Power-Automate.png" medium="image" />
             <category term="PowerAutomate"/>
 
         <updated>2025-09-02T22:08:00+02:00</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://www.osalydconsulting.com/media/posts/7/Vignette-Power-Automate.png" alt="" />
                     L’automatisation est souvent présentée comme une solution miracle pour gagner du temps, réduire les tâches répétitives et fiabiliser les processus. Et c’est vrai… quand c’est bien fait. Mais dans la pratique, beaucoup d’équipes tombent dans des pièges classiques qui peuvent non seulement annuler les bénéfices&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <p><img src="https://www.osalydconsulting.com/media/posts/7/Vignette-Power-Automate.png" class="type:primaryImage" alt="" /></p>
                 <p>L’automatisation est souvent présentée comme une solution miracle pour gagner du temps, réduire les tâches répétitives et fiabiliser les processus. Et c’est vrai… <span class="s2"><strong>quand c’est bien fait</strong></span>.</p>
 <p class="p3">Mais dans la pratique, beaucoup d’équipes tombent dans des pièges classiques qui peuvent non seulement annuler les bénéfices attendus, mais aussi générer des frustrations, des blocages, voire une perte de confiance dans les outils.</p>
 <p class="p3">Voici les <span class="s2"><strong>5 erreurs les plus fréquentes</strong></span> quand on se lance dans l’automatisation (avec Power Automate ou autre), et surtout <span class="s2"><strong>les bonnes pratiques pour les éviter.</strong></span></p>
