@@ -3,7 +3,7 @@
     <title>Julie BREDECHE</title>
     <link href="https://www.osalydconsulting.com/feed.xml" rel="self" />
     <link href="https://www.osalydconsulting.com" />
-    <updated>2026-01-05T12:19:08+01:00</updated>
+    <updated>2026-01-05T14:52:31+01:00</updated>
     <author>
         <name>Julie BREDECHE</name>
     </author>
@@ -330,6 +330,7 @@
         <link href="https://www.osalydconsulting.com/tuto-extraire-une-information-specifique-dun-pdf/"/>
         <id>https://www.osalydconsulting.com/tuto-extraire-une-information-specifique-dun-pdf/</id>
         <media:content url="https://www.osalydconsulting.com/media/posts/16/Vignette-Power-Automate-2.png" medium="image" />
+            <category term="PowerAutomate"/>
 
         <updated>2025-11-24T13:47:12+01:00</updated>
             <summary>
@@ -427,6 +428,148 @@
         </content>
     </entry>
     <entry>
+        <title>Tout savoir sur le nouveau modèle de facturation de Copilot Studio</title>
+        <author>
+            <name>Julie BREDECHE</name>
+        </author>
+        <link href="https://www.osalydconsulting.com/modele-facturation-copilot-studio/"/>
+        <id>https://www.osalydconsulting.com/modele-facturation-copilot-studio/</id>
+        <media:content url="https://www.osalydconsulting.com/media/posts/21/Vignette-Copilot-Studio-3.png" medium="image" />
+            <category term="Copilot"/>
+
+        <updated>2025-11-12T14:31:00+01:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://www.osalydconsulting.com/media/posts/21/Vignette-Copilot-Studio-3.png" alt="" />
+                    Depuis le 1er novembre 2025, Microsoft a fait évoluer en profondeur le modèle de facturation de d'AI Builder et de Copilot Studio. Objectif annoncé : proposer une facturation plus fine, plus juste, et mieux alignée avec les usages réels de l’IA. Mais dans les faits,&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://www.osalydconsulting.com/media/posts/21/Vignette-Copilot-Studio-3.png" class="type:primaryImage" alt="" /></p>
+                <div class="flex max-w-full flex-col grow">
+<div class="min-h-8 text-message relative flex w-full flex-col items-end gap-2 text-start break-words whitespace-normal [.text-message+&amp;]:mt-1" dir="auto" data-message-author-role="assistant" data-message-id="a48e0a90-af46-45d6-8550-6c21bd170471" data-message-model-slug="gpt-5-2">
+<div class="flex w-full flex-col gap-1 empty:hidden first:pt-[1px]">
+<div class="markdown prose dark:prose-invert w-full break-words light markdown-new-styling">
+<p data-start="462" data-end="687">Depuis le 1er novembre 2025, Microsoft a fait évoluer en profondeur le modèle de facturation de d'<strong>AI Builder</strong> et de <strong data-start="551" data-end="569">Copilot Studio</strong>.<br data-start="570" data-end="573">Objectif annoncé : proposer une facturation plus fine, plus juste, et mieux alignée avec les usages réels de l’IA.</p>
+<p data-start="689" data-end="755">Mais dans les faits, ce changement soulève beaucoup de questions :</p>
+<ul>
+<li data-start="758" data-end="803">Que sont exactement les <strong data-start="782" data-end="801">crédits Copilot</strong> ?</li>
+<li data-start="806" data-end="834">Comment sont-ils consommés ?</li>
+<li data-start="837" data-end="878">Quel modèle choisir selon ses usages IA ?</li>
+</ul>
+<br>
+<p data-start="880" data-end="941">Voici une lecture claire et pragmatique de ce nouveau modèle.</p>
+<hr data-start="943" data-end="946">
+<h3 data-start="948" data-end="1003">1. Les crédits Copilot : la nouvelle unité de mesure</h3>
+<p data-start="1005" data-end="1100">Premier changement majeur : <strong data-start="1033" data-end="1099">toutes les actions IA consomment désormais des crédits Copilot</strong>.</p>
+<p data-start="1102" data-end="1132">Chaque action déclenchée par :</p>
+<ul>
+<li data-start="1135" data-end="1152">un agent Copilot,</li>
+<li data-start="1155" data-end="1170">Copilot Studio,</li>
+<li data-start="1173" data-end="1205">ou le connecteur AI Builder (par exemple dans un flux Power Automate),</li>
+</ul>
+<p data-start="1207" data-end="1268">entraîne une consommation de crédits, selon un barème précis.</p>
+<h5 data-start="1270" data-end="1298">Exemples de consommation des crédits Copilot</h5>
+<table style="border-collapse: collapse; width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 24.9762%;"><span style="color: #3598db;"><strong>Type d'action</strong></span></td>
+<td style="width: 24.9762%;"><span style="color: #3598db;"><strong>Exemple</strong></span></td>
+<td style="width: 24.9762%;"><span style="color: #3598db;"><strong>Unité de mesure</strong></span></td>
+<td style="width: 24.9762%;"><span style="color: #3598db;"><strong>Consommation</strong></span></td>
+</tr>
+<tr>
+<td style="width: 24.9762%;"><strong><span class="a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none">Texte / IA générative (basique)</span></strong></td>
+<td style="width: 24.9762%;"><span class="a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none">Reconnaissance de texte (OCR)</span> </td>
+<td style="width: 24.9762%;">
+<p class="cvGsUA direction-ltr align-center para-style-body"><span class="a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none">1 page - </span><span class="a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none">1 image - </span><span class="a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none">1000 caractères</span></p>
+</td>
+<td style="width: 24.9762%;"><span class="a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none">0,1 crédit</span></td>
+</tr>
+<tr>
+<td style="width: 24.9762%;"><strong><span class="a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none">Texte / IA générative (standard)</span></strong></td>
+<td style="width: 24.9762%;"><span class="a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none">Traduction de texte</span></td>
+<td style="width: 24.9762%;">
+<p class="cvGsUA direction-ltr align-center para-style-body"><span class="a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none">1 page - </span><span class="a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none">1 image - </span><span class="a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none">1000 caractères</span></p>
+</td>
+<td style="width: 24.9762%;"><span class="a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none">1,5 crédit</span></td>
+</tr>
+<tr>
+<td style="width: 24.9762%;"><strong><span class="a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none">Texte / IA générative (premium)</span></strong></td>
+<td style="width: 24.9762%;"><span class="a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none">Synthèse de plusieurs documents</span></td>
+<td style="width: 24.9762%;">
+<p class="cvGsUA direction-ltr align-center para-style-body"><span class="a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none">1 page - </span><span class="a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none">1 image - </span><span class="a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none">1000 caractères</span></p>
+</td>
+<td style="width: 24.9762%;">10 crédits</td>
+</tr>
+<tr>
+<td style="width: 24.9762%;"><strong><span class="a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none">Outils de traitement de contenu</span></strong></td>
+<td style="width: 24.9762%;"><span class="a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none">Analyse d’une facture</span></td>
+<td style="width: 24.9762%;">
+<p class="cvGsUA direction-ltr align-center para-style-body"><span class="a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none">1 page - </span><span class="a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none">1 image </span></p>
+</td>
+<td style="width: 24.9762%;">8 crédits</td>
+</tr>
+</tbody>
+</table>
+<p data-start="1300" data-end="1333"> </p>
+<h3 data-start="1851" data-end="1900">2. Un nouveau modèle de facturation centralisé</h3>
+<p data-start="1902" data-end="2058">Deuxième évolution importante : la facturation est <strong data-start="1953" data-end="1988">centralisée au niveau du tenant</strong>.<br data-start="1989" data-end="1992">Cela permet une vision globale et un pilotage plus fin des usages.</p>
+<p data-start="1902" data-end="2058">Microsoft propose ainsi trois modèles complémentaires.</p>
+<h5 data-start="2110" data-end="2137">💰 Le modèle Pay-as-you-go :</h5>
+<ul>
+<li data-start="2141" data-end="2177">Facturation à la consommation réelle</li>
+<li data-start="2180" data-end="2197">0,01 $ par crédit</li>
+<li data-start="2200" data-end="2212">Idéal pour les tests ou les usages IA ponctuels</li>
+</ul>
+<p data-start="2286" data-end="2357">👉 Aucun engagement, mais une vigilance nécessaire sur la consommation.</p>
+<h5 data-start="2364" data-end="2395">📆 Le pack de capacité mensuel :</h5>
+<ul>
+<li data-start="2399" data-end="2444">Achat d’un volume fixe de crédits chaque mois</li>
+<li data-start="2447" data-end="2491">Exemple : 200 $ pour 25 000 crédits mensuels</li>
+<li data-start="2494" data-end="2536">Adapté aux usages réguliers et prévisibles</li>
+</ul>
+<p data-start="2538" data-end="2626">👉 Un bon compromis pour industrialiser des agents Copilot tout en maîtrisant les coûts.</p>
+<h5 data-start="2633" data-end="2659">💳 Le plan prépayé annuel :</h5>
+<ul>
+<li data-start="2663" data-end="2690">Crédit annuel payé d’avance</li>
+<li data-start="2693" data-end="2728">Tarifs dégressifs selon les volumes</li>
+<li data-start="2731" data-end="2752">Facturation sur devis</li>
+</ul>
+<p data-start="2754" data-end="2825">👉 La solution la plus économique pour les <strong data-start="2797" data-end="2824">gros volumes d’usage IA </strong>au sein de votre organisation</p>
+<h2 data-start="2832" data-end="2878">3. Les effets concrets pour les entreprises</h2>
+<p data-start="2880" data-end="2932">Ce nouveau modèle a plusieurs impacts très concrets : </p>
+<h5 data-start="2934" data-end="2976">Une facturation alignée sur la réalité</h5>
+<p data-start="2978" data-end="3013">Les coûts sont directement liés à ce qui est réellement consommé, et non plus à des licences parfois sous-utilisées.</p>
+<h5 data-start="3107" data-end="3151">Une capacité ajustable sans interruption</h5>
+<p data-start="3153" data-end="3198">Les volumes de crédits peuvent être ajustés sans couper le service, et sans devoir redéployer les agents.</p>
+<h5 data-start="3323" data-end="3372">Une logique unifiée pour toute l’IA Microsoft</h5>
+<p data-start="3374" data-end="3457">Toutes les actions IA (AI Builder, Copilot Studio, Power Automate) sont désormais facturées selon le <strong data-start="3479" data-end="3494">même barème</strong>, et peuvent être suivies via un <strong data-start="3513" data-end="3541">monitoring en temps réel</strong> par agent ou par environnement.</p>
+<br>
+<p data-start="3580" data-end="3615">⚠️ <span style="color: #ba372a;"><strong>Un point de vigilance important</strong> : </span>Les crédits AI Builder obtenus via des licences Power Automate ou PowerApps Premium <span style="color: #ba372a;"><strong data-start="3704" data-end="3739">expireront au 1er novembre 2026</strong></span>.</p>
+<h3 data-start="3825" data-end="3841">En conclusion</h3>
+<p data-start="3843" data-end="3974">Avec ce nouveau modèle, Microsoft envoie un message clair : l’IA devient un <strong data-start="3921" data-end="3973">service mesurable, pilotable et industrialisable</strong>.</p>
+<p data-start="3976" data-end="4034">Le bon choix de facturation dépend désormais directement :</p>
+<ul>
+<li data-start="4037" data-end="4057">des usages IA réels,</li>
+<li data-start="4060" data-end="4078">de leur fréquence,</li>
+<li data-start="4081" data-end="4109">et de leur criticité métier.</li>
+</ul>
+<p data-start="4111" data-end="4249">Pay-as-you-go, capacité mensuelle ou plan annuel : il n’existe pas de modèle universel, seulement <strong data-start="4211" data-end="4248">un modèle adapté à votre contexte</strong>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative h-[60px]">
+<div class="absolute h-[60px]">
+<div class="text-token-text-secondary flex items-center gap-0.5 text-xs font-semibold"> </div>
+</div>
+</div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
         <title>Comment l’IA a fait évoluer Power Virtual Agents vers Copilot Studio</title>
         <author>
             <name>Julie BREDECHE</name>
@@ -519,6 +662,8 @@
         <link href="https://www.osalydconsulting.com/ma-methode-infaillible/"/>
         <id>https://www.osalydconsulting.com/ma-methode-infaillible/</id>
         <media:content url="https://www.osalydconsulting.com/media/posts/15/Vignette-Power-Platform-2.png" medium="image" />
+            <category term="PowerAutomate"/>
+            <category term="PowerApps"/>
 
         <updated>2025-10-30T14:21:00+01:00</updated>
             <summary>
