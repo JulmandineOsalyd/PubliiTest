@@ -3,14 +3,14 @@
     <title>Julie BREDECHE</title>
     <link href="https://www.osalydconsulting.com/feed.xml" rel="self" />
     <link href="https://www.osalydconsulting.com" />
-    <updated>2026-01-04T14:32:03+01:00</updated>
+    <updated>2026-01-05T12:19:08+01:00</updated>
     <author>
         <name>Julie BREDECHE</name>
     </author>
     <id>https://www.osalydconsulting.com</id>
 
     <entry>
-        <title>[Copilot de A à Z] - Créez votre agent d&#x27;onboarding en 5 minutes avec Copilot Chat</title>
+        <title>[Copilot de A à Z] - Créez votre agent d&#x27;onboarding RH en 5 minutes avec Copilot Chat</title>
         <author>
             <name>Julie BREDECHE</name>
         </author>
@@ -29,7 +29,7 @@
         <content type="html">
             <![CDATA[
                     <p><img src="https://www.osalydconsulting.com/media/posts/19/Vignette-Copilot.png" class="type:primaryImage" alt="" /></p>
-                <p class="p1">Dans beaucoup d’organisations, l’onboarding des nouveaux collaborateurs repose sur des informations stockées dans un Intranet <span class="s1"><strong>SharePoint</strong></span> : Une page de bienvenue, quelques liens clés… et une bibliothèque de documents censée répondre à toutes les questions.</p>
+                <p>Dans beaucoup d’organisations, l’onboarding des nouveaux collaborateurs repose sur des informations stockées dans un Intranet <span class="s1"><strong>SharePoint</strong></span> : Une page de bienvenue, quelques liens clés… et une bibliothèque de documents censée répondre à toutes les questions.</p>
 <p class="p1">En théorie, tout est là. En pratique, les nouveaux arrivants ne savent pas <span class="s1"><strong>où chercher</strong></span>, <span class="s1"><strong>quoi lire</strong></span>, ni <span class="s1"><strong>quel document est à jour</strong></span>.</p>
 <p class="p1"><strong>🚀 Et si, au lieu de demander <i>« Où est le document ? »</i>, les collaborateurs pouvaient simplement poser leurs questions en langage naturel… et obtenir une réponse directement basée sur des contenus ciblés ?</strong></p>
 <p class="p1">C’est exactement ce que permet <span class="s1"><strong>Copilot Chat</strong></span>, grâce à la création d’un <span class="s1"><strong>agent dédié à l’onboarding</strong></span>, connecté à l'Intranet de l'entreprise et à des documents ciblés.</p>
