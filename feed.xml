@@ -3,7 +3,7 @@
     <title>Julie BREDECHE</title>
     <link href="https://www.osalydconsulting.com/feed.xml" rel="self" />
     <link href="https://www.osalydconsulting.com" />
-    <updated>2026-01-05T14:52:31+01:00</updated>
+    <updated>2026-01-05T15:01:33+01:00</updated>
     <author>
         <name>Julie BREDECHE</name>
     </author>
@@ -424,6 +424,56 @@
 <h3>✅ Conclusion</h3>
 <p data-start="87" data-end="343">Avec ce flux Power Automate, l’extraction d’un numéro de commande dans des milliers de PDF devient un processus rapide et entièrement automatisé ! Plus besoin d’ouvrir chaque fichier : le texte est reconnu, analysé, puis exploité selon les besoins.</p>
 <p data-start="345" data-end="603" data-is-last-node="" data-is-only-node="">C’est un exemple concret du gain de temps et de fiabilité que l’automatisation peut apporter aux métiers ! Et surtout, la solution reste évolutive : nouveaux formats, nouveaux champs à extraire, intégration à d’autres process… tout peut s’adapter en quelques clics.</p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Microsoft Ignite 2025 : arrêtez de penser Intranet, pensez IA !</title>
+        <author>
+            <name>Julie BREDECHE</name>
+        </author>
+        <link href="https://www.osalydconsulting.com/microsoft-ignite-2025-arretez-de-penser-intranet-pensez-ia/"/>
+        <id>https://www.osalydconsulting.com/microsoft-ignite-2025-arretez-de-penser-intranet-pensez-ia/</id>
+        <media:content url="https://www.osalydconsulting.com/media/posts/22/Vignette-Copilot.png" medium="image" />
+            <category term="SharePoint"/>
+            <category term="Copilot"/>
+
+        <updated>2025-11-21T14:55:00+01:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://www.osalydconsulting.com/media/posts/22/Vignette-Copilot.png" alt="" />
+                    🔥 Lors de l'Ignite 2025, Microsoft a envoyé un message clair : SharePoint n’est plus “juste” un portail ou un référentiel documentaire, mais devient un hub stratégique piloté par l'IA ! Copilot lit, résume, relie, priorise. Il transforme vos contenus en informations actionnables. 👉 Pas&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://www.osalydconsulting.com/media/posts/22/Vignette-Copilot.png" class="type:primaryImage" alt="" /></p>
+                <p>🔥 Lors de l'Ignite 2025, Microsoft a envoyé un message clair : <strong>SharePoint</strong> n’est plus “juste” un portail ou un référentiel documentaire, mais <strong>devient un hub stratégique piloté par l'IA !</strong></p>
+<div>
+<h5>1. L'IA devient le moteur de vos sites SharePoint</h5>
+<p>Copilot lit, résume, relie, priorise.</p>
+<p>Il transforme vos contenus en informations actionnables.</p>
+<p>👉 Pas de structure = pas d’IA efficace.</p>
+<h5>2. La gouvernance redevient prioritaire</h5>
+<p>Architecture d’information bancale ? Sites en doublon ? Métadonnées inexistantes ?</p>
+<p>👉 L’IA va amplifier le chaos. C’est le moment de remettre de l’ordre !</p>
+<h5>3. Votre intranet devient un espace de travail intelligent</h5>
+<p>Du contenu de pages généré avec Copilot, des "Knowledge agents" capables de classer vos informations...</p>
+<p>👉 On ne “consulte” plus SharePoint. On y travaille.</p>
+<h5>🎯 Qu'est ce que ça va changer concrètement ?</h5>
+<br>
+<div>Votre intranet devient un outil stratégique pour centraliser et exploiter l'information, et cela va bien au-delà du stockage de fichiers.</div>
+<br>
+<div>Avis aux équipes de Transformation Digitale ! C’est le moment parfait pour :</div>
+<div>✔️ réorganiser les contenus,</div>
+<div>✔️ poser une gouvernance claire,</div>
+<div>✔️ et co-construire avec les métiers des cas d’usage IA concrets</div>
+<h5>💬 Ma conviction</h5>
+<br>
+<div>SharePoint ouvre la voie à une collaboration plus intelligente… mais seulement si vous êtes prêts à structurer vos contenus en amont.</div>
+<br>
+<div><strong>🚨 L’IA ne fait pas de miracle si la base n’est pas solide.</strong></div>
+</div>
             ]]>
         </content>
     </entry>
@@ -879,85 +929,6 @@
 <p id="ember1369" class="ember-view reader-text-block__paragraph"></p>
 </div>
 <p id="ember1356" class="ember-view reader-text-block__paragraph"></p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>5 erreurs à éviter pour une réussir son automatisation !</title>
-        <author>
-            <name>Julie BREDECHE</name>
-        </author>
-        <link href="https://www.osalydconsulting.com/les-5-erreurs-a-eviter-pour-une-automatisat/"/>
-        <id>https://www.osalydconsulting.com/les-5-erreurs-a-eviter-pour-une-automatisat/</id>
-        <media:content url="https://www.osalydconsulting.com/media/posts/7/Vignette-Power-Automate-2.png" medium="image" />
-            <category term="PowerAutomate"/>
-
-        <updated>2025-09-02T22:08:00+02:00</updated>
-            <summary>
-                <![CDATA[
-                        <img src="https://www.osalydconsulting.com/media/posts/7/Vignette-Power-Automate-2.png" alt="" />
-                    L’automatisation est souvent présentée comme une solution miracle pour gagner du temps, réduire les tâches répétitives et fiabiliser les processus. Et c’est vrai… quand c’est bien fait. Mais dans la pratique, beaucoup d’équipes tombent dans des pièges classiques qui peuvent non seulement annuler les bénéfices&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                    <p><img src="https://www.osalydconsulting.com/media/posts/7/Vignette-Power-Automate-2.png" class="type:primaryImage" alt="" /></p>
-                <p>L’automatisation est souvent présentée comme une solution miracle pour gagner du temps, réduire les tâches répétitives et fiabiliser les processus. Et c’est vrai… <span class="s2"><strong>quand c’est bien fait</strong></span>.</p>
-<p class="p3">Mais dans la pratique, beaucoup d’équipes tombent dans des pièges classiques qui peuvent non seulement annuler les bénéfices attendus, mais aussi générer des frustrations, des blocages, voire une perte de confiance dans les outils.</p>
-<p class="p3">Voici les <span class="s2"><strong>5 erreurs les plus fréquentes</strong></span> quand on se lance dans l’automatisation (avec Power Automate ou autre), et surtout <span class="s2"><strong>les bonnes pratiques pour les éviter.</strong></span></p>
-<h3><span style="color: #000000;"><strong>❌  Erreur n°1 : Automatiser un processus qui est déjà défaillant</strong></span></h3>
-<p class="p3">Si votre processus est bancal à la base, l’automatisation ne fera qu’en amplifier les défauts.Un mauvais workflow, automatisé, reste un mauvais workflow… mais plus rapide à planter.</p>
-<p class="p4"><strong>À faire avant toute chose :</strong></p>
-<ul>
-<li class="p1">Cartographier le processus : qui fait quoi, quand, avec quelles exceptions ?</li>
-<li class="p1">Supprimer les étapes inutiles, clarifier les responsabilités.</li>
-<li class="p1">Impliquer les utilisateurs pour comprendre les vraies contraintes du terrain.</li>
-</ul>
-<p class="p3"><span class="s2"><strong>🎯 L’objectif :</strong></span> partir sur des bases saines avant d’automatiser.</p>
-<h3><span style="color: #000000;"><strong>❌  Erreur n°2 : Vouloir tout automatiser, y compris ce qui ne s’y prête pas</strong></span></h3>
-<p class="p3">Certaines tâches <span class="s2"><strong>nécessitent du contexte, de l’humain, ou du bon sens</strong></span>. Vouloir les automatiser coûte souvent plus cher que de les laisser manuelles.</p>
-<p class="p4"><strong>Ce qu’il vaut mieux automatiser :</strong></p>
-<ul>
-<li class="p1">Les actions simples, répétitives, bien définies</li>
-<li class="p1">Les enchaînements logiques sans ambiguïté</li>
-<li class="p1">Les alertes, validations, mises à jour, transferts de données…</li>
-</ul>
-<p class="p4"><strong>💡 Le bon réflexe :</strong><span class="s3"> automatiser là où c’est </span>sûr, rentable et prévisible<span class="s3">.</span></p>
-<h3><span style="color: #000000;"><strong>❌  Erreur n°3 : Négliger l’accompagnement des utilisateurs</strong></span></h3>
-<p class="p3">Un automatisme bien conçu mais mal adopté ne servira… à rien. <span class="s3">Et souvent, </span><strong>la résistance vient d’un manque d’explication ou de formation.</strong></p>
-<p class="p4"><strong>Les bonnes pratiques :</strong></p>
-<ul>
-<li class="p1">Associer les utilisateurs dès le début du projet</li>
-<li class="p1">Expliquer le <i>pourquoi</i>, pas seulement le <i>comment</i><i></i></li>
-<li class="p1">Prévoir une phase de test, de formation, et un support post-déploiement</li>
-</ul>
-<p class="p4"><strong>💡 Le bon réflexe : </strong>Le facteur humain est aussi important que la technique.</p>
-<h3><span style="color: #000000;"><strong>❌  Erreur n°4 : Oublier les exceptions et la gestion des erreurs</strong></span></h3>
-<p class="p3">Un flux qui fonctionne <i>seulement</i> quand tout se passe parfaitement… ne fonctionnera pas longtemps. Dans la vraie vie, les imprévus sont la norme.</p>
-<p class="p4"><strong>À prévoir dans votre automatisation :</strong></p>
-<ul>
-<li class="p1">Des scénarios alternatifs (ex. si une personne est absente)</li>
-<li>Des garde-fous : validations, vérifications, alertes</li>
-<li class="p1">Des escalades automatiques en cas de blocage</li>
-</ul>
-<p class="p3"><span class="s2"><strong>🎯 L’objectif :</strong></span> sécuriser le processus et éviter les interruptions invisibles.</p>
-<h3><span style="color: #000000;"><strong>❌  Erreur n°5 : Considérer l’automatisation comme un projet “one shot”</strong></span></h3>
-<p class="p3">Les besoins évoluent. Les équipes changent. Un processus qui fonctionnait bien à son lancement peut devenir obsolète en quelques mois.</p>
-<p class="p4"><strong>Pour que l’automatisation reste efficace :</strong></p>
-<ul>
-<li class="p1">Mesurer régulièrement les résultats (temps gagné, erreurs évitées…)</li>
-<li class="p1">Recueillir les retours des utilisateurs</li>
-<li class="p1">Prévoir des itérations : ajustements, ajouts, optimisations</li>
-</ul>
-<p class="p4"><strong>💡 Le bon réflexe : </strong>Une bonne automatisation s’adapte au fil du temps.</p>
-<h2><strong>En résumé</strong></h2>
-<p class="p3">L’automatisation est un levier puissant pour les entreprises. Mais pour en tirer tous les bénéfices, <span class="s2"><strong>il faut la penser comme un projet d’équipe, ancré dans la réalité métier</strong></span>, et non comme une simple implémentation technique.</p>
-<p class="p3">Avant de lancer votre prochain flux Power Automate, prenez un moment pour vérifier :</p>
-<p class="p3">✔ Le processus est-il bien conçu ?</p>
-<p>✔ Ai-je identifié les tâches vraiment automatisables ?</p>
-<p class="p3">✔ Les utilisateurs sont-ils embarqués ?</p>
-<p class="p3">✔ Les exceptions sont-elles prévues ?</p>
-<p class="p3">✔ Ai-je un plan pour faire évoluer le flux dans le temps ?</p>
             ]]>
         </content>
     </entry>
