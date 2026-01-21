@@ -570,7 +570,7 @@
                 users: "Utilisée par 150 collaborateurs et 12 gestionnaires RH. Accessible depuis le bureau et en mobilité pour les managers terrain.",
                 solution: "Application simple pour centraliser toutes les demandes RH (congés, formations, matériel), avec suivi automatisé et tableaux de bord en temps réel.",
                 screenshots: [
-                    "https://via.placeholder.com/1200x800/4dd0e1/ffffff?text=Screenshot+RH+1",
+                    "https://www.osalydconsulting.com/media/files/IESEG-Oraux-Accueil.png",
                     "https://via.placeholder.com/1200x800/64b5f6/ffffff?text=Screenshot+RH+2",
                     "https://via.placeholder.com/1200x800/4fc3f7/ffffff?text=Screenshot+RH+3"
                 ],
@@ -746,7 +746,17 @@
                         </div>
                     </div>
                 </div>
-            </div>`;
+            </div>
+            <!-- Lightbox pour les captures d'écran -->
+<div class="lightbox" id="lightbox">
+    <button class="lightbox-close" onclick="closeLightbox()">×</button>
+    <button class="lightbox-nav lightbox-prev" onclick="prevScreenshot()">←</button>
+    <div class="lightbox-content">
+        <img class="lightbox-image" id="lightboxImage" src="" alt="Capture d'écran">
+    </div>
+    <button class="lightbox-nav lightbox-next" onclick="nextScreenshot()">→</button>
+    <div class="lightbox-counter" id="lightboxCounter"></div>
+</div>`;
 
             sliderContainer.insertAdjacentHTML('beforeend', html);
         });
