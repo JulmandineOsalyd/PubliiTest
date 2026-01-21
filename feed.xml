@@ -3,7 +3,7 @@
     <title>Julie BREDECHE</title>
     <link href="https://www.osalydconsulting.com/feed.xml" rel="self" />
     <link href="https://www.osalydconsulting.com" />
-    <updated>2026-01-17T18:18:48+01:00</updated>
+    <updated>2026-01-17T12:26:05+01:00</updated>
     <author>
         <name>Julie BREDECHE</name>
     </author>
@@ -23,7 +23,7 @@
             <summary>
                 <![CDATA[
                         <img src="https://www.osalydconsulting.com/media/posts/23/Vignette-Copilot.png" alt="" />
-                    “Est-ce qu’on peut créer des agents Copilot sans licence ?” La réponse courte : oui, on peut créer des agents déclaratifs sans licence Copilot payante, mais les possibilités restent limitées. Ici on parle uniquement des licences Copilot pour Microsoft 365 versus Copilot Chat, version gratuite&hellip;
+                    “Est-ce qu’on peut créer des agents Copilot sans licence ?” La réponse courte : oui, on peut créer des agents déclaratifs sans licence Copilot payante, mais les possibilités restent limitées. Ici on parle uniquement des licences Copilot pour Microsoft 365 versus Copilot Chat inclus dans&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -31,10 +31,10 @@
                     <p><img src="https://www.osalydconsulting.com/media/posts/23/Vignette-Copilot.png" class="type:primaryImage" alt="" /></p>
                 <h4 data-start="299" data-end="386"><em data-start="299" data-end="386">“Est-ce qu’on peut créer des agents Copilot sans licence ?”</em></h4>
 <p data-start="388" data-end="594">La réponse courte : <strong data-start="408" data-end="497">oui, </strong>on peut créer des agents déclaratifs<strong data-start="408" data-end="497"> </strong>sans licence Copilot payante,<strong data-start="408" data-end="497"> mais les possibilités restent limitées.</strong></p>
-<p>Ici on parle uniquement des licences Copilot pour Microsoft 365 versus Copilot Chat, version gratuite incluse dans les licences Microsoft 365.</p>
+<p>Ici on parle uniquement des licences Copilot pour Microsoft 365 versus Copilot Chat inclus dans les licences Microsoft 365 standards.</p>
 <p data-start="388" data-end="594">👉 Microsoft détaille d’ailleurs clairement les différences de fonctionnalités entre Copilot Chat (gratuit) et Copilot pour Microsoft 365 dans sa <a href="https://www.microsoft.com/fr-fr/microsoft-365-copilot/pricing/enterprise">documentation officielle</a>.</p>
 <hr data-start="596" data-end="599">
-<h3 data-start="601" data-end="639">Cas n°1 : Pas de licences Copilot pour Microsoft 365</h3>
+<h3 data-start="601" data-end="639">Cas n°1 : Pas de licences Copilot </h3>
 <h5><span style="color: #3598db;">Le créateur de l'agent et les utilisateurs disposent de la version gratuite de Copilot Chat.</span></h5>
 <p data-start="686" data-end="714">✅ Dans ce cas, tout utilisateur sans licence peut créer un agent déclaratif basé uniquement sur :</p>
 <ul>
@@ -45,7 +45,7 @@
 <p data-start="892" data-end="912"> </p>
 <p class="msg msg--info">💡<strong> Cas d'usages types</strong> : Veille, FAQ basée sur de la documentation publique</p>
 <hr>
-<h3 data-start="1088" data-end="1138">Cas n°2 : 1 licence Copilot pour Microsoft 365</h3>
+<h3 data-start="1088" data-end="1138">Cas n°2 : Licence Copilot pour le créateur</h3>
 <h5><span style="color: #3598db;">Le créateur de l'agent dispose d'une licence Copilot pour Microsoft 365, tandis que les utilisateurs disposent la version gratuite Copilot Chat.</span></h5>
 <p data-start="1175" data-end="1206">✅ Ici, on passe un cap important. Le créateur peut créer un agent déclaratif basé sur :</p>
 <ul>
@@ -61,7 +61,7 @@
 <p> </p>
 <p class="msg msg--info">💡<strong> Cas d'usages types</strong> : Procédures et guides internes stables dans le temps</p>
 <hr>
-<h3 data-start="1591" data-end="1654">Cas n°3 : Licences Copilot pour Microsoft 365 pour tout le monde</h3>
+<h3 data-start="1591" data-end="1654">Cas n°3 : Copilot pour Microsoft 365 (à grande échelle)</h3>
 <h5><span style="color: #3598db;">Le créateur et les utilisateurs disposent de licences Copilot pour Microsoft 365.</span></h5>
 <p data-start="1706" data-end="1743">⭐ Ca y'est, on joue dans la cour des grands !</p>
 <p data-start="2775" data-end="2957">Le créateur peut créer un agent déclaratif basé sur <strong data-start="2880" data-end="2921">toute la connaissance de l’entreprise</strong> disponible dans le cloud Microsoft.</p>

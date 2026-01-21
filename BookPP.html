@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Power Platform Julie BREDECHE</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden;
+            background: #0a1628;
+        }
+        
+        .slider-container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .slide {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            left: 100%;
+            transition: left 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+            overflow-y: auto;
+        }
+        
+        .slide.active { left: 0; }
+        .slide.prev   { left: -100%; }
+        
+        /* Dégradés avec plus de bleu */
+        .slide:nth-child(1) { background: linear-gradient(135deg,#64b5f6 0%,#4fc3f7 55%,#7e57c2 100%); }
+        .slide:nth-child(2) { background: linear-gradient(135deg,#4fc3f7 0%,#29b6f6 55%,#ab47bc 100%); }
+        .slide:nth-child(3) { background: linear-gradient(135deg,#26c6da 0%,#4dd0e1 55%,#5e35b1 100%); }
+        .slide:nth-child(4) { background: linear-gradient(135deg,#29b6f6 0%,#64b5f6 55%,#673ab7 100%); }
+        
+        .slide-content {
+            flex: 1;
+            width: 100%;
+            padding: 40px 80px 80px 80px;
+            max-width: 1800px;
+            margin: 0 auto;
+            animation: slideIn 0.8s ease-out;
+        }
+        
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Header titre pleine largeur */
+        .project-header {
+            background: rgba(255,255,255,0.17);
+            backdrop-filter: blur(25px);
+            border-radius: 20px 20px 0 0;
+            padding: 25px 40px;
+            border-bottom: 2px solid rgba(255,255,255,0.25);
+            /* box-shadow: 0 8px 30px rgba(0,0,0,0.4);*/
+        }
+        
+        .project-title {
+            font-size: 38px;
+            color: white;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+            line-height: 1.2;
+            font-weight: 700;
+        }
+        
+        .project-title .emoji {
+            font-size: 34px;
+            margin-right: 12px;
+            vertical-align: middle;
+        }
+        
+        .meta-bar {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .meta-section {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .meta-label {
+            font-size: 18px;
+            color: white;
+            font-weight: 600;
+            opacity: 0.95;
+        }
+        
+        /* Technologies - Bleu foncé translucide */
+        .tech-badge {
+            background: rgba(13, 71, 161, 0.5);
+            backdrop-filter: blur(10px);
+            padding: 6px 14px;
+            border-radius: 14px;
+            font-size: 12px;
+            font-weight: 600;
+            color: white;   
+        }
+        
+            /* Dispositifs - Bleu clair transparent harmonieux */
+        .device-badge {
+            background: rgba(100, 181, 246, 0);
+            backdrop-filter: blur(10px);
+            padding: 6px 12px;
+            border-radius: 14px;
+            font-size: 12px;
+            font-weight: 600;
+            color: white;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+        }
+        
+        /* Corps 2 colonnes (1:3) */
+        .project-body {
+            display: grid;
+            grid-template-columns: 1.4fr 3fr;
+            background: rgba(255,255,255,0.12);
+            backdrop-filter: blur(25px);
+            border-radius: 0 0 20px 20px;
+            /* box-shadow: 0 10px 40px rgba(0,0,0,0.4);*/
+            margin-top: 0;
+            overflow: hidden;
+        }
+        
+        /* Colonne gauche - SANS fond bleu foncé */
+        .left-column {
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            border-right: 2px solid rgba(255,255,255,0.25);
+            min-height: 400px;
+        }
+        
+        .right-column {
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            color: white;
+            min-height: 400px;
+        }
+        
+        .info-section {
+            background: rgba(255,255,255,0.15);
+            padding: 18px;
+            border-radius: 12px;
+            border-left: 4px solid rgba(255,255,255,0.6);
+        }
+        
+        .section-title {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: white;
+        }
+        
+        .section-title .emoji { font-size: 18px; }
+        
+        .section-content {
+            font-size: 14px;
+            line-height: 1.55;
+            color: rgba(255,255,255,0.95);
+        }
+        
+        .section-content ul { list-style: none; padding-left: 0; }
+        .section-content ul li {
+            padding: 4px 0 4px 18px;
+            position: relative;
+        }
+        .section-content ul li::before {
+            content: "•";
+            position: absolute;
+            left: 3px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .full-width-section { grid-column: 1 / -1; }
+        
+        /* Navigation compacte */
+        .navigation {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            background: rgba(255,255,255,0.12);
+            backdrop-filter: blur(20px);
+            padding: 12px 25px;
+            border-radius: 25px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+            z-index: 100;
+        }
+        
+        .nav-btn {
+            background: rgba(255,255,255,0.25);
+            border: 2px solid rgba(255,255,255,0.5);
+            color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+        
+        .nav-btn:hover:not(:disabled) { 
+            background: rgba(255,255,255,0.4); 
+            transform: scale(1.05); 
+        }
+        .nav-btn:disabled { 
+            opacity: 0.2; 
+            cursor: not-allowed; 
+        }
+        
+        .page-indicator {
+            color: white;
+            font-weight: 600;
+            font-size: 14px;
+            min-width: 70px;
+            text-align: center;
+        }
+        
+        .dots-container { display: flex; gap: 8px; }
+        
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.4);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .dot.active { background: white; transform: scale(1.4); }
+        
+        /* Page de couverture - CENTRÉE */
+        .cover-slide {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            padding: 0 80px;
+            color: white;
+        }
+        
+        .cover-slide h1 {
+            font-size: 72px;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
+        
+        .cover-slide h2 {
+            font-size: 42px;
+            margin-bottom: 25px;
+            font-weight: 300;
+            opacity: 0.95;
+        }
+        
+        .cover-slide p { font-size: 22px; opacity: 0.9; }
+        
+        /* Scrollbar */
+        .slide::-webkit-scrollbar { width: 6px; }
+        .slide::-webkit-scrollbar-track { background: transparent; }
+        .slide::-webkit-scrollbar-thumb {
+            background: rgba(255,255,255,0.3);
+            border-radius: 6px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 1400px) {
+            .project-body { grid-template-columns: 1fr; }
+            .left-column {
+                border-right: none;
+                border-bottom: 2px solid rgba(255,255,255,0.25);
+            }
+            .right-column {
+                grid-template-columns: 1fr;
+                padding: 25px;
+            }
+            .slide-content { padding: 30px 40px 70px 40px; }
+        }
+        
+        @media (max-width: 768px) {
+            .meta-bar { flex-direction: column; gap: 15px; align-items: flex-start; }
+            .project-title { font-size: 32px; }
+            .cover-slide h1 { font-size: 48px; }
+            .cover-slide h2 { font-size: 32px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="slider-container">
+        <!-- Page de couverture -->
+        <div class="slide active">
+            <div class="cover-slide">
+                <h1>Portfolio Power Platform</h1>
+                <h2>Julie BREDECHE</h2>
+                <p>Automatisation & Applications avec Power Automate & Power Apps</p>
+            </div>
+        </div>
+        
+        <!-- Slides projets injectées en JS -->
+    </div>
+    
+    <div class="navigation">
+        <button class="nav-btn" id="prevBtn">←</button>
+        <div class="dots-container" id="dotsContainer"></div>
+        <span class="page-indicator" id="pageIndicator">1 / 1</span>
+        <button class="nav-btn" id="nextBtn">→</button>
+    </div>
+
+    <script>
+        const projects = [
+            {
+                title: "Application de suivi des demandes RH",
+                industry: "RH",
+                problem: "Les demandes RH étaient gérées via emails et fichiers Excel dispersés, entraînant des pertes de demandes, longs délais de traitement et manque total de visibilité pour les managers.",
+                users: "Utilisée par 150 collaborateurs et 12 gestionnaires RH. Accessible depuis le bureau et en mobilité pour les managers terrain.",
+                solution: "Application simple pour centraliser toutes les demandes RH (congés, formations, matériel), avec suivi automatisé et tableaux de bord en temps réel.",
+                features: [
+                    "Création et modification des demandes en 2 clics",
+                    "Workflow de validation automatisé multi-niveaux",
+                    "Notifications automatiques Teams et email",
+                    "Historique complet et traçabilité",
+                    "Tableaux de bord manager avec statistiques"
+                ],
+                technologies: ["Power Apps","Power Automate","SharePoint"],
+                devices: ["PC","Mobile","Tablette"],
+                teamsIntegrated: true,
+                userBenefits: [
+                    "Gain de 2h par semaine et par collaborateur",
+                    "Interface intuitive sans formation nécessaire",
+                    "80% de réduction des erreurs de saisie",
+                    "Visibilité temps réel sur l'état des demandes"
+                ],
+                businessValue: [
+                    "Processus RH standardisé dans toute l'entreprise",
+                    "Délai de traitement réduit de 65%",
+                    "Traçabilité complète pour audits",
+                    "Adoption de 95% en 3 semaines"
+                ]
+            },
+            {
+                title: "Workflow d'approbation des achats",
+                industry: "Achats",
+                problem: "Circuit de validation des achats complexe avec approbations par email, pertes de demandes, doublons et aucune vision globale des budgets engagés.",
+                users: "250 demandeurs, 35 approbateurs dans 5 services différents. Utilisation quotidienne pour toute demande > 500€.",
+                solution: "Plateforme de gestion des demandes d'achat avec routing intelligent selon montants et catégories, alertes automatiques et suivi budgétaire.",
+                features: [
+                    "Formulaire dynamique adapté au type d'achat",
+                    "Validation automatique selon règles métier",
+                    "Relances automatiques si pas de réponse sous 48h",
+                    "Intégration avec système comptable",
+                    "Dashboard budgétaire par service"
+                ],
+                technologies: ["Power Apps","Power Automate","Dataverse","Power BI"],
+                devices: ["PC","Mobile","Tablette"],
+                teamsIntegrated: false,
+                userBenefits: [
+                    "Demande créée en moins de 3 minutes",
+                    "Visibilité permanente sur l'avancement",
+                    "Moins de relances manuelles",
+                    "Process clair et transparent"
+                ],
+                businessValue: [
+                    "Validation 3x plus rapide qu'avant",
+                    "Conformité garantie avec politique achats",
+                    "Contrôle budgétaire en temps réel",
+                    "Réduction de 40% des litiges fournisseurs"
+                ]
+            },
+            {
+                title: "Portail de gestion des formations",
+                industry: "Formation",
+                problem: "Inscription aux formations via formulaires papier et emails, aucune visibilité sur les places disponibles, oublis fréquents, et compilation manuelle des présences.",
+                users: "500 employés, 8 gestionnaires formation. Utilisé lors des campagnes semestrielles et toute l'année pour formations ponctuelles.",
+                solution: "Application permettant de consulter le catalogue formations, s'inscrire directement, gérer les listes d'attente et suivre son parcours de développement.",
+                features: [
+                    "Catalogue interactif avec recherche et filtres",
+                    "Inscription en ligne avec gestion des places",
+                    "Validation automatique manager si requis",
+                    "Rappels automatiques avant formations",
+                    "Suivi individuel du plan de développement"
+                ],
+                technologies: ["Power Apps","Power Automate","SharePoint"],
+                devices: ["PC","Mobile"],
+                teamsIntegrated: true,
+                userBenefits: [
+                    "Inscription autonome 24/7",
+                    "Vue d'ensemble de son parcours formation",
+                    "Notifications pertinentes et ciblées",
+                    "Interface moderne et ergonomique"
+                ],
+                businessValue: [
+                    "Processus d'inscription digitalisé à 100%",
+                    "Taux de remplissage des sessions +35%",
+                    "Temps admin divisé par 4",
+                    "Meilleure planification des budgets formation"
+                ]
+            }
+        ];
+        
+        let currentSlide = 0;
+        const sliderContainer = document.querySelector('.slider-container');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const pageIndicator = document.getElementById('pageIndicator');
+        const dotsContainer = document.getElementById('dotsContainer');
+        
+        // Génération des slides
+        projects.forEach(project => {
+            const techBadges = project.technologies
+                .map(t => `<span class="tech-badge">${t}</span>`).join('');
+            const deviceBadges = project.devices
+                .map(d => `<span class="device-badge">${d}</span>`).join('');
+            
+            // Teams à part si intégré
+            const teamsSection = project.teamsIntegrated 
+                ? '<div class="meta-section"><span class="meta-label"></span></div>' 
+                : '';
+            
+            const featuresList = project.features.map(f => `<li>${f}</li>`).join('');
+            const userBenefitsList = project.userBenefits.map(b => `<li>${b}</li>`).join('');
+            const businessValueList = project.businessValue.map(v => `<li>${v}</li>`).join('');
+            
+            const html = `
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="project-header">
+                        <h1 class="project-title">${project.title}</h1>
+                        <div class="meta-bar">
+                            <div class="meta-section">
+                                <span class="meta-label">🏢 ${project.industry}</span>
+                            </div>
+                            <div class="meta-section">
+                                ${deviceBadges}
+                            </div>
+                            ${teamsSection}
+                            <div class="meta-section">
+                                ${techBadges}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="left-column">
+                            <div class="info-section">
+                                <div class="section-title"><span class="emoji">🎯</span>Problématique métier</div>
+                                <div class="section-content">${project.problem}</div>
+                            </div>
+                            <div class="info-section">
+                                <div class="section-title"><span class="emoji">👥</span>Utilisateurs & contexte</div>
+                                <div class="section-content">${project.users}</div>
+                            </div>
+                        </div>
+                        <div class="right-column">
+                            <div class="info-section full-width-section">
+                                <div class="section-title"><span class="emoji">💡</span>Solution mise en place</div>
+                                <div class="section-content">${project.solution}</div>
+                            </div>
+                            <div class="info-section full-width-section">
+                                <div class="section-title"><span class="emoji">⭐</span>Fonctionnalités clés</div>
+                                <div class="section-content"><ul>${featuresList}</ul></div>
+                            </div>
+                            <div class="info-section">
+                                <div class="section-title"><span class="emoji">🚀</span>Bénéfices utilisateurs</div>
+                                <div class="section-content"><ul>${userBenefitsList}</ul></div>
+                            </div>
+                            <div class="info-section">
+                                <div class="section-title"><span class="emoji">📈</span>Valeur business</div>
+                                <div class="section-content"><ul>${businessValueList}</ul></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>`;
+            
+            sliderContainer.insertAdjacentHTML('beforeend', html);
+        });
+        
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        
+        // Dots
+        slides.forEach((_, i) => {
+            const dot = document.createElement('div');
+            dot.className = 'dot' + (i === 0 ? ' active' : '');
+            dot.addEventListener('click', () => goToSlide(i));
+            dotsContainer.appendChild(dot);
+        });
+        const dots = document.querySelectorAll('.dot');
+        
+        function goToSlide(index) {
+            // Retirer active/prev de TOUTES les slides
+            slides.forEach(slide => {
+                slide.classList.remove('active', 'prev');
+            });
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            currentSlide = index;
+            
+            // Activer la nouvelle slide
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+            
+            updateNavigation();
+        }
+        
+        function nextSlide() {
+            if (currentSlide < totalSlides - 1) goToSlide(currentSlide + 1);
+        }
+        
+        function prevSlide() {
+            if (currentSlide > 0) goToSlide(currentSlide - 1);
+        }
+        
+        function updateNavigation() {
+            pageIndicator.textContent = `${currentSlide + 1} / ${totalSlides}`;
+            prevBtn.disabled = currentSlide === 0;
+            nextBtn.disabled = currentSlide === totalSlides - 1;
+        }
+        
+        prevBtn.addEventListener('click', prevSlide);
+        nextBtn.addEventListener('click', nextSlide);
+        
+        document.addEventListener('keydown', e => {
+            if (e.key === 'ArrowLeft')  prevSlide();
+            if (e.key === 'ArrowRight') nextSlide();
+        });
+        
+        let touchStartX = 0;
+        let touchEndX = 0;
+        sliderContainer.addEventListener('touchstart', e => {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+        sliderContainer.addEventListener('touchend', e => {
+            touchEndX = e.changedTouches[0].screenX;
+            if (touchStartX - touchEndX > 50) nextSlide();
+            if (touchEndX - touchStartX > 50) prevSlide();
+        });
+        
+        // Init
+        updateNavigation();
+    </script>
+</body>
+</html>
