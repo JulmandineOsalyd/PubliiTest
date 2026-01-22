@@ -18,6 +18,10 @@
             background: #0a1628;
         }
 
+        .saut-ligne {
+                margin-top: 0.8em;
+        }
+
         .slider-container {
             width: 100vw;
             height: 100vh;
@@ -44,21 +48,20 @@
             left: -100%;
         }
 
-        /* Dégradés avec plus de bleu */
+
         .slide:nth-child(1) {
-            background: linear-gradient(135deg, #64b5f6 0%, #4fc3f7 55%, #7e57c2 100%);
+            background: linear-gradient(135deg, #000000 0%, #476b7c 50%, #929ebf 100%);
         }
 
-        .slide:nth-child(2) {
-            background: linear-gradient(135deg, #4fc3f7 0%, #29b6f6 55%, #ab47bc 100%);
+        /* Masquer les éléments de navigation sur la première slide UNIQUEMENT */
+        body.first-slide .sommaire-icon,
+        body.first-slide .page-indicator {
+            display: none;
         }
 
-        .slide:nth-child(3) {
-            background: linear-gradient(135deg, #26c6da 0%, #4dd0e1 55%, #5e35b1 100%);
-        }
-
-        .slide:nth-child(4) {
-            background: linear-gradient(135deg, #29b6f6 0%, #64b5f6 55%, #673ab7 100%);
+        /* Masquer prevBtn SEULEMENT sur slide 0, pas sur slide 1 */
+        body.first-slide .nav-btn#prevBtn {
+            display: none;
         }
 
         .slide-content {
@@ -227,6 +230,7 @@
             font-size: 14px;
             line-height: 1.55;
             color: rgba(255, 255, 255, 0.95);
+            white-space: pre-line; 
         }
 
         .section-content ul {
@@ -297,30 +301,32 @@
             color: white;
             font-weight: 600;
             font-size: 14px;
-            min-width: 70px;
             text-align: center;
         }
 
-        .dots-container {
-            display: flex;
-            gap: 8px;
-        }
-
-        .dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.4);
+        /* Icône sommaire */
+        .sommaire-icon {
+            background: rgba(0, 0, 0, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
             cursor: pointer;
+            font-size: 24px;
+            display: flex;
+            justify-content: center;
             transition: all 0.3s;
+            margin-right:15px;
         }
 
-        .dot.active {
-            background: white;
-            transform: scale(1.4);
+        .sommaire-icon:hover {
+            background: rgba(255, 255, 255, 0.4);
+            transform: scale(1.1);
         }
 
-        /* Page de couverture - CENTRÉE */
+
+        /* Page de couverture */
         .cover-slide {
             display: flex;
             flex-direction: column;
@@ -342,14 +348,130 @@
         .cover-slide h2 {
             font-size: 42px;
             margin-bottom: 25px;
-            font-weight: 300;
+            font-weight: 400;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
             opacity: 0.95;
         }
 
         .cover-slide p {
-            font-size: 22px;
-            opacity: 0.9;
+            font-size: 26px;
+            opacity: 0.95;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
         }
+
+        .cover-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 10px;
+            margin-bottom: 25px;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+
+        /* Slide sommaire */
+        .sommaire-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 80px;
+    color: white;
+        }
+
+        .sommaire-slide h1 {
+            font-size: 48px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .sommaire-content {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+
+        .sommaire-item {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(20px);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 12px;
+            padding: 18px 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .sommaire-item:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateX(5px);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .sommaire-number {
+            font-size: 28px;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.6);
+            min-width: 40px;
+        }
+
+        .sommaire-info {
+            flex: 1;
+        }
+
+        .sommaire-title {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            line-height: 1.3;
+        }
+
+        .sommaire-industry {
+            font-size: 12px;
+            opacity: 0.8;
+        }
+
+        /* Scrollbar pour le sommaire si plus de 10 items */
+        .sommaire-content::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .sommaire-content::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .sommaire-content::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 6px;
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .sommaire-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .sommaire-slide h1 { font-size: 36px; }
+            .sommaire-item { padding: 15px; }
+            .sommaire-title { font-size: 15px; }
+            .sommaire-number { font-size: 24px; }
+        }
+
 
         /* Scrollbar */
         .slide::-webkit-scrollbar {
@@ -404,7 +526,13 @@
             .cover-slide h2 {
                 font-size: 32px;
             }
+
+            .cover-photo {
+                width: 120px;
+                height: 120px;
+            }
         }
+
 
         /* Bouton captures d'écran */
         .screenshots-button {
@@ -454,6 +582,7 @@
 
         .lightbox-content {
             position: relative;
+            /* Important */
             max-width: 90%;
             max-height: 85vh;
             display: flex;
@@ -527,15 +656,20 @@
 
         .lightbox-counter {
             position: absolute;
-            bottom: 30px;
+            bottom: 20px;
             left: 50%;
             transform: translateX(-50%);
-            background: rgba(255, 255, 255, 0.2);
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgb(121 116 116));
             backdrop-filter: blur(10px);
-            padding: 10px 20px;
+            padding: 12px 24px;
             border-radius: 20px;
             color: white;
             font-weight: 600;
+            text-align: center;
+            min-width: 200px;
+            font-size: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            line-height: 1.4;
         }
     </style>
 </head>
@@ -545,46 +679,70 @@
         <!-- Page de couverture -->
         <div class="slide active">
             <div class="cover-slide">
-                <h1>Portfolio Power Platform</h1>
-                <h2>Julie BREDECHE</h2>
-                <p>Automatisation & Applications avec Power Automate & PowerApps</p>
+                <h1>Portfolio</h1>
+                <h2>Power Automate & PowerApps</h2>
+                <img src="https://www.osalydconsulting.com/media/website/Julie-Bredeche.png" alt="Julie BREDECHE"
+                    class="cover-photo">
+                <p>Julie BREDECHE</p>
             </div>
         </div>
+
+        <!-- Sommaire -->
+        <div class="slide" style="background: linear-gradient(135deg, #000000 0%, #476b7c 50%, #929ebf 100%);">
+            <div class="sommaire-slide">
+                <h1>Sommaire</h1>
+                <div id="sommaireContent" class="sommaire-content"></div>
+            </div>
+        </div>
+
 
         <!-- Slides projets injectées en JS -->
     </div>
 
     <div class="navigation">
+        <div class="sommaire-icon" id="sommaireIcon" title="Retour au sommaire">☰</div>
         <button class="nav-btn" id="prevBtn">←</button>
-        <div class="dots-container" id="dotsContainer"></div>
         <span class="page-indicator" id="pageIndicator">1 / 1</span>
         <button class="nav-btn" id="nextBtn">→</button>
     </div>
 
+
     <script>
         const projects = [
             {
-                title: "TEST - Application de suivi des demandes RH",
-                industry: "RH",
-                problem: "Les demandes RH étaient gérées via emails et fichiers Excel dispersés, entraînant des pertes de demandes, longs délais de traitement et manque total de visibilité pour les managers.",
-                users: "Utilisée par 150 collaborateurs et 12 gestionnaires RH. Accessible depuis le bureau et en mobilité pour les managers terrain.",
-                solution: "Application simple pour centraliser toutes les demandes RH (congés, formations, matériel), avec suivi automatisé et tableaux de bord en temps réel.",
+                title: "Application de réservation de voyages",
+                mainTool: "PowerApps",
+                industry: "Education",
+                problem: "<p>Les demandes de réservation de train ou d'hôtel étaient gérées uniquement par mail entre les professeurs et le bureau des réservations.</p> <p class='saut-ligne'> Trop d'aller-retours, oublis et erreurs de saisie rendaient le processus chronophage.</p>",
+                users: "<ul><li>200 professeurs répartis sur 2 campus</li><li>2 gestionnaires des réservations</li><li>Service Comptabilité</li></ul>",
+                solution: "Une application mobile pour la saisie des demandes de réservation par les professeurs, avec un workflow de validation, et des notifications automatiques. <p class='saut-ligne'> Un back-office SharePoint pour le staff qui peut gérer les réservations et le suivi comptable de manière structurée.",
                 screenshots: [
-                    "https://www.osalydconsulting.com/media/files/IESEG-Oraux-Accueil.png",
-                    "https://via.placeholder.com/1200x800/64b5f6/ffffff?text=Screenshot+RH+2",
-                    "https://via.placeholder.com/1200x800/4fc3f7/ffffff?text=Screenshot+RH+3"
+                    {
+                        url: "https://www.osalydconsulting.com/media/files/IESEG-Oraux-Accueil.png",
+                        title: "Vue d'ensemble du tableau de bord RH"
+                    },
+                    {
+                        url: "https://via.placeholder.com/1200x800/64b5f6/ffffff?text=Formulaire",
+                        title: "Formulaire de création de demande"
+                    },
+                    {
+                        url: "https://via.placeholder.com/1200x800/4fc3f7/ffffff?text=Validation",
+                        title: "Workflow de validation multi-niveaux"
+                    }
                 ],
                 features: [
-                    "Création et modification des demandes en 2 clics",
-                    "Workflow de validation automatisé multi-niveaux",
-                    "Notifications automatiques Teams et email",
-                    "Historique complet et traçabilité",
-                    "Tableaux de bord manager avec statistiques"
+                    "Formulaire avec des règles de gestion pour uniformiser la saisie des demandes",
+                    "Duplication et annulation des demandes",
+                    "Workflow de validation selon le statut du professeur",
+                    "Notifications automatiques du traitement",
+                    "Tableaux de bord pour le suivi du traitement des réservations par le Staff"
                 ],
-                technologies: ["PowerApps", "Power Automate", "SharePoint", "Teams", "Forms", "OneDrive", "Outlook"],
+                //technologies: ["PowerApps", "Power Automate", "SharePoint", "Outlook", "OneDrive", "Forms", "Teams"],
+                technologies: ["PowerApps", "Power Automate", "SharePoint", "Outlook"],
+                //devices: ["PC", "Mobile", "Tablette"],
                 devices: ["PC", "Mobile", "Tablette"],
                 userBenefits: [
-                    "Gain de 2h par semaine et par collaborateur",
+                    "Gain de temps significatif pour la saisie des demandes professeurs",
                     "Interface intuitive sans formation nécessaire",
                     "80% de réduction des erreurs de saisie",
                     "Visibilité temps réel sur l'état des demandes"
@@ -598,6 +756,7 @@
             },
             {
                 title: "Workflow d'approbation des achats",
+                mainTool: "Power Automate",
                 industry: "Achats",
                 problem: "Circuit de validation des achats complexe avec approbations par email, pertes de demandes, doublons et aucune vision globale des budgets engagés.",
                 users: "250 demandeurs, 35 approbateurs dans 5 services différents. Utilisation quotidienne pour toute demande > 500€.",
@@ -623,34 +782,6 @@
                     "Contrôle budgétaire en temps réel",
                     "Réduction de 40% des litiges fournisseurs"
                 ]
-            },
-            {
-                title: "Portail de gestion des formations",
-                industry: "Formation",
-                problem: "Inscription aux formations via formulaires papier et emails, aucune visibilité sur les places disponibles, oublis fréquents, et compilation manuelle des présences.",
-                users: "500 employés, 8 gestionnaires formation. Utilisé lors des campagnes semestrielles et toute l'année pour formations ponctuelles.",
-                solution: "Application permettant de consulter le catalogue formations, s'inscrire directement, gérer les listes d'attente et suivre son parcours de développement.",
-                features: [
-                    "Catalogue interactif avec recherche et filtres",
-                    "Inscription en ligne avec gestion des places",
-                    "Validation automatique manager si requis",
-                    "Rappels automatiques avant formations",
-                    "Suivi individuel du plan de développement"
-                ],
-                technologies: ["PowerApps", "Power Automate", "SharePoint"],
-                devices: ["PC", "Mobile"],
-                userBenefits: [
-                    "Inscription autonome 24/7",
-                    "Vue d'ensemble de son parcours formation",
-                    "Notifications pertinentes et ciblées",
-                    "Interface moderne et ergonomique"
-                ],
-                businessValue: [
-                    "Processus d'inscription digitalisé à 100%",
-                    "Taux de remplissage des sessions +35%",
-                    "Temps admin divisé par 4",
-                    "Meilleure planification des budgets formation"
-                ]
             }
         ];
 
@@ -659,7 +790,7 @@
         const prevBtn = document.getElementById('prevBtn');
         const nextBtn = document.getElementById('nextBtn');
         const pageIndicator = document.getElementById('pageIndicator');
-        const dotsContainer = document.getElementById('dotsContainer');
+        //const dotsContainer = document.getElementById('dotsContainer');
 
 
         // Map des logos pour chaque technologie
@@ -674,7 +805,15 @@
         };
 
         // Génération des slides
+        const toolColors = {
+            "PowerApps": "linear-gradient(135deg, #681b75 0%, #a044b0 55%, #ac74b5 100%)",
+            "Power Automate": "linear-gradient(135deg, #104da0 0%, #106EBE 55%, #4FC3F7 100%)"
+        };
+
         projects.forEach(project => {
+            const slideColor = toolColors[project.mainTool] || "linear-gradient(135deg, #4fc3f7 0%, #29b6f6 55%, #ab47bc 100%)";
+
+
             const techBadges = project.technologies
                 .map(t => {
                     const logo = techLogos[t] || '';
@@ -697,21 +836,21 @@
             const businessValueList = project.businessValue.map(v => `<li>${v}</li>`).join('');
 
             const html = `
-            <div class="slide">
+            <div class="slide" style="background: ${slideColor};">
                 <div class="slide-content">
                     <div class="project-header">
                         <h1 class="project-title">${project.title}</h1>
                         <div class="meta-bar">
-    <div class="meta-section">
-        <span class="meta-label">🏢 ${project.industry}</span>
-    </div>
-    <div class="meta-section">
-        ${deviceBadges}
-    </div>
-    <div class="meta-section">
-        ${techBadges}
-    </div>
-</div>
+                            <div class="meta-section">
+                                <span class="meta-label">🏢 ${project.industry}</span>
+                            </div>
+                            <div class="meta-section">
+                                ${deviceBadges}
+                            </div>
+                            <div class="meta-section">
+                                ${techBadges}
+                            </div>
+                        </div>
                     </div>
                     <div class="project-body">
                         <div class="left-column">
@@ -748,69 +887,105 @@
                 </div>
             </div>
             <!-- Lightbox pour les captures d'écran -->
-<div class="lightbox" id="lightbox">
-    <button class="lightbox-close" onclick="closeLightbox()">×</button>
-    <button class="lightbox-nav lightbox-prev" onclick="prevScreenshot()">←</button>
-    <div class="lightbox-content">
-        <img class="lightbox-image" id="lightboxImage" src="" alt="Capture d'écran">
-    </div>
-    <button class="lightbox-nav lightbox-next" onclick="nextScreenshot()">→</button>
-    <div class="lightbox-counter" id="lightboxCounter"></div>
-</div>`;
+            <div class="lightbox" id="lightbox">
+                <button class="lightbox-close" onclick="closeLightbox()">×</button>
+                <button class="lightbox-nav lightbox-prev" onclick="prevScreenshot()">←</button>
+                <div class="lightbox-content">
+                    <img class="lightbox-image" id="lightboxImage" src="" alt="Capture d'écran">
+                </div>
+                <button class="lightbox-nav lightbox-next" onclick="nextScreenshot()">→</button>
+                <div class="lightbox-counter" id="lightboxCounter"></div>
+            </div>`;
 
             sliderContainer.insertAdjacentHTML('beforeend', html);
         });
 
+        // Génération sommaire
+        const sommaireContent = document.getElementById('sommaireContent');
+        projects.forEach((project, index) => {
+            const sommaireItem = document.createElement('div');
+            sommaireItem.className = 'sommaire-item';
+            sommaireItem.onclick = () => goToSlide(index + 2); // +2 car intro + sommaire
+            sommaireItem.innerHTML = `
+                <div class="sommaire-number">${index + 1}</div>
+                <div class="sommaire-info">
+                    <div class="sommaire-title">${project.title}</div>
+                    <div class="sommaire-industry">🏢 ${project.industry}</div>
+                </div>
+            `;
+            sommaireContent.appendChild(sommaireItem);
+        });
+
         const slides = document.querySelectorAll('.slide');
         const totalSlides = slides.length;
-
-        // Dots
-        slides.forEach((_, i) => {
-            const dot = document.createElement('div');
-            dot.className = 'dot' + (i === 0 ? ' active' : '');
-            dot.addEventListener('click', () => goToSlide(i));
-            dotsContainer.appendChild(dot);
-        });
-        const dots = document.querySelectorAll('.dot');
-
+        
+        // Icône sommaire - clic pour retourner à la slide 1
+        const sommaireIcon = document.getElementById('sommaireIcon');
+        sommaireIcon.addEventListener('click', () => goToSlide(1));
+        
         function goToSlide(index) {
             // Retirer active/prev de TOUTES les slides
             slides.forEach(slide => {
                 slide.classList.remove('active', 'prev');
             });
-            dots.forEach(dot => dot.classList.remove('active'));
-
+            
             currentSlide = index;
-
+            
             // Activer la nouvelle slide
             slides[currentSlide].classList.add('active');
-            dots[currentSlide].classList.add('active');
-
+            
             updateNavigation();
         }
 
+
+        
         function nextSlide() {
             if (currentSlide < totalSlides - 1) goToSlide(currentSlide + 1);
         }
-
+        
         function prevSlide() {
             if (currentSlide > 0) goToSlide(currentSlide - 1);
         }
-
+        
         function updateNavigation() {
-            pageIndicator.textContent = `${currentSlide + 1} / ${totalSlides}`;
-            prevBtn.disabled = currentSlide === 0;
-            nextBtn.disabled = currentSlide === totalSlides - 1;
+            // Slide 0 (intro) : masquer dots, compteur et bouton prev
+            if (currentSlide === 0) {
+                document.body.classList.add('first-slide');
+                pageIndicator.textContent = '';
+                prevBtn.disabled = true;
+                nextBtn.disabled = false;
+            }
+            // Slide 1 (sommaire) : masquer dots et compteur, mais MONTRER bouton prev
+            else if (currentSlide === 1) {
+                document.body.classList.add('first-slide');
+                document.getElementById('prevBtn').style.display = 'flex';  // Forcer l'affichage
+                pageIndicator.textContent = '';
+                prevBtn.disabled = false;
+                nextBtn.disabled = false;
+            }
+            // Slides projets : tout afficher
+            else {
+                document.body.classList.remove('first-slide');
+                pageIndicator.textContent = `${currentSlide - 1} / ${totalSlides - 2}`;
+                prevBtn.disabled = false;
+                nextBtn.disabled = currentSlide === totalSlides - 1;
+            }
         }
 
+
+
+        
+        // Event listeners pour les boutons (C'ÉTAIT ÇA QUI MANQUAIT !)
         prevBtn.addEventListener('click', prevSlide);
         nextBtn.addEventListener('click', nextSlide);
-
+        
+        // Navigation clavier
         document.addEventListener('keydown', e => {
             if (e.key === 'ArrowLeft') prevSlide();
             if (e.key === 'ArrowRight') nextSlide();
         });
-
+        
+        // Swipe tactile
         let touchStartX = 0;
         let touchEndX = 0;
         sliderContainer.addEventListener('touchstart', e => {
@@ -821,6 +996,8 @@
             if (touchStartX - touchEndX > 50) nextSlide();
             if (touchEndX - touchStartX > 50) prevSlide();
         });
+
+        //Fonctions Lightbox 
 
         let currentProject = null;
         let currentScreenshotIndex = 0;
@@ -842,9 +1019,20 @@
             const img = document.getElementById('lightboxImage');
             const counter = document.getElementById('lightboxCounter');
 
-            img.src = currentProject.screenshots[currentScreenshotIndex];
-            counter.textContent = `${currentScreenshotIndex + 1} / ${currentProject.screenshots.length}`;
+            const screenshot = currentProject.screenshots[currentScreenshotIndex];
+
+            if (typeof screenshot === 'string') {
+                img.src = screenshot;
+                counter.innerHTML = `<strong>${currentScreenshotIndex + 1} / ${currentProject.screenshots.length}</strong>`;
+            } else {
+                img.src = screenshot.url;
+                counter.innerHTML = `
+            <span>${screenshot.title}</span>
+        `;
+            }
         }
+
+
 
         function nextScreenshot() {
             if (!currentProject) return;
