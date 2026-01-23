@@ -19,7 +19,7 @@
         }
 
         .saut-ligne {
-                margin-top: 0.8em;
+            margin-top: 0.8em;
         }
 
         .slider-container {
@@ -49,9 +49,13 @@
         }
 
 
-        .slide:nth-child(1) {
-            background: linear-gradient(135deg, #000000 0%, #476b7c 50%, #929ebf 100%);
+        /* Dégradé sobre pour la slide d'intro */
+        .slide:nth-child(1),
+        .slide:nth-child(2) {
+            background: linear-gradient(135deg, #152a68 0%, #26D0CE 100%);
+            /* Cool Blue Intro */
         }
+
 
         /* Masquer les éléments de navigation sur la première slide UNIQUEMENT */
         body.first-slide .sommaire-icon,
@@ -85,9 +89,46 @@
             }
         }
 
+        /* Switch EN-FR */
+        .language-switch {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(20px);
+            padding: 8px 12px;
+            border-radius: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            z-index: 50;
+        }
+
+        .language-switch button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            padding: 4px 10px;
+            border-radius: 10px;
+            transition: all 0.3s;
+        }
+
+        .language-switch button.active {
+            background: rgba(255, 255, 255, 0.25);
+            color: white;
+        }
+
+        .language-switch button:hover:not(.active) {
+            opacity: 0.7;
+        }
+
+
         /* Header titre pleine largeur */
         .project-header {
-            background: rgba(255, 255, 255, 0.17);
+            background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(25px);
             border-radius: 20px 20px 0 0;
             padding: 25px 40px;
@@ -230,7 +271,7 @@
             font-size: 14px;
             line-height: 1.55;
             color: rgba(255, 255, 255, 0.95);
-            white-space: pre-line; 
+            white-space: pre-line;
         }
 
         .section-content ul {
@@ -317,7 +358,7 @@
             display: flex;
             justify-content: center;
             transition: all 0.3s;
-            margin-right:15px;
+            margin-right: 15px;
         }
 
         .sommaire-icon:hover {
@@ -373,16 +414,16 @@
 
         /* Slide sommaire */
         .sommaire-slide {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 80px;
-    color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 80px;
+            color: white;
         }
 
         .sommaire-slide h1 {
@@ -404,7 +445,7 @@
         .sommaire-item {
             background: rgba(255, 255, 255, 0.15);
             backdrop-filter: blur(20px);
-            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-left: 4px solid rgba(255, 255, 255, 0.6);
             border-radius: 12px;
             padding: 18px 20px;
             cursor: pointer;
@@ -413,11 +454,11 @@
             display: flex;
             align-items: center;
             gap: 15px;
+
         }
 
         .sommaire-item:hover {
             background: rgba(255, 255, 255, 0.25);
-            transform: translateX(5px);
             border-color: rgba(255, 255, 255, 0.5);
         }
 
@@ -466,211 +507,238 @@
         }
 
         @media (max-width: 768px) {
-            .sommaire-slide h1 { font-size: 36px; }
-            .sommaire-item { padding: 15px; }
-            .sommaire-title { font-size: 15px; }
-            .sommaire-number { font-size: 24px; }
-        }
-
-
-        /* Scrollbar */
-        .slide::-webkit-scrollbar {
-            width: 6px;
-        }
-
-        .slide::-webkit-scrollbar-track {
-            background: transparent;
-        }
-
-        .slide::-webkit-scrollbar-thumb {
-            background: rgba(255, 255, 255, 0.3);
-            border-radius: 6px;
-        }
-
-        /* Responsive */
-        @media (max-width: 1400px) {
-            .project-body {
-                grid-template-columns: 1fr;
+            .sommaire-slide h1 {
+                font-size: 36px;
             }
 
-            .left-column {
-                border-right: none;
-                border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+            .sommaire-item {
+                padding: 15px;
             }
 
-            .right-column {
-                grid-template-columns: 1fr;
-                padding: 25px;
+            .sommaire-title {
+                font-size: 15px;
             }
 
-            .slide-content {
-                padding: 20px 40px 40px 40px;
+            .sommaire-number {
+                font-size: 24px;
             }
-        }
 
-        @media (max-width: 768px) {
-            .meta-bar {
+            .page-indicator {
+                display: none !important;
+            }
+
+            .language-switch {
                 flex-direction: column;
-                gap: 15px;
-                align-items: flex-start;
+                gap: 6px;
+                padding: 10px 10px;
+                border-radius: 16px;
             }
 
-            .project-title {
-                font-size: 32px;
+            .sommaire-content {
+                width: 120%;
+
+
             }
 
-            .cover-slide h1 {
-                font-size: 48px;
+
+            /* Scrollbar */
+            .slide::-webkit-scrollbar {
+                width: 6px;
             }
 
-            .cover-slide h2 {
-                font-size: 32px;
+            .slide::-webkit-scrollbar-track {
+                background: transparent;
             }
 
-            .cover-photo {
-                width: 120px;
-                height: 120px;
+            .slide::-webkit-scrollbar-thumb {
+                background: rgba(255, 255, 255, 0.3);
+                border-radius: 6px;
             }
-        }
+
+            /* Responsive */
+            @media (max-width: 1400px) {
+                .project-body {
+                    grid-template-columns: 1fr;
+                }
+
+                .left-column {
+                    border-right: none;
+                    border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+                }
+
+                .right-column {
+                    grid-template-columns: 1fr;
+                    padding: 25px;
+                }
+
+                .slide-content {
+                    padding: 20px 40px 40px 40px;
+                }
+            }
+
+            @media (max-width: 768px) {
+                .meta-bar {
+                    flex-direction: column;
+                    gap: 15px;
+                    align-items: flex-start;
+                }
+
+                .project-title {
+                    font-size: 32px;
+                }
+
+                .cover-slide h1 {
+                    font-size: 48px;
+                }
+
+                .cover-slide h2 {
+                    font-size: 32px;
+                }
+
+                .cover-photo {
+                    width: 120px;
+                    height: 120px;
+                }
+            }
 
 
-        /* Bouton captures d'écran */
-        .screenshots-button {
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
-            padding: 18px;
-            border-radius: 12px;
-            border: 2px dashed rgba(255, 255, 255, 0.4);
-            cursor: pointer;
-            transition: all 0.3s;
-            text-align: center;
-        }
+            /* Bouton captures d'écran */
+            .screenshots-button {
+                background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+                padding: 18px;
+                border-radius: 12px;
+                border: 2px dashed rgba(255, 255, 255, 0.4);
+                cursor: pointer;
+                transition: all 0.3s;
+                text-align: center;
+            }
 
-        .screenshots-button:hover {
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.15));
-            border-color: rgba(255, 255, 255, 0.6);
-            transform: translateY(-2px);
-        }
+            .screenshots-button:hover {
+                background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.15));
+                border-color: rgba(255, 255, 255, 0.6);
+                transform: translateY(-2px);
+            }
 
-        .screenshots-button .emoji {
-            font-size: 24px;
-            margin-right: 8px;
-        }
+            .screenshots-button .emoji {
+                font-size: 24px;
+                margin-right: 8px;
+            }
 
-        .screenshots-button-text {
-            color: white;
-            font-size: 15px;
-            font-weight: 700;
-        }
+            .screenshots-button-text {
+                color: white;
+                font-size: 15px;
+                font-weight: 700;
+            }
 
-        /* Lightbox visionneuse */
-        .lightbox {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background: rgba(0, 0, 0, 0.92);
-            z-index: 1000;
-            justify-content: center;
-            align-items: center;
-        }
+            /* Lightbox visionneuse */
+            .lightbox {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background: rgba(0, 0, 0, 0.92);
+                z-index: 1000;
+                justify-content: center;
+                align-items: center;
+            }
 
-        .lightbox.active {
-            display: flex;
-        }
+            .lightbox.active {
+                display: flex;
+            }
 
-        .lightbox-content {
-            position: relative;
-            /* Important */
-            max-width: 90%;
-            max-height: 85vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+            .lightbox-content {
+                position: relative;
+                /* Important */
+                max-width: 90%;
+                max-height: 85vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
 
-        .lightbox-image {
-            max-width: 100%;
-            max-height: 85vh;
-            object-fit: contain;
-            border-radius: 10px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
-        }
+            .lightbox-image {
+                max-width: 100%;
+                max-height: 85vh;
+                object-fit: contain;
+                border-radius: 10px;
+                box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+            }
 
-        .lightbox-close {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
-            border: 2px solid white;
-            color: white;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            cursor: pointer;
-            font-size: 24px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s;
-        }
+            .lightbox-close {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                background: rgba(255, 255, 255, 0.2);
+                backdrop-filter: blur(10px);
+                border: 2px solid white;
+                color: white;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                cursor: pointer;
+                font-size: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.3s;
+            }
 
-        .lightbox-close:hover {
-            background: rgba(255, 255, 255, 0.3);
-            transform: scale(1.1);
-        }
+            .lightbox-close:hover {
+                background: rgba(255, 255, 255, 0.3);
+                transform: scale(1.1);
+            }
 
-        .lightbox-nav {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
-            border: 2px solid white;
-            color: white;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            cursor: pointer;
-            font-size: 24px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s;
-        }
+            .lightbox-nav {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background: rgba(255, 255, 255, 0.2);
+                backdrop-filter: blur(10px);
+                border: 2px solid white;
+                color: white;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                cursor: pointer;
+                font-size: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.3s;
+            }
 
-        .lightbox-nav:hover {
-            background: rgba(255, 255, 255, 0.3);
-            transform: translateY(-50%) scale(1.1);
-        }
+            .lightbox-nav:hover {
+                background: rgba(255, 255, 255, 0.3);
+                transform: translateY(-50%) scale(1.1);
+            }
 
-        .lightbox-prev {
-            left: 20px;
-        }
+            .lightbox-prev {
+                left: 20px;
+            }
 
-        .lightbox-next {
-            right: 20px;
-        }
+            .lightbox-next {
+                right: 20px;
+            }
 
-        .lightbox-counter {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgb(121 116 116));
-            backdrop-filter: blur(10px);
-            padding: 12px 24px;
-            border-radius: 20px;
-            color: white;
-            font-weight: 600;
-            text-align: center;
-            min-width: 200px;
-            font-size: 16px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-            line-height: 1.4;
-        }
+            .lightbox-counter {
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgb(121 116 116));
+                backdrop-filter: blur(10px);
+                padding: 12px 24px;
+                border-radius: 20px;
+                color: white;
+                font-weight: 600;
+                text-align: center;
+                min-width: 200px;
+                font-size: 16px;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+                line-height: 1.4;
+            }
     </style>
 </head>
 
@@ -688,7 +756,7 @@
         </div>
 
         <!-- Sommaire -->
-        <div class="slide" style="background: linear-gradient(135deg, #000000 0%, #476b7c 50%, #929ebf 100%);">
+        <div class="slide" id="sommaireSlide">
             <div class="sommaire-slide">
                 <h1>Sommaire</h1>
                 <div id="sommaireContent" class="sommaire-content"></div>
@@ -710,88 +778,214 @@
     <script>
         const projects = [
             {
-                title: "Application de réservation de voyages",
+                title: {
+                    fr: "Application de réservation de voyages",
+                    en: "Travel Booking Application"
+                },
                 mainTool: "PowerApps",
-                industry: "Education",
-                problem: "<p>Les demandes de réservation de train ou d'hôtel étaient gérées uniquement par mail entre les professeurs et le bureau des réservations.</p> <p class='saut-ligne'> Trop d'aller-retours, oublis et erreurs de saisie rendaient le processus chronophage.</p>",
-                users: "<ul><li>200 professeurs répartis sur 2 campus</li><li>2 gestionnaires des réservations</li><li>Service Comptabilité</li></ul>",
-                solution: "Une application mobile pour la saisie des demandes de réservation par les professeurs, avec un workflow de validation, et des notifications automatiques. <p class='saut-ligne'> Un back-office SharePoint pour le staff qui peut gérer les réservations et le suivi comptable de manière structurée.",
+                industry: {
+                    fr: "Education",
+                    en: "Education"
+                },
+                problem: {
+                    fr: "<p>Les demandes de réservation de train ou d'hôtel étaient gérées uniquement par mail entre les professeurs et le bureau des réservations.</p> <p class='saut-ligne'> Trop d'aller-retours, oublis et erreurs de saisie rendaient le processus chronophage.</p>",
+                    en: "<p>Train and hotel booking requests were handled only by email between teachers and the booking office.</p> <p class='saut-ligne'>Too much back-and-forth, missed requests, and data entry errors made the process time-consuming.</p>"
+                },
+                users: {
+                    fr: "<ul><li>200 professeurs répartis sur 2 campus</li><li>2 gestionnaires des réservations</li><li>Service Comptabilité</li></ul>",
+                    en: "<ul><li>200 teachers across 2 campuses</li><li>2 booking managers</li><li>Accounting department</li></ul>"
+                },
+                solution: {
+                    fr: "Une application mobile pour la saisie des demandes de réservation par les professeurs, avec un workflow de validation, et des notifications automatiques. <p class='saut-ligne'> Un back-office SharePoint pour le staff qui peut gérer les réservations et le suivi comptable de manière structurée.",
+                    en: "A mobile app enabling teachers to submit booking requests, with an approval workflow and automated notifications. <p class='saut-ligne'>A SharePoint back-office for staff to manage bookings and accounting follow-up in a structured way."
+                },
                 screenshots: [
                     {
-                        url: "https://www.osalydconsulting.com/media/files/IESEG-Oraux-Accueil.png",
-                        title: "Vue d'ensemble du tableau de bord RH"
+                        url: "https://www.osalydconsulting.com/media/files/ImagesBook/MyBooking/MyBooking-Home.png",
+                        title: { fr: "1. Page d'accueil de l'application", en: "1. App home page" }
                     },
                     {
-                        url: "https://via.placeholder.com/1200x800/64b5f6/ffffff?text=Formulaire",
-                        title: "Formulaire de création de demande"
+                        url: "https://www.osalydconsulting.com/media/files/ImagesBook/MyBooking/MyBooking-Form1.png",
+                        title: { fr: "2. Formulaire de réservation - Etape 1", en: "2. Booking form - Step 1" }
                     },
                     {
-                        url: "https://via.placeholder.com/1200x800/4fc3f7/ffffff?text=Validation",
-                        title: "Workflow de validation multi-niveaux"
-                    }
+                        url: "https://www.osalydconsulting.com/media/files/ImagesBook/MyBooking/MyBooking-Form2.png",
+                        title: { fr: "3. Formulaire de réservation - Etape 2", en: "3. Booking form - Step 2" }
+                    },
+                    {
+                        url: "https://www.osalydconsulting.com/media/files/ImagesBook/MyBooking/MyBooking-Form3.png",
+                        title: { fr: "4. Formulaire de réservation - Etape 3", en: "4. Booking form - Step 3" }
+                    },
+                    {
+                        url: "https://www.osalydconsulting.com/media/files/ImagesBook/MyBooking/MyBooking-MobileHome.png",
+                        title: { fr: "5. Page d'accueil de l'application - Mobile", en: "5. App home page - Mobile" }
+                    },
+                    {
+                        url: "https://www.osalydconsulting.com/media/files/ImagesBook/MyBooking/MyBooking-MobileForm.png",
+                        title: { fr: "6. Formulaire de réservation - Mobile", en: "6. Booking form - Mobile" }
+                    },
+                    {
+                        url: "https://www.osalydconsulting.com/media/files/ImagesBook/MyBooking/MyBooking-BackOffice.png",
+                        title: { fr: "7.Back-office SharePoint pour le staff", en: "7. SharePoint back-office for staff" }
+                    },
                 ],
-                features: [
-                    "Formulaire avec des règles de gestion pour uniformiser la saisie des demandes",
-                    "Duplication et annulation des demandes",
-                    "Workflow de validation selon le statut du professeur",
-                    "Notifications automatiques du traitement",
-                    "Tableaux de bord pour le suivi du traitement des réservations par le Staff"
-                ],
-                //technologies: ["PowerApps", "Power Automate", "SharePoint", "Outlook", "OneDrive", "Forms", "Teams"],
+                features: {
+                    fr: [
+                        "Formulaire avec des règles de gestion pour uniformiser la saisie des demandes",
+                        "Duplication des demandes de réservation récurrentes",
+                        "Workflow de validation selon le statut du professeur",
+                        "Notifications automatiques de traitement",
+                        "Tableaux de bord pour le suivi des réservations"
+                    ],
+                    en: [
+                        "Form with business rules to standardize request entry",
+                        "Duplicate recurring booking requests",
+                        "Approval workflow based on teacher status",
+                        "Automated processing notifications",
+                        "Dashboards to monitor bookings"
+                    ]
+                },
                 technologies: ["PowerApps", "Power Automate", "SharePoint", "Outlook"],
-                //devices: ["PC", "Mobile", "Tablette"],
                 devices: ["PC", "Mobile", "Tablette"],
-                userBenefits: [
-                    "Gain de temps significatif pour la saisie des demandes professeurs",
-                    "Interface intuitive sans formation nécessaire",
-                    "80% de réduction des erreurs de saisie",
-                    "Visibilité temps réel sur l'état des demandes"
-                ],
-                businessValue: [
-                    "Processus RH standardisé dans toute l'entreprise",
-                    "Délai de traitement réduit de 65%",
-                    "Traçabilité complète pour audits",
-                    "Adoption de 95% en 3 semaines"
-                ]
+                userBenefits: {
+                    fr: [
+                        "Gain de temps significatif pour les professeurs",
+                        "95% de réduction des erreurs de saisie",
+                        "Visibilité en temps réel de l'état des demandes",
+                        "Collaboration facilitée entre les gestionnaires et la comptabilité"
+                    ],
+                    en: [
+                        "Significant time savings for teachers",
+                        "95% reduction in data entry errors",
+                        "Real-time visibility on request status",
+                        "Improved collaboration between booking managers and accounting"
+                    ]
+                },
+                businessValue: {
+                    fr: [
+                        "Processus standardisé et auditable de bout en bout",
+                        "Délai de traitement des gestionnaires divisé par 3",
+                        "Passage de ~10 emails d'échanges manuels à 2 notifications automatiques max"
+                    ],
+                    en: [
+                        "Standardized, end-to-end auditable process",
+                        "Processing time for managers divided by 3",
+                        "Reduced from ~10 manual emails to at most 2 automated notifications"
+                    ]
+                }
             },
             {
-                title: "Workflow d'approbation des achats",
+                title: {
+                    fr: "Workflow d'approbation des achats",
+                    en: "Purchase Approval Workflow"
+                },
                 mainTool: "Power Automate",
-                industry: "Achats",
-                problem: "Circuit de validation des achats complexe avec approbations par email, pertes de demandes, doublons et aucune vision globale des budgets engagés.",
-                users: "250 demandeurs, 35 approbateurs dans 5 services différents. Utilisation quotidienne pour toute demande > 500€.",
-                solution: "Plateforme de gestion des demandes d'achat avec routing intelligent selon montants et catégories, alertes automatiques et suivi budgétaire.",
-                features: [
-                    "Formulaire dynamique adapté au type d'achat",
-                    "Validation automatique selon règles métier",
-                    "Relances automatiques si pas de réponse sous 48h",
-                    "Intégration avec système comptable",
-                    "Dashboard budgétaire par service"
-                ],
+                industry: {
+                    fr: "Achats",
+                    en: "Procurement"
+                },
+                problem: {
+                    fr: "Circuit de validation des achats complexe avec approbations par email, pertes de demandes, doublons et aucune vision globale des budgets engagés.",
+                    en: "Complex purchase approval process with email-based approvals, lost requests, duplicates, and no global visibility on committed budgets."
+                },
+                users: {
+                    fr: "250 demandeurs, 35 approbateurs dans 5 services différents. Utilisation quotidienne pour toute demande > 500€.",
+                    en: "250 requesters, 35 approvers across 5 different departments. Daily use for any request above €500."
+                },
+                solution: {
+                    fr: "Plateforme de gestion des demandes d'achat avec routing intelligent selon montants et catégories, alertes automatiques et suivi budgétaire.",
+                    en: "Purchase request management platform with smart routing based on amounts and categories, automated alerts, and budget tracking."
+                },
+                features: {
+                    fr: [
+                        "Formulaire dynamique adapté au type d'achat",
+                        "Validation automatique selon règles métier",
+                        "Relances automatiques si pas de réponse sous 48h",
+                        "Intégration avec système comptable",
+                        "Dashboard budgétaire par service"
+                    ],
+                    en: [
+                        "Dynamic form adapted to purchase type",
+                        "Automated approvals based on business rules",
+                        "Automatic reminders if no response within 48 hours",
+                        "Integration with the accounting system",
+                        "Budget dashboard per department"
+                    ]
+                },
                 technologies: ["PowerApps", "Power Automate", "Dataverse", "Power BI"],
                 devices: ["PC", "Mobile", "Tablette"],
-                userBenefits: [
-                    "Demande créée en moins de 3 minutes",
-                    "Visibilité permanente sur l'avancement",
-                    "Moins de relances manuelles",
-                    "Process clair et transparent"
-                ],
-                businessValue: [
-                    "Validation 3x plus rapide qu'avant",
-                    "Conformité garantie avec politique achats",
-                    "Contrôle budgétaire en temps réel",
-                    "Réduction de 40% des litiges fournisseurs"
-                ]
+                userBenefits: {
+                    fr: [
+                        "Demande créée en moins de 3 minutes",
+                        "Visibilité permanente sur l'avancement",
+                        "Moins de relances manuelles",
+                        "Process clair et transparent"
+                    ],
+                    en: [
+                        "Request created in under 3 minutes",
+                        "Continuous visibility on progress",
+                        "Fewer manual follow-ups",
+                        "Clear and transparent process"
+                    ]
+                },
+                businessValue: {
+                    fr: [
+                        "Validation 3x plus rapide qu'avant",
+                        "Conformité garantie avec politique achats",
+                        "Contrôle budgétaire en temps réel",
+                        "Réduction de 40% des litiges fournisseurs"
+                    ],
+                    en: [
+                        "Approvals 3x faster than before",
+                        "Compliance ensured with procurement policy",
+                        "Real-time budget control",
+                        "40% reduction in supplier disputes"
+                    ]
+                }
             }
         ];
+
+        // Objet de traductions
+        const translations = {
+            fr: {
+                sommaire: 'Sommaire',
+                retourSommaire: 'Retour au sommaire',
+                voirCaptures: 'Voir les captures',
+                problematique: 'Problématique métier',
+                utilisateurs: 'Utilisateurs',
+                solution: 'Solution mise en place',
+                fonctionnalites: 'Fonctionnalités clés',
+                benefices: 'Bénéfices utilisateurs',
+                valeurBusiness: 'Valeur business (ROI)',
+                devices: {
+                    "PC": "PC",
+                    "Mobile": "Mobile",
+                    "Tablette": "Tablette"
+                }
+            },
+            en: {
+                sommaire: 'Summary',
+                retourSommaire: 'Back to summary',
+                voirCaptures: 'View screenshots',
+                problematique: 'Business Problem',
+                utilisateurs: 'Users',
+                solution: 'Solution',
+                fonctionnalites: 'Key Features',
+                benefices: 'User Benefits',
+                valeurBusiness: 'Business Value (ROI)',
+                devices: {
+                    "PC": "Desktop",
+                    "Mobile": "Mobile",
+                    "Tablette": "Tablet"
+                }
+            }
+        };
 
         let currentSlide = 0;
         const sliderContainer = document.querySelector('.slider-container');
         const prevBtn = document.getElementById('prevBtn');
         const nextBtn = document.getElementById('nextBtn');
         const pageIndicator = document.getElementById('pageIndicator');
-        //const dotsContainer = document.getElementById('dotsContainer');
-
 
         // Map des logos pour chaque technologie
         const techLogos = {
@@ -801,18 +995,36 @@
             "Teams": "https://www.osalydconsulting.com/media/files/Teams2025.png",
             "Forms": "https://www.osalydconsulting.com/media/files/Forms.png",
             "OneDrive": "https://www.osalydconsulting.com/media/files/OneDrive2025.png",
-            "Outlook": "https://www.osalydconsulting.com/media/files/Outlook2025.png"
+            "Outlook": "https://www.osalydconsulting.com/media/files/Outlook2025.png",
+            "Copilot Studio": "https://www.osalydconsulting.com/media/files/CopilotStudi.svg",
+            "DocuSign": "https://www.osalydconsulting.com/media/files/DocuSign.svg",
+            "Plumsail": "https://www.osalydconsulting.com/media/files/Plumsail.png",
+            "AI Builder": "https://www.osalydconsulting.com/media/files/AIBuilder.svg",
+            "Dataverse": "https://www.osalydconsulting.com/media/files/Dataverse.svg",
+            "Power BI": "https://www.osalydconsulting.com/media/files/PowerBI.svg"
         };
+
+        // Helpers i18n (minimal)
+        function getLocalized(value, lang) {
+            if (value && typeof value === 'object' && !Array.isArray(value) && value[lang] !== undefined) {
+                return value[lang];
+            }
+            return value;
+        }
+
+        function renderList(items) {
+            const safeItems = Array.isArray(items) ? items : [];
+            return `<ul>${safeItems.map(i => `<li>${i}</li>`).join('')}</ul>`;
+        }
 
         // Génération des slides
-        const toolColors = {
-            "PowerApps": "linear-gradient(135deg, #681b75 0%, #a044b0 55%, #ac74b5 100%)",
-            "Power Automate": "linear-gradient(135deg, #104da0 0%, #106EBE 55%, #4FC3F7 100%)"
-        };
-
         projects.forEach(project => {
-            const slideColor = toolColors[project.mainTool] || "linear-gradient(135deg, #4fc3f7 0%, #29b6f6 55%, #ab47bc 100%)";
+            const slideColor = "linear-gradient(135deg, #152a68 0%, #26D0CE 100%)";
 
+            const mainLogoUrl = techLogos[project.mainTool];
+            const mainLogoHtml = mainLogoUrl
+                ? `<img src="${mainLogoUrl}" alt="${project.mainTool}" style="height: 1em; vertical-align: middle; margin-right: 15px; margin-bottom: 5px;">`
+                : '';
 
             const techBadges = project.technologies
                 .map(t => {
@@ -822,27 +1034,29 @@
                 }).join('');
 
             const deviceBadges = project.devices
-                .map(d => `<span class="device-badge">${d}</span>`).join('');
+                .map(d => `<span class="device-badge" data-device="${d}">${d}</span>`).join('');
+
+            const projectIndex = projects.indexOf(project);
 
             const screenshotsButton = project.screenshots && project.screenshots.length > 0
-                ? `<div class="screenshots-button" onclick="openLightbox(${projects.indexOf(project)})">
+                ? `<div class="screenshots-button" onclick="openLightbox(${projectIndex})">
             <span class="emoji">📸</span>
-            <span class="screenshots-button-text">Voir les captures (${project.screenshots.length})</span>
+            <span class="screenshots-button-text" data-key="voirCaptures" data-count="${project.screenshots.length}">Voir les captures (${project.screenshots.length})</span>
                 </div>`
                 : '';
 
-            const featuresList = project.features.map(f => `<li>${f}</li>`).join('');
-            const userBenefitsList = project.userBenefits.map(b => `<li>${b}</li>`).join('');
-            const businessValueList = project.businessValue.map(v => `<li>${v}</li>`).join('');
+            const featuresListHtml = renderList(getLocalized(project.features, 'fr'));
+            const userBenefitsListHtml = renderList(getLocalized(project.userBenefits, 'fr'));
+            const businessValueListHtml = renderList(getLocalized(project.businessValue, 'fr'));
 
             const html = `
             <div class="slide" style="background: ${slideColor};">
                 <div class="slide-content">
                     <div class="project-header">
-                        <h1 class="project-title">${project.title}</h1>
+                        <h1 class="project-title">${mainLogoHtml}<span class="translatable-title" data-project-index="${projectIndex}">${getLocalized(project.title, 'fr')}</span></h1>
                         <div class="meta-bar">
                             <div class="meta-section">
-                                <span class="meta-label">🏢 ${project.industry}</span>
+                                <span class="meta-label">🏢 <span class="translatable-industry" data-project-index="${projectIndex}">${getLocalized(project.industry, 'fr')}</span></span>
                             </div>
                             <div class="meta-section">
                                 ${deviceBadges}
@@ -856,31 +1070,42 @@
                         <div class="left-column">
                             <div>${screenshotsButton}</div>
                             <div class="info-section-pb">
-                                    
-                                <div class="section-title"><span class="emoji">🎯</span>Problématique métier</div>
-                                <div class="section-content">${project.problem}</div>
+                                <div class="section-title" data-key="problematique">
+                                    <span class="emoji">🎯</span><span class="label-text">Problématique métier</span>
+                                </div>
+                                <div class="section-content translatable-field" data-project-index="${projectIndex}" data-field="problem">${getLocalized(project.problem, 'fr')}</div>
                             </div>
                             <div class="info-section-pb">
-                                <div class="section-title"><span class="emoji">👥</span>Utilisateurs</div>
-                                <div class="section-content">${project.users}</div>
+                                <div class="section-title" data-key="utilisateurs">
+                                    <span class="emoji">👥</span><span class="label-text">Utilisateurs</span>
+                                </div>
+                                <div class="section-content translatable-field" data-project-index="${projectIndex}" data-field="users">${getLocalized(project.users, 'fr')}</div>
                             </div>
                         </div>
                         <div class="right-column">
                             <div class="info-section full-width-section">
-                                <div class="section-title"><span class="emoji">💡</span>Solution mise en place</div>
-                                <div class="section-content">${project.solution}</div>
+                                <div class="section-title" data-key="solution">
+                                    <span class="emoji">💡</span><span class="label-text">Solution mise en place</span>
+                                </div>
+                                <div class="section-content translatable-field" data-project-index="${projectIndex}" data-field="solution">${getLocalized(project.solution, 'fr')}</div>
                             </div>
                             <div class="info-section full-width-section">
-                                <div class="section-title"><span class="emoji">⭐</span>Fonctionnalités clés</div>
-                                <div class="section-content"><ul>${featuresList}</ul></div>
+                                <div class="section-title" data-key="fonctionnalites">
+                                    <span class="emoji">⭐</span><span class="label-text">Fonctionnalités clés</span>
+                                </div>
+                                <div class="section-content translatable-field" data-project-index="${projectIndex}" data-field="features">${featuresListHtml}</div>
                             </div>
                             <div class="info-section">
-                                <div class="section-title"><span class="emoji">🚀</span>Bénéfices utilisateurs</div>
-                                <div class="section-content"><ul>${userBenefitsList}</ul></div>
+                                <div class="section-title" data-key="benefices">
+                                    <span class="emoji">🚀</span><span class="label-text">Bénéfices utilisateurs</span>
+                                </div>
+                                <div class="section-content translatable-field" data-project-index="${projectIndex}" data-field="userBenefits">${userBenefitsListHtml}</div>
                             </div>
                             <div class="info-section">
-                                <div class="section-title"><span class="emoji">📈</span>Valeur business</div>
-                                <div class="section-content"><ul>${businessValueList}</ul></div>
+                                <div class="section-title" data-key="valeurBusiness">
+                                    <span class="emoji">📈</span><span class="label-text">Valeur business (ROI)</span>
+                                </div>
+                                <div class="section-content translatable-field" data-project-index="${projectIndex}" data-field="businessValue">${businessValueListHtml}</div>
                             </div>
                         </div>
                     </div>
@@ -895,58 +1120,76 @@
                 </div>
                 <button class="lightbox-nav lightbox-next" onclick="nextScreenshot()">→</button>
                 <div class="lightbox-counter" id="lightboxCounter"></div>
-            </div>`;
+            </div>
+            <!-- Language Switch -->
+    <div class="language-switch">
+        <button class="lang-btn active" data-lang="fr">FR</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+    </div>`
+                ;
 
             sliderContainer.insertAdjacentHTML('beforeend', html);
         });
 
         // Génération sommaire
         const sommaireContent = document.getElementById('sommaireContent');
+
         projects.forEach((project, index) => {
             const sommaireItem = document.createElement('div');
             sommaireItem.className = 'sommaire-item';
-            sommaireItem.onclick = () => goToSlide(index + 2); // +2 car intro + sommaire
+            sommaireItem.onclick = () => goToSlide(index + 2);
+
+            // Récupération du logo
+            const mainLogoUrl = techLogos[project.mainTool];
+
+            // On affiche l'image si elle existe, sinon le numéro par sécurité
+            const leftContent = mainLogoUrl
+                ? `<img src="${mainLogoUrl}" alt="${project.mainTool}" style="width: 32px; height: 32px; object-fit: contain;">`
+                : (index + 1);
+
             sommaireItem.innerHTML = `
-                <div class="sommaire-number">${index + 1}</div>
-                <div class="sommaire-info">
-                    <div class="sommaire-title">${project.title}</div>
-                    <div class="sommaire-industry">🏢 ${project.industry}</div>
-                </div>
-            `;
+            <div class="sommaire-number" style="display: flex; align-items: center; justify-content: center;">
+                ${leftContent}
+            </div>
+            <div class="sommaire-info">
+                <div class="sommaire-title translatable-sommaire-title" data-project-index="${index}">${getLocalized(project.title, 'fr')}</div>
+                <div class="sommaire-industry translatable-sommaire-industry" data-project-index="${index}">${getLocalized(project.industry, 'fr')}</div>
+            </div>
+        `;
+            sommaireItem.dataset.index = index;
+
             sommaireContent.appendChild(sommaireItem);
         });
 
         const slides = document.querySelectorAll('.slide');
         const totalSlides = slides.length;
-        
+
         // Icône sommaire - clic pour retourner à la slide 1
         const sommaireIcon = document.getElementById('sommaireIcon');
         sommaireIcon.addEventListener('click', () => goToSlide(1));
-        
+
         function goToSlide(index) {
             // Retirer active/prev de TOUTES les slides
             slides.forEach(slide => {
                 slide.classList.remove('active', 'prev');
             });
-            
+
             currentSlide = index;
-            
+
             // Activer la nouvelle slide
             slides[currentSlide].classList.add('active');
-            
+
             updateNavigation();
         }
 
-
-        
         function nextSlide() {
             if (currentSlide < totalSlides - 1) goToSlide(currentSlide + 1);
         }
-        
+
         function prevSlide() {
             if (currentSlide > 0) goToSlide(currentSlide - 1);
         }
-        
+
         function updateNavigation() {
             // Slide 0 (intro) : masquer dots, compteur et bouton prev
             if (currentSlide === 0) {
@@ -958,7 +1201,7 @@
             // Slide 1 (sommaire) : masquer dots et compteur, mais MONTRER bouton prev
             else if (currentSlide === 1) {
                 document.body.classList.add('first-slide');
-                document.getElementById('prevBtn').style.display = 'flex';  // Forcer l'affichage
+                document.getElementById('prevBtn').style.display = 'flex';
                 pageIndicator.textContent = '';
                 prevBtn.disabled = false;
                 nextBtn.disabled = false;
@@ -972,19 +1215,16 @@
             }
         }
 
-
-
-        
-        // Event listeners pour les boutons (C'ÉTAIT ÇA QUI MANQUAIT !)
+        // Event listeners pour les boutons
         prevBtn.addEventListener('click', prevSlide);
         nextBtn.addEventListener('click', nextSlide);
-        
+
         // Navigation clavier
         document.addEventListener('keydown', e => {
             if (e.key === 'ArrowLeft') prevSlide();
             if (e.key === 'ArrowRight') nextSlide();
         });
-        
+
         // Swipe tactile
         let touchStartX = 0;
         let touchEndX = 0;
@@ -997,8 +1237,7 @@
             if (touchEndX - touchStartX > 50) prevSlide();
         });
 
-        //Fonctions Lightbox 
-
+        // Fonctions Lightbox
         let currentProject = null;
         let currentScreenshotIndex = 0;
 
@@ -1026,13 +1265,12 @@
                 counter.innerHTML = `<strong>${currentScreenshotIndex + 1} / ${currentProject.screenshots.length}</strong>`;
             } else {
                 img.src = screenshot.url;
-                counter.innerHTML = `
-            <span>${screenshot.title}</span>
-        `;
+                const title = (screenshot.title && typeof screenshot.title === 'object')
+                    ? screenshot.title[currentLanguage]
+                    : screenshot.title;
+                counter.innerHTML = `<span>${title || ''}</span>`;
             }
         }
-
-
 
         function nextScreenshot() {
             if (!currentProject) return;
@@ -1061,11 +1299,125 @@
             if (e.target.id === 'lightbox') closeLightbox();
         });
 
+        // Language Switch Logic
+        let currentLanguage = 'fr';
+        const langButtons = document.querySelectorAll('.lang-btn');
 
+        function updateLanguage(lang) {
+            currentLanguage = lang;
+
+            // Mettre à jour tous les labels avec data-key
+            document.querySelectorAll('[data-key]').forEach(element => {
+                const key = element.dataset.key;
+
+                if (!translations[lang] || !translations[lang][key]) return;
+
+                // Cas spécifique : bouton captures avec compteur
+                if (key === 'voirCaptures' && element.classList.contains('screenshots-button-text')) {
+                    const count = element.dataset.count || '';
+                    element.textContent = `${translations[lang][key]} (${count})`;
+                    return;
+                }
+
+                // Cas standard : section-title avec <span class="label-text">
+                const labelText = element.querySelector('.label-text');
+                if (labelText) {
+                    labelText.textContent = translations[lang][key];
+                } else {
+                    // fallback : si l'élément porte data-key directement
+                    element.textContent = translations[lang][key];
+                }
+            });
+
+            // Mettre à jour les titres des projets dans les slides
+            document.querySelectorAll('.translatable-title').forEach(element => {
+                const index = parseInt(element.dataset.projectIndex);
+                element.textContent = getLocalized(projects[index].title, lang);
+            });
+
+            // Mettre à jour les industries dans les slides
+            document.querySelectorAll('.translatable-industry').forEach(element => {
+                const index = parseInt(element.dataset.projectIndex);
+                element.textContent = getLocalized(projects[index].industry, lang);
+            });
+
+            // Mettre à jour les devices (PC / Mobile / Tablette)
+            document.querySelectorAll('.device-badge').forEach(el => {
+                const key = el.dataset.device || el.textContent.trim();
+                el.dataset.device = key; // sécurise si jamais absent
+                const translated = translations[lang]?.devices?.[key];
+                if (translated) el.textContent = translated;
+            });
+
+            // Mettre à jour le contenu dynamique des projets (problem/users/solution + listes)
+            document.querySelectorAll('.translatable-field').forEach(element => {
+                const index = parseInt(element.dataset.projectIndex);
+                const field = element.dataset.field;
+
+                const value = projects[index][field];
+                const localized = getLocalized(value, lang);
+
+                // Listes
+                if (field === 'features' || field === 'userBenefits' || field === 'businessValue') {
+                    element.innerHTML = renderList(localized);
+                } else {
+                    // HTML autorisé (problem/users/solution)
+                    element.innerHTML = localized;
+                }
+            });
+
+            // Mettre à jour les titres du sommaire
+            document.querySelectorAll('.translatable-sommaire-title').forEach(element => {
+                const index = parseInt(element.dataset.projectIndex);
+                element.textContent = getLocalized(projects[index].title, lang);
+            });
+
+            // Mettre à jour les industries du sommaire
+            document.querySelectorAll('.translatable-sommaire-industry').forEach(element => {
+                const index = parseInt(element.dataset.projectIndex);
+                element.textContent = getLocalized(projects[index].industry, lang);
+            });
+
+            // Mettre à jour le titre du sommaire (h1 "Sommaire")
+            const sommaireTitles = document.querySelectorAll('.sommaire-slide h1');
+            sommaireTitles.forEach(title => {
+                title.textContent = translations[lang]['sommaire'];
+            });
+
+            // Mettre à jour le bouton du sommaire
+            const sommaireIcon = document.getElementById('sommaireIcon');
+            if (sommaireIcon) {
+                sommaireIcon.title = translations[lang]['retourSommaire'];
+            }
+
+            // Si la lightbox est ouverte, rafraîchir le titre (capture)
+            const lightbox = document.getElementById('lightbox');
+            if (lightbox && lightbox.classList.contains('active')) {
+                showScreenshot();
+            }
+        }
+
+        langButtons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const lang = e.target.dataset.lang;
+
+                // Retirer active de tous les boutons
+                langButtons.forEach(b => b.classList.remove('active'));
+                // Ajouter active au bouton cliqué
+                e.target.classList.add('active');
+
+                // Mettre à jour la langue
+                updateLanguage(lang);
+            });
+        });
 
         // Init
         updateNavigation();
+
+        // Initialiser la langue APRÈS que tout soit dans le DOM
+        updateLanguage('fr');
     </script>
+
 </body>
 
 </html>
