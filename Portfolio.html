@@ -16,6 +16,14 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             overflow: hidden;
             background: #0a1628;
+            -webkit-user-select: none;
+            /* Chrome / Safari */
+            -moz-user-select: none;
+            /* Firefox */
+            -ms-user-select: none;
+            /* IE / Edge */
+            user-select: none;
+            /* Standard */
         }
 
         .saut-ligne {
@@ -261,6 +269,7 @@
             align-items: center;
             gap: 8px;
             color: white;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
         }
 
         .section-title .emoji {
@@ -474,14 +483,15 @@
         }
 
         .sommaire-title {
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 700;
             margin-bottom: 5px;
             line-height: 1.3;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
         }
 
         .sommaire-industry {
-            font-size: 12px;
+            font-size: 14px;
             opacity: 0.8;
         }
 
@@ -626,8 +636,8 @@
 
         .screenshots-button-text {
             color: white;
-            font-size: 15px;
-            font-weight: 700;
+            font-size: 16px;
+            font-weight: 500;
         }
 
         /* Lightbox visionneuse */
@@ -739,6 +749,47 @@
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
             line-height: 1.4;
         }
+
+        .copyright-footer {
+            position: fixed;
+            bottom: 14px;
+            right: 18px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+
+            font-size: 12px;
+            color: rgba(0, 0, 0, 0.55);
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(4px);
+            padding: 6px 10px;
+            border-radius: 8px;
+
+            z-index: 10000;
+            /* au-dessus de la watermark */
+        }
+
+        .copyright-linkedin {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 26px;
+            height: 26px;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        .linkedin-icon {
+            width: 18px;
+            height: 18px;
+            display: block;
+            fill: currentColor;
+            /* prend la couleur du texte */
+        }
+
+        .copyright-linkedin:hover {
+            opacity: 0.8;
+        }
     </style>
 </head>
 
@@ -748,7 +799,7 @@
         <div class="slide active">
             <div class="cover-slide">
                 <h1>Portfolio</h1>
-                <h2>Power Automate & PowerApps</h2>
+                <h2>Mes réalisations avec Power Automate & PowerApps</h2>
                 <img src="https://www.osalydconsulting.com/media/website/Julie-Bredeche.png" alt="Julie BREDECHE"
                     class="cover-photo">
                 <p>Julie BREDECHE</p>
@@ -788,16 +839,16 @@
                     en: "Education"
                 },
                 problem: {
-                    fr: "<p>Les demandes de réservation de train ou d'hôtel étaient gérées uniquement par mail entre les professeurs et le bureau des réservations.</p> <p class='saut-ligne'> Trop d'aller-retours, oublis et erreurs de saisie rendaient le processus chronophage.</p>",
-                    en: "<p>Train and hotel booking requests were handled only by email between teachers and the booking office.</p> <p class='saut-ligne'>Too much back-and-forth, missed requests, and data entry errors made the process time-consuming.</p>"
+                    fr: "<p>Demandes de réservation de voyages des professeurs gérées <b>uniquement par mail</b> avec les gestionnaires de réservation.</p> <p class='saut-ligne'> Des <b>demandes de validation manuelles</b> qui retardaient le processus.</p><p class='saut-ligne'> De nombreux allers-retours, des <b>oublis et des erreurs de saisie</b> rendaient le processus chronophage.</p>",
+                    en: "<p>Travel booking requests from teachers were <b>handled exclusively by email</b> with the booking managers.</p> <p class='saut-ligne'><b>Manual validation requests</b> slowed down the process.</p><p class='saut-ligne'>Numerous back-and-forth exchanges, oversights, and <b>data entry errors</b> made the process time-consuming.</p>",
                 },
                 users: {
                     fr: "<ul><li>200 professeurs répartis sur 2 campus</li><li>2 gestionnaires des réservations</li><li>Service Comptabilité</li></ul>",
                     en: "<ul><li>200 teachers across 2 campuses</li><li>2 booking managers</li><li>Accounting department</li></ul>"
                 },
                 solution: {
-                    fr: "Une application mobile pour la saisie des demandes de réservation par les professeurs, avec un workflow de validation, et des notifications automatiques. <p class='saut-ligne'> Un back-office SharePoint pour le staff qui peut gérer les réservations et le suivi comptable de manière structurée.",
-                    en: "A mobile app enabling teachers to submit booking requests, with an approval workflow and automated notifications. <p class='saut-ligne'>A SharePoint back-office for staff to manage bookings and accounting follow-up in a structured way."
+                    fr: "Une application mobile de saisie des demandes de réservation par les professeurs, avec un workflow de validation, et des notifications automatiques. <p class='saut-ligne'> Un tableau de bord interactif pour le staff qui peut gérer les réservations et le suivi comptable de manière structurée.",
+                    en: "An app enabling teachers to submit booking requests, with an approval workflow and automated notifications. <p class='saut-ligne'>A SharePoint back-office for staff to manage bookings and accounting follow-up in a structured way."
                 },
                 screenshots: [
                     {
@@ -831,19 +882,20 @@
                 ],
                 features: {
                     fr: [
-                        "Formulaire avec des règles de gestion pour uniformiser la saisie des demandes",
-                        "Duplication des demandes de réservation récurrentes",
-                        "Workflow de validation selon le statut du professeur",
-                        "Notifications automatiques de traitement",
-                        "Tableaux de bord pour le suivi des réservations"
+                        "<b>Formulaire de réservation dynamique</b> avec règles de gestion pour fiabiliser et uniformiser la saisie",
+                        "<b>Duplication des réservations</b> récurrentes en 2 clics",
+                        "<b>Workflow de validation automatique</b> selon le statut du professeur",
+                        "<b>Notifications automatisées</b> tout au long du traitement des demandes",
+                        "<b>Tableau de bord unifié</b> avec vues dédiées pour les gestionnaires et la comptabilité"
                     ],
                     en: [
-                        "Form with business rules to standardize request entry",
-                        "Duplicate recurring booking requests",
-                        "Approval workflow based on teacher status",
-                        "Automated processing notifications",
-                        "Dashboards to monitor bookings"
-                    ]
+                        "<b>Dynamic reservation form</b> with business rules to standardize and secure data entry",
+                        "<b>Duplication of recurring bookings</b> in just two clicks",
+                        "<b>Automatic approval workflow</b> based on the teacher’s status",
+                        "<b>Automated notifications</b> throughout the request processing",
+                        "<b>Unified dashboard</b> with dedicated views for booking managers and accounting"
+                    ],
+
                 },
                 technologies: ["PowerApps", "Power Automate", "SharePoint", "Outlook"],
                 devices: ["PC", "Mobile", "Tablette"],
@@ -855,17 +907,16 @@
                         "Collaboration facilitée entre les gestionnaires et la comptabilité"
                     ],
                     en: [
-                        "Significant time savings for teachers",
-                        "95% reduction in data entry errors",
-                        "Real-time visibility on request status",
-                        "Improved collaboration between booking managers and accounting"
-                    ]
+                        "Processing time divided by 3",
+                        "70% reduction in emails between all stakeholders",
+                        "Ability to extract KPIs to optimize costs"
+                    ],
                 },
                 businessValue: {
                     fr: [
-                        "Processus standardisé et auditable de bout en bout",
-                        "Délai de traitement des gestionnaires divisé par 3",
-                        "Passage de ~10 emails d'échanges manuels à 2 notifications automatiques max"
+                        "Délai de traitement divisé par 3",
+                        "Réduction de 70 % des emails entre tous les interlocuteurs",
+                        "Possibilité d’extraire des KPI pour rationaliser les coûts"
                     ],
                     en: [
                         "Standardized, end-to-end auditable process",
@@ -874,75 +925,7 @@
                     ]
                 }
             },
-            {
-                title: {
-                    fr: "Workflow d'approbation des achats",
-                    en: "Purchase Approval Workflow"
-                },
-                mainTool: "Power Automate",
-                industry: {
-                    fr: "Achats",
-                    en: "Procurement"
-                },
-                problem: {
-                    fr: "Circuit de validation des achats complexe avec approbations par email, pertes de demandes, doublons et aucune vision globale des budgets engagés.",
-                    en: "Complex purchase approval process with email-based approvals, lost requests, duplicates, and no global visibility on committed budgets."
-                },
-                users: {
-                    fr: "250 demandeurs, 35 approbateurs dans 5 services différents. Utilisation quotidienne pour toute demande > 500€.",
-                    en: "250 requesters, 35 approvers across 5 different departments. Daily use for any request above €500."
-                },
-                solution: {
-                    fr: "Plateforme de gestion des demandes d'achat avec routing intelligent selon montants et catégories, alertes automatiques et suivi budgétaire.",
-                    en: "Purchase request management platform with smart routing based on amounts and categories, automated alerts, and budget tracking."
-                },
-                features: {
-                    fr: [
-                        "Formulaire dynamique adapté au type d'achat",
-                        "Validation automatique selon règles métier",
-                        "Relances automatiques si pas de réponse sous 48h",
-                        "Intégration avec système comptable",
-                        "Dashboard budgétaire par service"
-                    ],
-                    en: [
-                        "Dynamic form adapted to purchase type",
-                        "Automated approvals based on business rules",
-                        "Automatic reminders if no response within 48 hours",
-                        "Integration with the accounting system",
-                        "Budget dashboard per department"
-                    ]
-                },
-                technologies: ["PowerApps", "Power Automate", "Dataverse", "Power BI"],
-                devices: ["PC", "Mobile", "Tablette"],
-                userBenefits: {
-                    fr: [
-                        "Demande créée en moins de 3 minutes",
-                        "Visibilité permanente sur l'avancement",
-                        "Moins de relances manuelles",
-                        "Process clair et transparent"
-                    ],
-                    en: [
-                        "Request created in under 3 minutes",
-                        "Continuous visibility on progress",
-                        "Fewer manual follow-ups",
-                        "Clear and transparent process"
-                    ]
-                },
-                businessValue: {
-                    fr: [
-                        "Validation 3x plus rapide qu'avant",
-                        "Conformité garantie avec politique achats",
-                        "Contrôle budgétaire en temps réel",
-                        "Réduction de 40% des litiges fournisseurs"
-                    ],
-                    en: [
-                        "Approvals 3x faster than before",
-                        "Compliance ensured with procurement policy",
-                        "Real-time budget control",
-                        "40% reduction in supplier disputes"
-                    ]
-                }
-            }
+
         ];
 
         // Objet de traductions
@@ -950,7 +933,7 @@
             fr: {
                 sommaire: 'Sommaire',
                 retourSommaire: 'Retour au sommaire',
-                voirCaptures: 'Voir les captures',
+                voirCaptures: 'Voir les visuels',
                 problematique: 'Problématique métier',
                 utilisateurs: 'Utilisateurs',
                 solution: 'Solution mise en place',
@@ -1077,7 +1060,7 @@
                             </div>
                             <div class="info-section-pb">
                                 <div class="section-title" data-key="utilisateurs">
-                                    <span class="emoji">👥</span><span class="label-text">Utilisateurs</span>
+                                    <span class="emoji">🧑🏻‍💻</span><span class="label-text">Utilisateurs</span>
                                 </div>
                                 <div class="section-content translatable-field" data-project-index="${projectIndex}" data-field="users">${getLocalized(project.users, 'fr')}</div>
                             </div>
@@ -1097,7 +1080,7 @@
                             </div>
                             <div class="info-section">
                                 <div class="section-title" data-key="benefices">
-                                    <span class="emoji">🚀</span><span class="label-text">Bénéfices utilisateurs</span>
+                                    <span class="emoji">⚡</span><span class="label-text">Bénéfices utilisateurs</span>
                                 </div>
                                 <div class="section-content translatable-field" data-project-index="${projectIndex}" data-field="userBenefits">${userBenefitsListHtml}</div>
                             </div>
@@ -1164,6 +1147,30 @@
         const slides = document.querySelectorAll('.slide');
         const totalSlides = slides.length;
 
+        function slideFromHash() {
+            const h = (location.hash || "").replace("#", "").toLowerCase();
+
+            if (!h || h === "cover") return 0;
+            if (h === "sommaire" || h === "summary") return 1;
+
+            // format #p1, #p2, ...
+            const m = h.match(/^p(\d+)$/);
+            if (m) {
+                const projectNumber = parseInt(m[1], 10); // 1-based
+                // tes slides projets commencent à l'index 2
+                return 1 + projectNumber; // p1 -> 2, p2 -> 3, etc.
+            }
+
+            return 0;
+        }
+
+        function setHashForSlide(index) {
+            if (index === 0) location.hash = "cover";
+            else if (index === 1) location.hash = "sommaire";
+            else location.hash = `p${index - 1}`; // slide 2 -> p1
+        }
+
+
         // Icône sommaire - clic pour retourner à la slide 1
         const sommaireIcon = document.getElementById('sommaireIcon');
         sommaireIcon.addEventListener('click', () => goToSlide(1));
@@ -1180,6 +1187,7 @@
             slides[currentSlide].classList.add('active');
 
             updateNavigation();
+            setHashForSlide(index);
         }
 
         function nextSlide() {
@@ -1416,7 +1424,213 @@
 
         // Initialiser la langue APRÈS que tout soit dans le DOM
         updateLanguage('fr');
+
+        // Ouvrir la bonne slide si un hash est présent dans l’URL
+        goToSlide(slideFromHash());
+
+        // Suivre les changements de hash (collage de lien, navigation navigateur)
+        window.addEventListener("hashchange", () => {
+            goToSlide(slideFromHash());
+        });
+
+        // Blocage sélection / copie
+
+        (() => {
+            "use strict";
+
+
+            const CFG = {
+                // Autoriser sélection/copie dans certains éléments (email, liens contact, etc.)
+                allowSelectSelector: ".allow-select, input, textarea",
+
+                // Dissuasion watermark (très faible opacité)
+                watermark: {
+                    enabled: true,
+                    // Mets ton nom / ta marque / ton site
+                    text: "Osalyd Consulting",
+                    opacity: 0.02,          // 0.02 à 0.06 selon ton goût
+                    fontSize: 28,            // px
+                    rotationDeg: -22,        // angle
+                    gapX: 260,               // espacement horizontal
+                    gapY: 180,               // espacement vertical
+                    zIndex: 9999
+                },
+
+                // Bloquages
+                block: {
+                    contextMenu: true,
+                    selection: true,
+                    clipboardEvents: true,   // copy/cut/paste
+                    hotkeys: true            // Ctrl/Cmd + C/A/U/X/S/P
+                }
+            };
+
+            /** --------------------------
+             *  Helpers
+             *  -------------------------- */
+            const isAllowedTarget = (target) => {
+                if (!target || !(target instanceof Element)) return false;
+                return !!target.closest(CFG.allowSelectSelector);
+            };
+
+            const injectStyle = () => {
+                const css = `
+      /* blocage sélection global (sauf zones autorisées) */
+      body[data-nocopy="1"] * {
+        -webkit-user-select: none !important;
+        -moz-user-select: none !important;
+        -ms-user-select: none !important;
+        user-select: none !important;
+      }
+      body[data-nocopy="1"] ${CFG.allowSelectSelector},
+      body[data-nocopy="1"] ${CFG.allowSelectSelector} * {
+        -webkit-user-select: text !important;
+        -moz-user-select: text !important;
+        -ms-user-select: text !important;
+        user-select: text !important;
+      }
+
+      /* watermark overlay */
+      .wm-overlay {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: ${CFG.watermark.zIndex};
+        opacity: ${CFG.watermark.opacity};
+        mix-blend-mode: normal;
+      }
+    `.trim();
+
+                const style = document.createElement("style");
+                style.setAttribute("data-nocopy-style", "1");
+                style.appendChild(document.createTextNode(css));
+                document.head.appendChild(style);
+            };
+
+            const createWatermark = () => {
+                if (!CFG.watermark.enabled) return;
+
+                // Canvas watermark (répétée) -> image de fond
+                const canvas = document.createElement("canvas");
+                const ctx = canvas.getContext("2d");
+
+                // Taille du motif (canvas)
+                canvas.width = CFG.watermark.gapX;
+                canvas.height = CFG.watermark.gapY;
+
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                ctx.translate(canvas.width / 2, canvas.height / 2);
+                ctx.rotate((CFG.watermark.rotationDeg * Math.PI) / 180);
+                ctx.font = `${CFG.watermark.fontSize}px sans-serif`;
+                ctx.fillStyle = "rgba(0,0,0,1)"; // l'opacité est gérée par le div overlay
+                ctx.textAlign = "center";
+                ctx.textBaseline = "middle";
+                ctx.fillText(CFG.watermark.text, 0, 0);
+
+                const overlay = document.createElement("div");
+                overlay.className = "wm-overlay";
+                overlay.setAttribute("aria-hidden", "true");
+                overlay.style.backgroundImage = `url("${canvas.toDataURL("image/png")}")`;
+                overlay.style.backgroundRepeat = "repeat";
+                overlay.style.backgroundPosition = "0 0";
+
+                document.body.appendChild(overlay);
+            };
+
+            const installGuards = () => {
+                document.body.setAttribute("data-nocopy", "1");
+
+                // Clic droit
+                if (CFG.block.contextMenu) {
+                    document.addEventListener(
+                        "contextmenu",
+                        (e) => {
+                            if (isAllowedTarget(e.target)) return;
+                            e.preventDefault();
+                        },
+                        { capture: true }
+                    );
+                }
+
+                // Sélection (drag / double click / etc.)
+                if (CFG.block.selection) {
+                    // Empêche la sélection au démarrage
+                    document.addEventListener(
+                        "selectstart",
+                        (e) => {
+                            if (isAllowedTarget(e.target)) return;
+                            e.preventDefault();
+                        },
+                        { capture: true }
+                    );
+                }
+
+                // Clipboard events
+                if (CFG.block.clipboardEvents) {
+                    ["copy", "cut", "paste"].forEach((evt) => {
+                        document.addEventListener(
+                            evt,
+                            (e) => {
+                                if (isAllowedTarget(e.target)) return;
+                                e.preventDefault();
+                            },
+                            { capture: true }
+                        );
+                    });
+                }
+
+                // Raccourcis clavier (Ctrl/Cmd + ...)
+                if (CFG.block.hotkeys) {
+                    document.addEventListener(
+                        "keydown",
+                        (e) => {
+                            if (isAllowedTarget(e.target)) return;
+
+                            const key = (e.key || "").toLowerCase();
+                            const ctrlOrCmd = e.ctrlKey || e.metaKey;
+
+                            // Tu peux ajuster la liste si besoin
+                            const blocked = ["c", "a", "u", "x", "s", "p"]; // copy, select all, view source, cut, save, print
+
+                            if (ctrlOrCmd && blocked.includes(key)) {
+                                e.preventDefault();
+                            }
+                        },
+                        { capture: true }
+                    );
+                }
+            };
+
+            /** --------------------------
+             *  Boot
+             *  -------------------------- */
+            const boot = () => {
+                injectStyle();
+                installGuards();
+                createWatermark();
+            };
+
+            if (document.readyState === "loading") {
+                document.addEventListener("DOMContentLoaded", boot, { once: true });
+            } else {
+                boot();
+            }
+        })();
+
+
     </script>
+
+    <div class="copyright-footer allow-select">
+        <span>© 2025 Osalyd Consulting</span>
+
+        <a class="copyright-linkedin" href="https://www.linkedin.com/in/juliebredeche" target="_blank"
+            rel="noopener noreferrer" aria-label="LinkedIn Osalyd Consulting" title="LinkedIn">
+            <svg class="linkedin-icon" aria-hidden="true" focusable="false">
+                <use href="https://www.osalydconsulting.com/media/files/Linkedin-white.png"></use>
+            </svg>
+        </a>
+    </div>
+
 
 </body>
 
