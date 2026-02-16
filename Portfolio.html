@@ -845,8 +845,8 @@
                     en: "<ul><li>200 teachers across 2 campuses</li><li>2 booking managers</li><li>Accounting department</li></ul>"
                 },
                 solution: {
-                    fr: "Une application mobile de saisie des demandes de réservation par les professeurs, avec un workflow de validation, et des notifications automatiques. <p class='saut-ligne'> Un tableau de bord interactif pour le staff qui peut gérer les réservations et le suivi comptable de manière structurée.",
-                    en: "An app enabling teachers to submit booking requests, with an approval workflow and automated notifications. <p class='saut-ligne'>A SharePoint back-office for staff to manage bookings and accounting follow-up in a structured way."
+                    fr: "Une <b>application mobile</b> de saisie des demandes de réservation par les professeurs, avec un workflow de validation, et des notifications automatiques. <p class='saut-ligne'> Un <b>tableau de bord interactif</b> pour le staff qui peut gérer les réservations et le suivi comptable de manière structurée.",
+                    en: "A <b>mobile app</b> enabling teachers to submit booking requests, with an approval workflow and automated notifications. <p class='saut-ligne'>An <b>interactive dashboard</b> for staff to manage bookings and accounting follow-up in a structured way."
                 },
                 screenshots: [
                     {
@@ -938,41 +938,29 @@
                     en: "<p><b>Manual extraction</b> of order numbers from thousands of PDF invoices to integrate into a new invoicing tool.</p><br><p>Time-consuming process causing <b>error risks</b> and billing delays.</p>"
                 },
                 users: {
-                    fr: "<ul><li>200 professeurs répartis sur 2 campus</li><li>2 gestionnaires des réservations</li><li>Service Comptabilité</li></ul>",
-                    en: "<ul><li>200 teachers across 2 campuses</li><li>2 booking managers</li><li>Accounting department</li></ul>"
+                    fr: "<ul><li>2 personnes mobilisées à temps plein</li><li>10 000 factures à traiter en retard</li><li>Un flux continu de facture PDF encore reçu de l'ancien système</li></ul>",
+                    en: "<ul><li>2 full-time employees dedicated to manual extraction</li><li>10 000 overdue invoices to process</li><li>Ongoing continuous inflow of PDF invoices still received from the legacy system</li></ul>"
                 },
                 solution: {
-                    fr: "Un flux Power Automate intégré à SharePoint qui permet une lecture OCR automatisée des factures PDF, et qui détecte précisement leurs numéros de commande",
-                    en: "A Power Automate flow integrated with SharePoint enabling automated OCR reading of PDF invoices, precisely detecting their order numbers"
+                    fr: "Un flux Power Automate intégré à SharePoint qui permet une <b>lecture OCR automatisée</b> des factures PDF, et qui <b>détecte précisement leurs numéros de commande</b>.",
+                    en: "A Power Automate flow integrated with SharePoint enabling <b>automated OCR reading</b> of PDF invoices, precisely <b>detecting their order numbers</b>."
                 },
                 screenshots: [
                     {
-                        url: "https://www.osalydconsulting.com/media/files/ImagesBook/MyBooking/MyBooking-Home.png",
-                        title: { fr: "1. Page d'accueil de l'application", en: "1. App home page" }
+                        url: "https://www.osalydconsulting.com/media/files/ImagesBook/LecturePDF/0.png",
+                        title: { fr: "1. Récupération du contenu du PDF", en: "1. PDF content retrieval" }
                     },
                     {
-                        url: "https://www.osalydconsulting.com/media/files/ImagesBook/MyBooking/MyBooking-Form1.png",
-                        title: { fr: "2. Formulaire de réservation - Etape 1", en: "2. Booking form - Step 1" }
+                        url: "https://www.osalydconsulting.com/media/files/ImagesBook/LecturePDF/1.png",
+                        title: { fr: "2. Lecture OCR du PDF", en: "2. PDF OCR reading" }
                     },
                     {
-                        url: "https://www.osalydconsulting.com/media/files/ImagesBook/MyBooking/MyBooking-Form2.png",
-                        title: { fr: "3. Formulaire de réservation - Etape 2", en: "3. Booking form - Step 2" }
+                        url: "https://www.osalydconsulting.com/media/files/ImagesBook/LecturePDF/2.png",
+                        title: { fr: "3. REGEX utilisée dans un Office Script", en: "3. REGEX used in an Office Script" }
                     },
                     {
-                        url: "https://www.osalydconsulting.com/media/files/ImagesBook/MyBooking/MyBooking-Form3.png",
-                        title: { fr: "4. Formulaire de réservation - Etape 3", en: "4. Booking form - Step 3" }
-                    },
-                    {
-                        url: "https://www.osalydconsulting.com/media/files/ImagesBook/MyBooking/MyBooking-MobileHome.png",
-                        title: { fr: "5. Page d'accueil de l'application - Mobile", en: "5. App home page - Mobile" }
-                    },
-                    {
-                        url: "https://www.osalydconsulting.com/media/files/ImagesBook/MyBooking/MyBooking-MobileForm.png",
-                        title: { fr: "6. Formulaire de réservation - Mobile", en: "6. Booking form - Mobile" }
-                    },
-                    {
-                        url: "https://www.osalydconsulting.com/media/files/ImagesBook/MyBooking/MyBooking-BackOffice.png",
-                        title: { fr: "7.Back-office SharePoint pour le staff", en: "7. SharePoint back-office for staff" }
+                        url: "https://www.osalydconsulting.com/media/files/ImagesBook/LecturePDF/3.png",
+                        title: { fr: "4. Utilisation de la REGEX dans le flux", en: "4. REGEX usage in the flow" }
                     },
                 ],
                 features: {
@@ -982,10 +970,10 @@
                         "<b>Renommage automatique</b> des fichiers valides et <b>déplacement des cas non-conformes</b> vers un dossier de révision"
                     ],
                     en: [
-  "Automated flow that scans documents in a SharePoint library",
-  "<b>OCR reading</b> of PDF content via AI Builder to <b>extract order numbers</b> using REGEX",
-  "<b>Automatic renaming</b> of valid files and <b>moving non-compliant cases</b> to a review folder"
-],
+                        "Automated flow that scans documents in a SharePoint library",
+                        "<b>OCR reading</b> of PDF content via AI Builder to <b>extract order numbers</b> using REGEX",
+                        "<b>Automatic renaming</b> of valid files and <b>moving non-compliant cases</b> to a review folder"
+                        ],
 
                 },
                 technologies: ["Power Automate", "AI Builder", "SharePoint"],
