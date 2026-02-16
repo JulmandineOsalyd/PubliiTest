@@ -923,6 +923,99 @@
                     ]
                 }
             },
+            {
+                title: {
+                    fr: "Extraction automatique de N° de commande sur des factures PDF",
+                    en: "Automated extraction of order numbers from PDF Invoices"
+                },
+                mainTool: "Power Automate",
+                industry: {
+                    fr: "Pharmaceutique",
+                    en: "Pharmaceutical"
+                },
+                problem: {
+                    fr: "<p><b>Extraction manuelle</b> des numéros de commande sur des milliers de factures PDF pour les intégrer à un nouvel outil de facturation.</p><br><p>Processus chronophage qui engendrait <b>risques d'erreurs</b> et des retards de facturation.</p>",
+                    en: "<p><b>Manual extraction</b> of order numbers from thousands of PDF invoices to integrate into a new invoicing tool.</p><br><p>Time-consuming process causing <b>error risks</b> and billing delays.</p>"
+                },
+                users: {
+                    fr: "<ul><li>200 professeurs répartis sur 2 campus</li><li>2 gestionnaires des réservations</li><li>Service Comptabilité</li></ul>",
+                    en: "<ul><li>200 teachers across 2 campuses</li><li>2 booking managers</li><li>Accounting department</li></ul>"
+                },
+                solution: {
+                    fr: "Un flux Power Automate intégré à SharePoint qui permet une lecture OCR automatisée des factures PDF, et qui détecte précisement leurs numéros de commande",
+                    en: "A Power Automate flow integrated with SharePoint enabling automated OCR reading of PDF invoices, precisely detecting their order numbers"
+                },
+                screenshots: [
+                    {
+                        url: "https://www.osalydconsulting.com/media/files/ImagesBook/MyBooking/MyBooking-Home.png",
+                        title: { fr: "1. Page d'accueil de l'application", en: "1. App home page" }
+                    },
+                    {
+                        url: "https://www.osalydconsulting.com/media/files/ImagesBook/MyBooking/MyBooking-Form1.png",
+                        title: { fr: "2. Formulaire de réservation - Etape 1", en: "2. Booking form - Step 1" }
+                    },
+                    {
+                        url: "https://www.osalydconsulting.com/media/files/ImagesBook/MyBooking/MyBooking-Form2.png",
+                        title: { fr: "3. Formulaire de réservation - Etape 2", en: "3. Booking form - Step 2" }
+                    },
+                    {
+                        url: "https://www.osalydconsulting.com/media/files/ImagesBook/MyBooking/MyBooking-Form3.png",
+                        title: { fr: "4. Formulaire de réservation - Etape 3", en: "4. Booking form - Step 3" }
+                    },
+                    {
+                        url: "https://www.osalydconsulting.com/media/files/ImagesBook/MyBooking/MyBooking-MobileHome.png",
+                        title: { fr: "5. Page d'accueil de l'application - Mobile", en: "5. App home page - Mobile" }
+                    },
+                    {
+                        url: "https://www.osalydconsulting.com/media/files/ImagesBook/MyBooking/MyBooking-MobileForm.png",
+                        title: { fr: "6. Formulaire de réservation - Mobile", en: "6. Booking form - Mobile" }
+                    },
+                    {
+                        url: "https://www.osalydconsulting.com/media/files/ImagesBook/MyBooking/MyBooking-BackOffice.png",
+                        title: { fr: "7.Back-office SharePoint pour le staff", en: "7. SharePoint back-office for staff" }
+                    },
+                ],
+                features: {
+                    fr: [
+                        "Flux automatisé qui parcours les documents d'une bibliotheque SharePoint",
+                        "<b>Lecture OCR</b> du contenu des PDF via AI Builder pour <b>extraire le n° de commande</b> à l'aide d'une REGEX",
+                        "<b>Renommage automatique</b> des fichiers valides et <b>déplacement des cas non-conformes</b> vers un dossier de révision"
+                    ],
+                    en: [
+  "Automated flow that scans documents in a SharePoint library",
+  "<b>OCR reading</b> of PDF content via AI Builder to <b>extract order numbers</b> using REGEX",
+  "<b>Automatic renaming</b> of valid files and <b>moving non-compliant cases</b> to a review folder"
+],
+
+                },
+                technologies: ["Power Automate", "AI Builder", "SharePoint"],
+                devices: ["PC"],
+                userBenefits: {
+                    fr: [
+                        "90 % du temps alloué aux tâches manuelles éliminé",
+                        "Intégration simplifiée dans le nouvel outil de facturation sans ressaisie",
+                        "Simplicite d'utilisation : un clic pour traiter des milliers de factures"
+                    ],
+                    en: [
+                        "90% of time spent on manual tasks eliminated",
+                        "Simplified integration into the new invoicing tool without re-entry",
+                        "User-friendly: one click to process thousands of invoices"
+                    ],
+
+                },
+                businessValue: {
+                    fr: [
+                        "ROI rapide : reduction des coûts de 80 % sur le traitement",
+                        "Conformite renforcee : traceabilite pour audits regulatoires",
+                        "Scalabilite : flux reutilisable pour d'autres documents"
+                    ],
+                    en: [
+                        "Quick ROI: 80% cost reduction on processing",
+                        "Enhanced compliance: traceability for regulatory audits",
+                        "Scalability: reusable flow for other documents"
+                    ]
+                }
+            }
 
         ];
 
@@ -933,7 +1026,7 @@
                 retourSommaire: 'Retour au sommaire',
                 voirCaptures: 'Voir les visuels',
                 problematique: 'Problématique métier',
-                utilisateurs: 'Utilisateurs',
+                utilisateurs: 'Contexte et utilisateurs',
                 solution: 'Solution mise en place',
                 fonctionnalites: 'Fonctionnalités clés',
                 benefices: 'Bénéfices utilisateurs',
@@ -949,7 +1042,7 @@
                 retourSommaire: 'Back to summary',
                 voirCaptures: 'View screenshots',
                 problematique: 'Business Problem',
-                utilisateurs: 'Users',
+                utilisateurs: 'Context and users',
                 solution: 'Solution',
                 fonctionnalites: 'Key Features',
                 benefices: 'User Benefits',
@@ -1058,7 +1151,7 @@
                             </div>
                             <div class="info-section-pb">
                                 <div class="section-title" data-key="utilisateurs">
-                                    <span class="emoji">🧑🏻‍💻</span><span class="label-text">Utilisateurs</span>
+                                    <span class="emoji">🧑🏻‍💻</span><span class="label-text">Contexte et utilisateurs</span>
                                 </div>
                                 <div class="section-content translatable-field" data-project-index="${projectIndex}" data-field="users">${getLocalized(project.users, 'fr')}</div>
                             </div>
@@ -1623,7 +1716,8 @@
 
         <a class="copyright-linkedin" href="https://www.linkedin.com/in/juliebredeche" target="_blank"
             rel="noopener noreferrer" aria-label="LinkedIn Osalyd Consulting" title="LinkedIn">
-            <img class="linkedin-icon" aria-hidden="true" focusable="false" src="https://www.osalydconsulting.com/media/files/Linkedin-White.png">
+            <img class="linkedin-icon" aria-hidden="true" focusable="false"
+                src="https://www.osalydconsulting.com/media/files/Linkedin-White.png">
         </a>
     </div>
 
