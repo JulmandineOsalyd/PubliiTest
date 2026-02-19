@@ -1003,7 +1003,85 @@
                         "Scalability: reusable flow for other documents"
                     ]
                 }
-            }
+            },
+            {
+  title: {
+    fr: "Classement automatisé des contrats signés vers une contrathèque SharePoint",
+    en: "Automated classification of signed contracts into a SharePoint contract library"
+  },
+
+  mainTool: "Power Automate",
+
+  industry: {
+    fr: "Achats",
+    en: "Procurement"
+  },
+
+  users: {
+    fr: "<ul><li>Service Achats (10 personnes)</li><li>Environ 50 contrats finalisés par mois à classer</li><li>De nombreux documents de travail mélangés aux contrats signés</li></ul>",
+    en: "<ul><li>Procurement department (10 people)</li><li>About 50 finalized contracts per month to classify</li><li>Lots of working documents mixed with signed contracts</li></ul>"
+  },
+
+  problem: {
+    fr: "<p>Les contrats finalisés se retrouvaient dispersés parmi des documents de travail.</p><p class=\"saut-ligne\">Résultat : une <b>recherche manuelle</b> longue et aléatoire dans de nombreux dossiers avant de trouver le dernier contrat en vigueur, ou l'historique des contrats liés à un fournisseur.</p>",
+    en: "<p>Finalized contracts were spread out among working documents. As a result, it took a long and random <b>manual searching process</b> through numerous files to find the latest valid contract, or the contract history for a given supplier.</p>"
+  },
+
+  solution: {
+
+  fr: "<p>Un flux Power Automate qui ouvre un <b>formulaire de saisie des métadonnées</b> (fournisseur, type, montant, échéance, etc.), puis déplace le contrat vers une bibliothèque SharePoint dédiée.</p><p class=\"saut-ligne\">Couplé à un <b>moteur de recherche avec filtres avancés</b> pour retrouver instantanément les contrats grâce aux métadonnées renseignées.</p>",
+en: "<p>A Power Automate flow that opens a <b>metadata entry form</b> (vendor, type, amount, expiry date, etc.), then moves the contract to a dedicated SharePoint library.</p><p class=\"saut-ligne\">Coupled with an <b>advanced filtering search engine</b> to instantly retrieve contracts using the entered metadata.</p>"  },
+
+  screenshots: [],
+
+  features: {
+    fr: [
+      "<b>Déclenchement manuel</b> par bouton : lancer le classement au moment où le contrat est finalisé",
+      "<b>Formulaire</b> de saisie/validation des métadonnées (ex. fournisseur, type, date de fin, statut, etc.)",
+      "<b>Déplacement automatisé</b> du document vers la bibliothèque « Contrats signés » avec mise à jour des métadonnées",
+      "<b>Alertes Teams</b> automatiques lorsqu’un contrat approche de son échéance",
+      "<b>Mise à jour du statut</b> du contrat une fois la date de fin dépassée (ex. « Expiré »)"
+    ],
+    en: [
+      "<b>Manual trigger</b> via button: run classification when the contract is finalized",
+      "<b>Form</b> to enter/validate metadata (e.g., vendor, type, end date, status, etc.)",
+      "<b>Automated move</b> to the “Signed contracts” library with metadata update",
+      "<b>Teams alerts</b> when a contract is approaching its end date",
+      "<b>Status update</b> once the end date is passed (e.g., “Expired”)"
+    ]
+  },
+
+  technologies: ["SharePoint", "Power Automate", "Microsoft Teams"],
+
+  devices: ["PC"],
+
+  userBenefits: {
+    fr: [
+      "Classement guidé et homogène : moins d’erreurs et moins d’oublis de métadonnées",
+      "Recherche plus rapide : filtres par fournisseur, type, statut, échéance, etc.",
+      "Alertes proactives dans Teams pour anticiper les renouvellements"
+    ],
+    en: [
+      "Guided, consistent classification: fewer errors and fewer missing metadata",
+      "Faster retrieval: filters by vendor, type, status, expiry date, etc.",
+      "Proactive Teams alerts to anticipate renewals"
+    ]
+  },
+
+  businessValue: {
+    fr: [
+      "Réduction du temps perdu à rechercher des contrats et amélioration de la productivité de l’équipe Achats",
+      "Réduction des risques : meilleur suivi des échéances et du statut contractuel",
+      "Gouvernance documentaire renforcée : bibliothèque unique des contrats signés, exploitable par la recherche"
+    ],
+    en: [
+      "Reduced time spent searching for contracts and improved productivity for the Procurement team",
+      "Risk reduction: better monitoring of contract expiry dates and status",
+      "Stronger document governance: single source of truth for signed contracts, searchable and filterable"
+    ]
+  }
+}
+
 
         ];
 
